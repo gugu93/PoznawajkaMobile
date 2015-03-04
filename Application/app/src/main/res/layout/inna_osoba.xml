@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="                                    "
+        android:textSize="15dp"
+        android:id="@+id/profil"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profil"
+        android:gravity="left"
+        android:id="@+id/avatar">
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:id="@+id/avatarImg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="#56221819" />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profil"
+        android:id="@+id/dane"
+        android:layout_toRightOf="@+id/avatar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imie Ania"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nazwisko Paszkiewicz"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferencje Bruneci"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wyglad Blondynka"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:textSize="20dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Popros Anie o spotkanie!"
+            android:id="@+id/button" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Wystaw ocene użytkownikowi!"
+            android:id="@+id/button1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dodaj Anie do znajomych!"
+            android:id="@+id/button12" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:layout_below="@+id/dane"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Znajomi użytkownika Ania"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wojtek Wojtek"
+            android:textSize="20dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout"      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grupy znajomości"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:paddingTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koło informatyków II UJ"
+            android:textSize="20dp"/>
+
+      </LinearLayout>
+
+
+</RelativeLayout>

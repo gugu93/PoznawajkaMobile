@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kml.poznawajkamobile" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_logged" >
+        </activity>
+        <activity
+            android:name=".MeetNewPeopleActivity"
+            android:label="@string/title_activity_meet_new_ppl" >
+        </activity>
+        <activity
+            android:name=".GalleryActivity"
+            android:label="@string/title_activity_gallery" >
+        </activity>
+        <activity
+            android:name=".AppointmentActivity"
+            android:label="@string/title_activity_prepostion" >
+        </activity>
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".OtherProfilActivity"
+            android:label="@string/title_activity_other_profil" >
+        </activity>
+        <activity
+            android:name=".AutoDialogActivity"
+            android:label="@string/title_activity_auto_dialog" >
+        </activity>
+    </application>
+
+</manifest>

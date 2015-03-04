@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:id="@+id/imageView2"
+        android:src="@drawable/main_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="Poznawajka Mobile. Zaloguj się lub zarejestruj, jeśli nie masz konta"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="30dp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/emailLin"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:text="email"
+        android:textSize="35dp"
+        android:layout_weight="0.25"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Wpisz email"
+            android:ems="10"
+            android:textSize="18dp"
+            android:id="@+id/editTextEmail"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:id="@+id/passwordLIn"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLin"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="haslo"
+            android:textColor="@color/blue"
+            android:textSize="35dp"
+            android:layout_weight="0.25"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Wpisz hasło"
+
+            android:ems="10"
+            android:textSize="18dp"
+            android:id="@+id/editTextPassword"
+            android:layout_weight="0.75"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLIn"
+        android:id="@+id/buttons"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wyjdz"
+            android:textColor="@color/white"
+            android:background="@color/Orange"
+            android:id="@+id/buttonEXIT"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Orange"
+            android:textColor="@color/white"
+            android:text="Zaloguj"
+            android:id="@+id/buttonLOGIN"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/buttons">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nie masz konta? Zarejestruj się!"
+            android:textColor="#ff1d19ff"
+            android:id="@+id/registerText"
+            android:paddingLeft="80dp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nie pamietasz hasła?"
+            android:textColor="#ff1d19ff"
+            android:id="@+id/passwordReset"
+            android:paddingLeft="130dp"
+            />
+        </LinearLayout>
+
+</RelativeLayout>
