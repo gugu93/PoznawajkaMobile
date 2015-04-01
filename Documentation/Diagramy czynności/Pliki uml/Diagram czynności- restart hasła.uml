@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XPD:PROJECT xmlns:XPD="http://www.staruml.com" version="1">
+<XPD:HEADER>
+<XPD:SUBUNITS>
+</XPD:SUBUNITS>
+<XPD:PROFILES>
+<XPD:PROFILE>UMLStandard</XPD:PROFILE>
+</XPD:PROFILES>
+</XPD:HEADER>
+<XPD:BODY>
+<XPD:OBJ name="DocumentElement" type="UMLProject" guid="0d4TvSaNVUSvexQWvcvnZwAA">
+<XPD:ATTR name="Title" type="string">Untitled</XPD:ATTR>
+<XPD:ATTR name="#OwnedElements" type="integer">6</XPD:ATTR>
+<XPD:OBJ name="OwnedElements[0]" type="UMLModel" guid="L8SQgZeSOEiYGlnWAjwJ2AAA">
+<XPD:ATTR name="Name" type="string">Use Case Model</XPD:ATTR>
+<XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">useCaseModel</XPD:ATTR>
+<XPD:REF name="Namespace">0d4TvSaNVUSvexQWvcvnZwAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLUseCaseDiagram" guid="HI/lmmZpd0W6TkiWjX2UVQAA">
+<XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
+<XPD:REF name="DiagramOwner">L8SQgZeSOEiYGlnWAjwJ2AAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLUseCaseDiagramView" guid="QMzlrUmk1EGcge2ddFM76gAA">
+<XPD:REF name="Diagram">HI/lmmZpd0W6TkiWjX2UVQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[1]" type="UMLModel" guid="SdRBT6bidUCom2sjPJ2LzAAA">
+<XPD:ATTR name="Name" type="string">Analysis Model</XPD:ATTR>
+<XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">analysisModel</XPD:ATTR>
+<XPD:REF name="Namespace">0d4TvSaNVUSvexQWvcvnZwAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLClassDiagram" guid="kYYawCRPmUKcfSN6MuOFWAAA">
+<XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
+<XPD:ATTR name="DefaultDiagram" type="boolean">True</XPD:ATTR>
+<XPD:ATTR name="DiagramType" type="string">RobustnessDiagram</XPD:ATTR>
+<XPD:REF name="DiagramOwner">SdRBT6bidUCom2sjPJ2LzAAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="fFcllh3GGUi/XNOKOihtcQAA">
+<XPD:REF name="Diagram">kYYawCRPmUKcfSN6MuOFWAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[2]" type="UMLModel" guid="BV9W2ZW+40KEZGWQaFQ0/QAA">
+<XPD:ATTR name="Name" type="string">Design Model</XPD:ATTR>
+<XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">designModel</XPD:ATTR>
+<XPD:REF name="Namespace">0d4TvSaNVUSvexQWvcvnZwAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLClassDiagram" guid="0D53sG9CzkGmaCV97xXXJwAA">
+<XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
+<XPD:ATTR name="DefaultDiagram" type="boolean">True</XPD:ATTR>
+<XPD:REF name="DiagramOwner">BV9W2ZW+40KEZGWQaFQ0/QAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLClassDiagramView" guid="kiuBhzBvDEKhuTp9raPOQAAA">
+<XPD:REF name="Diagram">0D53sG9CzkGmaCV97xXXJwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[3]" type="UMLModel" guid="j5CLq1HcbkqMRtbF3xcLhQAA">
+<XPD:ATTR name="Name" type="string">Implementation Model</XPD:ATTR>
+<XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">implementationModel</XPD:ATTR>
+<XPD:REF name="Namespace">0d4TvSaNVUSvexQWvcvnZwAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLComponentDiagram" guid="DZNj0d9UO0au1DIwOwPNBAAA">
+<XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
+<XPD:REF name="DiagramOwner">j5CLq1HcbkqMRtbF3xcLhQAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLComponentDiagramView" guid="a4CxFVHGcECH6n+EringqAAA">
+<XPD:REF name="Diagram">DZNj0d9UO0au1DIwOwPNBAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[4]" type="UMLModel" guid="9wRxRBhc+EC2IYUcH/5bHwAA">
+<XPD:ATTR name="Name" type="string">Deployment Model</XPD:ATTR>
+<XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">deploymentModel</XPD:ATTR>
+<XPD:REF name="Namespace">0d4TvSaNVUSvexQWvcvnZwAA</XPD:REF>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLDeploymentDiagram" guid="1kezmMDiqEaIEBRdYhO4JgAA">
+<XPD:ATTR name="Name" type="string">Main</XPD:ATTR>
+<XPD:REF name="DiagramOwner">9wRxRBhc+EC2IYUcH/5bHwAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLDeploymentDiagramView" guid="Jn6MfiMn+Eq6N7PeW/x7ZwAA">
+<XPD:REF name="Diagram">1kezmMDiqEaIEBRdYhO4JgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedElements[5]" type="UMLModel" guid="7ApRMDmhE0+ezh7CCEI++QAA">
+<XPD:ATTR name="Name" type="string">Use Case Model1</XPD:ATTR>
+<XPD:ATTR name="StereotypeProfile" type="string">UMLStandard</XPD:ATTR>
+<XPD:ATTR name="StereotypeName" type="string">useCaseModel</XPD:ATTR>
+<XPD:REF name="Namespace">0d4TvSaNVUSvexQWvcvnZwAA</XPD:REF>
+<XPD:ATTR name="#Behaviors" type="integer">2</XPD:ATTR>
+<XPD:OBJ name="Behaviors[0]" type="UMLActivityGraph" guid="gCcDgW2tFU2S3Jz9+8CXaQAA">
+<XPD:ATTR name="Name" type="string">ActivityGraph1</XPD:ATTR>
+<XPD:REF name="Context">7ApRMDmhE0+ezh7CCEI++QAA</XPD:REF>
+<XPD:OBJ name="Top" type="UMLCompositeState" guid="0EBFntVs00ubXovRh/lDrQAA">
+<XPD:ATTR name="Name" type="string">TOP</XPD:ATTR>
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:ATTR name="#Subvertices" type="integer">17</XPD:ATTR>
+<XPD:OBJ name="Subvertices[0]" type="UMLPseudostate" guid="LPwyBRg98Ei4+mkFDMhLbgAA">
+<XPD:ATTR name="Name" type="string">Initial1</XPD:ATTR>
+<XPD:ATTR name="PseudostateKind" type="UMLPseudostateKind">pkInitial</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">iYh/kTUFE0OcAGNLdx7iJAAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">oVxSiWzs/UqPHtn8TKyXkAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[1]" type="UMLActionState" guid="BN6SL7M8v0OYLVyekpZH9AAA">
+<XPD:ATTR name="Name" type="string">Uruchamianie aplikacji mobilnej</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">X5qBpZciXEybSkKUiVh6wQAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">icGHDG0quUCBZoXq76y0EgAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">oVxSiWzs/UqPHtn8TKyXkAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[2]" type="UMLActionState" guid="jkS+RhyZMUWlbcx/zsTJmwAA">
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[3]" type="UMLActionState" guid="lbHcgCQvPk6b/J3DdhE3+wAA">
+<XPD:ATTR name="Name" type="string">Wyświetlanie ekranu wyboru</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">fSyHrj/4hUaIyuPAE28ENAAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">r7dWi2joCEOhxXAoPhBBwAAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">icGHDG0quUCBZoXq76y0EgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[4]" type="UMLActionState" guid="oTXZurh6F0GXJvozL+syrQAA">
+<XPD:ATTR name="Name" type="string">Naciśnięcie przycisku rejestracji</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">1KREmiWOJEizbB0hbKEhagAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">q3Q9pRg6lkCUba2nr7rAxgAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">r7dWi2joCEOhxXAoPhBBwAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[5]" type="UMLActionState" guid="8/APe4gdB0yRRHbRS8MSwgAA">
+<XPD:ATTR name="Name" type="string">Wyświetlanie formularza rejestracyjnego</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">mAbvXaf3j06SmdFxgGy2tAAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">JbZ/ZQ8Rk0uEugnHqKrblgAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">q3Q9pRg6lkCUba2nr7rAxgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[6]" type="UMLActionState" guid="oUJaXXZzREmw3sA5va6EQAAA">
+<XPD:ATTR name="Name" type="string">Wpisanie koniecznych danych do formularza</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">lL26XJucIEy9fJw+c+fQjwAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">umd6Z+sVqkur/1NqKXY72wAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">JbZ/ZQ8Rk0uEugnHqKrblgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[7]" type="UMLSignalSendState" guid="y4w/1GjUCkmBMRRmeTYkWgAA">
+<XPD:ATTR name="Name" type="string">Wysłanie danych do serwera</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">mWuwcPIYZUm1uIOBMeFccwAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">uRy8Fl+jm0293H/RGGjBlwAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">umd6Z+sVqkur/1NqKXY72wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[8]" type="UMLSignalAcceptState" guid="XfyPdrCjvEujXqVH5arPpgAA">
+<XPD:ATTR name="Name" type="string">Zweryfikowanie poprawności danych</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">ss7eKXiqlEO//LE0Iy1+kAAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">Ij3vOzV27EmBjVMEh/BA8AAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">uRy8Fl+jm0293H/RGGjBlwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[9]" type="UMLSignalAcceptState" guid="kRXVWdkhBUSY5En5Dub13AAA">
+<XPD:ATTR name="Name" type="string">SignalAcceptState1</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[10]" type="UMLPseudostate" guid="foB3sK/F7UO/9c+bgacfAAAA">
+<XPD:ATTR name="Name" type="string">Decision1</XPD:ATTR>
+<XPD:ATTR name="PseudostateKind" type="UMLPseudostateKind">pkDecision</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">homIIZqpMU6aHPhztGSOQQAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">2</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">ffZnPmqs9Eyp8VDnsA5HfQAA</XPD:REF>
+<XPD:REF name="Outgoings[1]">fsdM3Mb020GirExxT68uQgAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">Ij3vOzV27EmBjVMEh/BA8AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[11]" type="UMLActionState" guid="Oi3eX23F6E+Fma8fGgSrMQAA">
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[12]" type="UMLActionState" guid="xDi/iemP50Kczjl28inJ5wAA">
+<XPD:ATTR name="Name" type="string">Założenie konta użytkownika</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">jQgsUkJpT0ywO4kRwu4f7gAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">+5LCxo9R7USMsZJ+n9Qt+gAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">fsdM3Mb020GirExxT68uQgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[13]" type="UMLActionState" guid="tH7vDyeyAkGdgzJcKRTWfQAA">
+<XPD:ATTR name="Name" type="string">Wyświetlenie komunikatu o poprawnym założeniu konta</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">sv6BesnigEiLLAhTh/SvHAAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">XbbQgW3wRU2NdCE0rC4K3wAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">+5LCxo9R7USMsZJ+n9Qt+gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[14]" type="UMLActionState" guid="DOIsv5ONm0Clvn9FckRs0gAA">
+<XPD:ATTR name="Name" type="string">Wyświetlanie komunikacji o blędzie</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">qQtQ143GBUKDhh1Bz2RrNgAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">tcFfCV9hx0KgKlTa9xgf2wAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">ffZnPmqs9Eyp8VDnsA5HfQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[15]" type="UMLFinalState" guid="u5AI9xgA2kmECItd2ab9hgAA">
+<XPD:ATTR name="Name" type="string">FinalState1</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">uiGqKtgobEaR42Q05cCjugAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">XbbQgW3wRU2NdCE0rC4K3wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[16]" type="UMLFlowFinalState" guid="pROUusmyMEe83T+adoYxNgAA">
+<XPD:ATTR name="Name" type="string">FlowFinalState1</XPD:ATTR>
+<XPD:REF name="ContainerState">0EBFntVs00ubXovRh/lDrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">f90tuKYe+0ecDHKciP8vHQAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">tcFfCV9hx0KgKlTa9xgf2wAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLActivityDiagram" guid="pDmdett4eEeeLgzfK/Qt3wAA">
+<XPD:ATTR name="Name" type="string">ActivityDiagram1</XPD:ATTR>
+<XPD:REF name="DiagramOwner">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLActivityDiagramView" guid="65+Nw6xL/EOpQ1w9OX7hSgAA">
+<XPD:REF name="Diagram">pDmdett4eEeeLgzfK/Qt3wAA</XPD:REF>
+<XPD:ATTR name="#OwnedViews" type="integer">33</XPD:ATTR>
+<XPD:OBJ name="OwnedViews[0]" type="UMLSwimlaneView" guid="80Z7z8UynEe61NsTGcnptAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">32</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">32</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">265</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">793</XPD:ATTR>
+<XPD:REF name="Model">O8+9RPS4v0itYEIEWYQcNwAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="xu/kzGPkhEqw5lTWOhVKmQAA">
+<XPD:ATTR name="Text" type="string">User</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[1]" type="UMLSwimlaneView" guid="QhQWLdII5E6WmzAJcxKkJQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">296</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">32</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">300</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">793</XPD:ATTR>
+<XPD:REF name="Model">IWJCOqX5hkibEXczKaTX+wAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="kKPJhAY+q02PSLW0DP+0vwAA">
+<XPD:ATTR name="Text" type="string">Aplikacja mobilna</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[2]" type="UMLSwimlaneView" guid="qNe7q+Zh8UmBwtRcf986qgAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">596</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">32</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">280</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">785</XPD:ATTR>
+<XPD:REF name="Model">LuFDhAYahUuSUVQ0/SvXCQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="LEgMyUMIsEWm+K17OA+XhgAA">
+<XPD:ATTR name="Text" type="string">Serwer</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[3]" type="UMLPseudostateView" guid="iYh/kTUFE0OcAGNLdx7iJAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">148</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">68</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">20</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">20</XPD:ATTR>
+<XPD:REF name="Model">LPwyBRg98Ei4+mkFDMhLbgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[4]" type="UMLActionStateView" guid="X5qBpZciXEybSkKUiVh6wQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">72</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">120</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">167</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">40</XPD:ATTR>
+<XPD:REF name="Model">BN6SL7M8v0OYLVyekpZH9AAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="DzQj8puprUibZydCnq9hWQAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="DdZKDIm/GUyBDiKyk8wb9gAA">
+<XPD:ATTR name="Text" type="string">Uruchamianie aplikacji mobilnej</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="22lfIr+p6EOsszc2SGedxwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="nT37/3WxI0yiW/waO7I/xAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[5]" type="UMLTransitionView" guid="BHaO8rUJgUqIYohduvvGOQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">157,87;156,120</XPD:ATTR>
+<XPD:REF name="Model">oVxSiWzs/UqPHtn8TKyXkAAA</XPD:REF>
+<XPD:REF name="Head">X5qBpZciXEybSkKUiVh6wQAA</XPD:REF>
+<XPD:REF name="Tail">iYh/kTUFE0OcAGNLdx7iJAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="B+HXVLOZC0mgjjb16WeSSwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">oVxSiWzs/UqPHtn8TKyXkAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="G2KUZfpTO0OVt7viXzFlSQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">oVxSiWzs/UqPHtn8TKyXkAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="/B21EIIPJ0abnVHwdTRHcgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">oVxSiWzs/UqPHtn8TKyXkAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[6]" type="UMLActionStateView" guid="fSyHrj/4hUaIyuPAE28ENAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">360</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">120</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">164</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">37</XPD:ATTR>
+<XPD:REF name="Model">lbHcgCQvPk6b/J3DdhE3+wAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="pxvSXjI9YUCe7StUWe92XQAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="DCN+EJFxz0qgpMQ7UifAzQAA">
+<XPD:ATTR name="Text" type="string">Wyświetlanie ekranu wyboru</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="OIGmn8Ttfk+JWmWxe3STNQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="m3DA3ZAfu0WWAH7eoQyaHQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[7]" type="UMLActionStateView" guid="1KREmiWOJEizbB0hbKEhagAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">80</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">212</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">176</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">60</XPD:ATTR>
+<XPD:REF name="Model">oTXZurh6F0GXJvozL+syrQAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="JPCYULmY5EaugJBv3Oh/BgAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="RToLvy01hE6wIcqwpefa0wAA">
+<XPD:ATTR name="Text" type="string">Naciśnięcie przycisku rejestracji</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="EKMHY5W43k+SD9k5nam1eQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="dzq4mVHJ30O7osBwcplo4wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[8]" type="UMLActionStateView" guid="mAbvXaf3j06SmdFxgGy2tAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">336</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">196</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">222</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">72</XPD:ATTR>
+<XPD:REF name="Model">8/APe4gdB0yRRHbRS8MSwgAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="P/qFAtnjh0K9FoyH+xIFRwAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="0oFUbaMD5km9ffpjVTmd5AAA">
+<XPD:ATTR name="Text" type="string">Wyświetlanie formularza rejestracyjnego</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="e7mYXNnoxUK12+6uzKP/cQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="zNa9UpHTPkGqOju0wqG1ywAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[9]" type="UMLActionStateView" guid="lL26XJucIEy9fJw+c+fQjwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">52</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">300</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">232</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
+<XPD:REF name="Model">oUJaXXZzREmw3sA5va6EQAAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="3PCrEJGFokiKqlmiXLhrQwAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="8aE5bj4m+EiCoduTxtzbxgAA">
+<XPD:ATTR name="Text" type="string">Wpisanie koniecznych danych do formularza</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="kSokeY4JK0+X2FnHUwqlDwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="QiBUnUvSgE+nz5IFqCHXsgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[10]" type="UMLSignalSendStateView" guid="mWuwcPIYZUm1uIOBMeFccwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">352</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">292</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">215</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">72</XPD:ATTR>
+<XPD:REF name="Model">y4w/1GjUCkmBMRRmeTYkWgAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="q0deIFlGPUqqhjirZFsamwAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="t1NifPCfAE+VQqfyIP/kOAAA">
+<XPD:ATTR name="Text" type="string">Wysłanie danych do serwera</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="a6aUv0t/TkCPsT0GjuI6/AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="/bzHOynZNE2sL7vOCPnpUAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[11]" type="UMLSignalAcceptStateView" guid="ss7eKXiqlEO//LE0Iy1+kAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">644</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">292</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">229</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">76</XPD:ATTR>
+<XPD:REF name="Model">XfyPdrCjvEujXqVH5arPpgAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="+KZVl/IKZkWnl7S4ajRgKQAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="yToRkgBmAkGLVBORZTF39AAA">
+<XPD:ATTR name="Text" type="string">Zweryfikowanie poprawności danych</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="edaP2sxii0aUa2UkJA+ZzAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="10Tk2nkip0yOpcuviMnz9AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[12]" type="UMLPseudostateView" guid="homIIZqpMU6aHPhztGSOQQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">708</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">412</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">92</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">92</XPD:ATTR>
+<XPD:REF name="Model">foB3sK/F7UO/9c+bgacfAAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[13]" type="UMLActionStateView" guid="jQgsUkJpT0ywO4kRwu4f7gAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">676</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">600</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">161</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">68</XPD:ATTR>
+<XPD:REF name="Model">xDi/iemP50Kczjl28inJ5wAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="EcZnz0Zw2UemYXZcHe+crQAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="JUGFGude/UeCChPjmvhiqQAA">
+<XPD:ATTR name="Text" type="string">Założenie konta użytkownika</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="KXiI+rzJlE6qaP2lvnAorwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="WZpUXa7LWkK2tXB3Zp4TvQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[14]" type="UMLActionStateView" guid="sv6BesnigEiLLAhTh/SvHAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">300</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">584</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">294</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">116</XPD:ATTR>
+<XPD:REF name="Model">tH7vDyeyAkGdgzJcKRTWfQAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="1Pv8VUv7IEmDxxVyt2VcmQAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="PtDUWKaTlEyvcBBDs0bvPQAA">
+<XPD:ATTR name="Text" type="string">Wyświetlenie komunikatu o poprawnym założeniu konta</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="aKqCOk0Xa0SSqK+ItGziQQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="joAA6FOPXkOVbPIL3gJ1zQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[15]" type="UMLActionStateView" guid="qQtQ143GBUKDhh1Bz2RrNgAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">344</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">416</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">212</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">80</XPD:ATTR>
+<XPD:REF name="Model">DOIsv5ONm0Clvn9FckRs0gAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="k7Bc7X8hcE2TJlQxPvWgLAAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="WzxkGqAArUyaRhaK0MjxwAAA">
+<XPD:ATTR name="Text" type="string">Wyświetlanie komunikacji o blędzie</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="z5hhwUbU8E2KE2VQ40sNnwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="YAIz+0zqekWw3/U8TlObRAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[16]" type="UMLTransitionView" guid="5DM8jsgW6UiFmJMpyL+SaQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">238,139;360,138</XPD:ATTR>
+<XPD:REF name="Model">icGHDG0quUCBZoXq76y0EgAA</XPD:REF>
+<XPD:REF name="Head">fSyHrj/4hUaIyuPAE28ENAAA</XPD:REF>
+<XPD:REF name="Tail">X5qBpZciXEybSkKUiVh6wQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="+98c+0hScEeG6IVzdwF9dQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">icGHDG0quUCBZoXq76y0EgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="y25Yme9cGECl7c1CH8kHgQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">icGHDG0quUCBZoXq76y0EgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="uqFtbev3W0W12mVKQuR/3gAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">icGHDG0quUCBZoXq76y0EgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[17]" type="UMLTransitionView" guid="jkF8k8OVUUSsHkKD7LQNrwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">393,156;244,212</XPD:ATTR>
+<XPD:REF name="Model">r7dWi2joCEOhxXAoPhBBwAAA</XPD:REF>
+<XPD:REF name="Head">1KREmiWOJEizbB0hbKEhagAA</XPD:REF>
+<XPD:REF name="Tail">fSyHrj/4hUaIyuPAE28ENAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="Yab8yV0dHkOj1In3osr+tAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">r7dWi2joCEOhxXAoPhBBwAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="XoB5S7DRAE2ToLhjW4TE2gAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">r7dWi2joCEOhxXAoPhBBwAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="TERipATeC0a8BwMgCTa7EQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">r7dWi2joCEOhxXAoPhBBwAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[18]" type="UMLTransitionView" guid="YM4XIBsW2kiKEp3Zg8VVNAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">255,238;336,235</XPD:ATTR>
+<XPD:REF name="Model">q3Q9pRg6lkCUba2nr7rAxgAA</XPD:REF>
+<XPD:REF name="Head">mAbvXaf3j06SmdFxgGy2tAAA</XPD:REF>
+<XPD:REF name="Tail">1KREmiWOJEizbB0hbKEhagAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="lUBO6HhyZ0Cpnj02Gw00zgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">q3Q9pRg6lkCUba2nr7rAxgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="EiV/FzajS02FGWoskd1SkgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">q3Q9pRg6lkCUba2nr7rAxgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="YrA43wVrhU6civqmfQstYAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">q3Q9pRg6lkCUba2nr7rAxgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[19]" type="UMLTransitionView" guid="Zm5YXAur2Umvx+SCIKBhygAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">346,267;254,300</XPD:ATTR>
+<XPD:REF name="Model">JbZ/ZQ8Rk0uEugnHqKrblgAA</XPD:REF>
+<XPD:REF name="Head">lL26XJucIEy9fJw+c+fQjwAA</XPD:REF>
+<XPD:REF name="Tail">mAbvXaf3j06SmdFxgGy2tAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="eNKg5st3tkGlEit0Kl0S3AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">JbZ/ZQ8Rk0uEugnHqKrblgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="8x1hGFFuEkiuvAmtfbp4ugAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">JbZ/ZQ8Rk0uEugnHqKrblgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="Ixt86YrhrUa8qTRxKp2eBQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">JbZ/ZQ8Rk0uEugnHqKrblgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[20]" type="UMLTransitionView" guid="tuHvNsCFNUm6rbsXR9n5aQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">283,329;352,328</XPD:ATTR>
+<XPD:REF name="Model">umd6Z+sVqkur/1NqKXY72wAA</XPD:REF>
+<XPD:REF name="Head">mWuwcPIYZUm1uIOBMeFccwAA</XPD:REF>
+<XPD:REF name="Tail">lL26XJucIEy9fJw+c+fQjwAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="/5pSZ9iqIU645tzFrbEVTQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">umd6Z+sVqkur/1NqKXY72wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="Ll/07KiXUEWWDfYLZ3dXVQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">umd6Z+sVqkur/1NqKXY72wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="r/zuwH/sAkeUbw5+p35sOwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">umd6Z+sVqkur/1NqKXY72wAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[21]" type="UMLTransitionView" guid="Q8KL8LNHTk2+N2oflh0IiQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">566,328;644,328</XPD:ATTR>
+<XPD:REF name="Model">uRy8Fl+jm0293H/RGGjBlwAA</XPD:REF>
+<XPD:REF name="Head">ss7eKXiqlEO//LE0Iy1+kAAA</XPD:REF>
+<XPD:REF name="Tail">mWuwcPIYZUm1uIOBMeFccwAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="yaQZulB9xkmJkGgpDz1kuwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">uRy8Fl+jm0293H/RGGjBlwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="HDmanR2WbUum7QO7JkYO+AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">uRy8Fl+jm0293H/RGGjBlwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="bsDFYATkREGwwycRBLXV8wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">uRy8Fl+jm0293H/RGGjBlwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[22]" type="UMLTransitionView" guid="BBOv2EkHzEKh3GvqAfeMyAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">757,367;755,412</XPD:ATTR>
+<XPD:REF name="Model">Ij3vOzV27EmBjVMEh/BA8AAA</XPD:REF>
+<XPD:REF name="Head">homIIZqpMU6aHPhztGSOQQAA</XPD:REF>
+<XPD:REF name="Tail">ss7eKXiqlEO//LE0Iy1+kAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="+cyAq7ddxUCn7hv9wcnG3gAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">Ij3vOzV27EmBjVMEh/BA8AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="EvQaPDbB+UO15yg3yplvPgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">Ij3vOzV27EmBjVMEh/BA8AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="rKLCxsvrWEmzlPLK/gvKYAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">Ij3vOzV27EmBjVMEh/BA8AAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[23]" type="UMLTransitionView" guid="4NE/a2iBs0SZUIS3gg5itgAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">708,457;555,456</XPD:ATTR>
+<XPD:REF name="Model">ffZnPmqs9Eyp8VDnsA5HfQAA</XPD:REF>
+<XPD:REF name="Head">qQtQ143GBUKDhh1Bz2RrNgAA</XPD:REF>
+<XPD:REF name="Tail">homIIZqpMU6aHPhztGSOQQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="4YxSq/uh7UO6W65ro7HnXgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">ffZnPmqs9Eyp8VDnsA5HfQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="/MCjfokaBEGg1EKVgd34UgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">ffZnPmqs9Eyp8VDnsA5HfQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="bdEZWvsPjUukSNMvcH+L8AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">ffZnPmqs9Eyp8VDnsA5HfQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[24]" type="UMLTransitionView" guid="Yxto3H2GGka157elI+r/KQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">754,503;755,600</XPD:ATTR>
+<XPD:REF name="Model">fsdM3Mb020GirExxT68uQgAA</XPD:REF>
+<XPD:REF name="Head">jQgsUkJpT0ywO4kRwu4f7gAA</XPD:REF>
+<XPD:REF name="Tail">homIIZqpMU6aHPhztGSOQQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="cDFUyGlXS0CmRCrmdepWXwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">fsdM3Mb020GirExxT68uQgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="n6+JRbHF0UuUG/Vs4n59HgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">fsdM3Mb020GirExxT68uQgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="44e3gnKoWkOQyNWdbn4KWgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">fsdM3Mb020GirExxT68uQgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[25]" type="UMLTransitionView" guid="ferq9K/px0aJol13gaQz8QAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">676,635;593,637</XPD:ATTR>
+<XPD:REF name="Model">+5LCxo9R7USMsZJ+n9Qt+gAA</XPD:REF>
+<XPD:REF name="Head">sv6BesnigEiLLAhTh/SvHAAA</XPD:REF>
+<XPD:REF name="Tail">jQgsUkJpT0ywO4kRwu4f7gAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="0d65scml00Ota7gSmsJ+HwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">+5LCxo9R7USMsZJ+n9Qt+gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="XYJPAxAeK0SGaj1rNny49QAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">+5LCxo9R7USMsZJ+n9Qt+gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="UIzTsw97ZUmwkBcUpgDj7gAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">+5LCxo9R7USMsZJ+n9Qt+gAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[26]" type="UMLTextView" guid="IH14wGbSPEug6XqFAAgP9wAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">632</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">432</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">70</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">38</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">błąd danych
+</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[27]" type="UMLTextView" guid="jDHObTG/H0myaa1jHkYwFAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">760</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">504</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">85</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">23</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">dane poprawne
+</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[28]" type="UMLNoteView" guid="5QIz36oRTU2d2fqRYl/SewAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">32</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">4</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">128</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">30</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">Rejestracja
+</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[29]" type="UMLFinalStateView" guid="uiGqKtgobEaR42Q05cCjugAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">432</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">744</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">26</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">26</XPD:ATTR>
+<XPD:REF name="Model">u5AI9xgA2kmECItd2ab9hgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[30]" type="UMLFlowFinalStateView" guid="f90tuKYe+0ecDHKciP8vHQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">436</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">532</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">26</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">26</XPD:ATTR>
+<XPD:REF name="Model">pROUusmyMEe83T+adoYxNgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[31]" type="UMLTransitionView" guid="9qspGSMhRkCCxvpbpV3pHwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">449,495;448,532</XPD:ATTR>
+<XPD:REF name="Model">tcFfCV9hx0KgKlTa9xgf2wAA</XPD:REF>
+<XPD:REF name="Head">f90tuKYe+0ecDHKciP8vHQAA</XPD:REF>
+<XPD:REF name="Tail">qQtQ143GBUKDhh1Bz2RrNgAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="UXvFz4SF70+fd40rm2OxugAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">tcFfCV9hx0KgKlTa9xgf2wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="ogusr4Nq4UmyAMzSn4m+eAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">tcFfCV9hx0KgKlTa9xgf2wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="8Lvmk+w/V0Wtxv8nvFFFrgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">tcFfCV9hx0KgKlTa9xgf2wAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[32]" type="UMLTransitionView" guid="qvWOktL/2UCRjKlaRwjA/QAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">445,699;444,744</XPD:ATTR>
+<XPD:REF name="Model">XbbQgW3wRU2NdCE0rC4K3wAA</XPD:REF>
+<XPD:REF name="Head">uiGqKtgobEaR42Q05cCjugAA</XPD:REF>
+<XPD:REF name="Tail">sv6BesnigEiLLAhTh/SvHAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="6HW9SIUkTEyZ/tbEVYktRgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">XbbQgW3wRU2NdCE0rC4K3wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="tg/xSl9FJ0Kq0IykhRBwcQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">XbbQgW3wRU2NdCE0rC4K3wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="0zGcLIyex0KhjV58QSahhgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">XbbQgW3wRU2NdCE0rC4K3wAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#Transitions" type="integer">13</XPD:ATTR>
+<XPD:OBJ name="Transitions[0]" type="UMLTransition" guid="oVxSiWzs/UqPHtn8TKyXkAAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">LPwyBRg98Ei4+mkFDMhLbgAA</XPD:REF>
+<XPD:REF name="Target">BN6SL7M8v0OYLVyekpZH9AAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">BHaO8rUJgUqIYohduvvGOQAA</XPD:REF>
+<XPD:REF name="Views[1]">B+HXVLOZC0mgjjb16WeSSwAA</XPD:REF>
+<XPD:REF name="Views[2]">G2KUZfpTO0OVt7viXzFlSQAA</XPD:REF>
+<XPD:REF name="Views[3]">/B21EIIPJ0abnVHwdTRHcgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[1]" type="UMLTransition" guid="icGHDG0quUCBZoXq76y0EgAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">BN6SL7M8v0OYLVyekpZH9AAA</XPD:REF>
+<XPD:REF name="Target">lbHcgCQvPk6b/J3DdhE3+wAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">5DM8jsgW6UiFmJMpyL+SaQAA</XPD:REF>
+<XPD:REF name="Views[1]">+98c+0hScEeG6IVzdwF9dQAA</XPD:REF>
+<XPD:REF name="Views[2]">y25Yme9cGECl7c1CH8kHgQAA</XPD:REF>
+<XPD:REF name="Views[3]">uqFtbev3W0W12mVKQuR/3gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[2]" type="UMLTransition" guid="r7dWi2joCEOhxXAoPhBBwAAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">lbHcgCQvPk6b/J3DdhE3+wAA</XPD:REF>
+<XPD:REF name="Target">oTXZurh6F0GXJvozL+syrQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">jkF8k8OVUUSsHkKD7LQNrwAA</XPD:REF>
+<XPD:REF name="Views[1]">Yab8yV0dHkOj1In3osr+tAAA</XPD:REF>
+<XPD:REF name="Views[2]">XoB5S7DRAE2ToLhjW4TE2gAA</XPD:REF>
+<XPD:REF name="Views[3]">TERipATeC0a8BwMgCTa7EQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[3]" type="UMLTransition" guid="q3Q9pRg6lkCUba2nr7rAxgAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">oTXZurh6F0GXJvozL+syrQAA</XPD:REF>
+<XPD:REF name="Target">8/APe4gdB0yRRHbRS8MSwgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">YM4XIBsW2kiKEp3Zg8VVNAAA</XPD:REF>
+<XPD:REF name="Views[1]">lUBO6HhyZ0Cpnj02Gw00zgAA</XPD:REF>
+<XPD:REF name="Views[2]">EiV/FzajS02FGWoskd1SkgAA</XPD:REF>
+<XPD:REF name="Views[3]">YrA43wVrhU6civqmfQstYAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[4]" type="UMLTransition" guid="JbZ/ZQ8Rk0uEugnHqKrblgAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">8/APe4gdB0yRRHbRS8MSwgAA</XPD:REF>
+<XPD:REF name="Target">oUJaXXZzREmw3sA5va6EQAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">Zm5YXAur2Umvx+SCIKBhygAA</XPD:REF>
+<XPD:REF name="Views[1]">eNKg5st3tkGlEit0Kl0S3AAA</XPD:REF>
+<XPD:REF name="Views[2]">8x1hGFFuEkiuvAmtfbp4ugAA</XPD:REF>
+<XPD:REF name="Views[3]">Ixt86YrhrUa8qTRxKp2eBQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[5]" type="UMLTransition" guid="umd6Z+sVqkur/1NqKXY72wAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">oUJaXXZzREmw3sA5va6EQAAA</XPD:REF>
+<XPD:REF name="Target">y4w/1GjUCkmBMRRmeTYkWgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">tuHvNsCFNUm6rbsXR9n5aQAA</XPD:REF>
+<XPD:REF name="Views[1]">/5pSZ9iqIU645tzFrbEVTQAA</XPD:REF>
+<XPD:REF name="Views[2]">Ll/07KiXUEWWDfYLZ3dXVQAA</XPD:REF>
+<XPD:REF name="Views[3]">r/zuwH/sAkeUbw5+p35sOwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[6]" type="UMLTransition" guid="uRy8Fl+jm0293H/RGGjBlwAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">y4w/1GjUCkmBMRRmeTYkWgAA</XPD:REF>
+<XPD:REF name="Target">XfyPdrCjvEujXqVH5arPpgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">Q8KL8LNHTk2+N2oflh0IiQAA</XPD:REF>
+<XPD:REF name="Views[1]">yaQZulB9xkmJkGgpDz1kuwAA</XPD:REF>
+<XPD:REF name="Views[2]">HDmanR2WbUum7QO7JkYO+AAA</XPD:REF>
+<XPD:REF name="Views[3]">bsDFYATkREGwwycRBLXV8wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[7]" type="UMLTransition" guid="Ij3vOzV27EmBjVMEh/BA8AAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">XfyPdrCjvEujXqVH5arPpgAA</XPD:REF>
+<XPD:REF name="Target">foB3sK/F7UO/9c+bgacfAAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">BBOv2EkHzEKh3GvqAfeMyAAA</XPD:REF>
+<XPD:REF name="Views[1]">+cyAq7ddxUCn7hv9wcnG3gAA</XPD:REF>
+<XPD:REF name="Views[2]">EvQaPDbB+UO15yg3yplvPgAA</XPD:REF>
+<XPD:REF name="Views[3]">rKLCxsvrWEmzlPLK/gvKYAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[8]" type="UMLTransition" guid="ffZnPmqs9Eyp8VDnsA5HfQAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">foB3sK/F7UO/9c+bgacfAAAA</XPD:REF>
+<XPD:REF name="Target">DOIsv5ONm0Clvn9FckRs0gAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">4NE/a2iBs0SZUIS3gg5itgAA</XPD:REF>
+<XPD:REF name="Views[1]">4YxSq/uh7UO6W65ro7HnXgAA</XPD:REF>
+<XPD:REF name="Views[2]">/MCjfokaBEGg1EKVgd34UgAA</XPD:REF>
+<XPD:REF name="Views[3]">bdEZWvsPjUukSNMvcH+L8AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[9]" type="UMLTransition" guid="fsdM3Mb020GirExxT68uQgAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">foB3sK/F7UO/9c+bgacfAAAA</XPD:REF>
+<XPD:REF name="Target">xDi/iemP50Kczjl28inJ5wAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">Yxto3H2GGka157elI+r/KQAA</XPD:REF>
+<XPD:REF name="Views[1]">cDFUyGlXS0CmRCrmdepWXwAA</XPD:REF>
+<XPD:REF name="Views[2]">n6+JRbHF0UuUG/Vs4n59HgAA</XPD:REF>
+<XPD:REF name="Views[3]">44e3gnKoWkOQyNWdbn4KWgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[10]" type="UMLTransition" guid="+5LCxo9R7USMsZJ+n9Qt+gAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">xDi/iemP50Kczjl28inJ5wAA</XPD:REF>
+<XPD:REF name="Target">tH7vDyeyAkGdgzJcKRTWfQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">ferq9K/px0aJol13gaQz8QAA</XPD:REF>
+<XPD:REF name="Views[1]">0d65scml00Ota7gSmsJ+HwAA</XPD:REF>
+<XPD:REF name="Views[2]">XYJPAxAeK0SGaj1rNny49QAA</XPD:REF>
+<XPD:REF name="Views[3]">UIzTsw97ZUmwkBcUpgDj7gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[11]" type="UMLTransition" guid="tcFfCV9hx0KgKlTa9xgf2wAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">DOIsv5ONm0Clvn9FckRs0gAA</XPD:REF>
+<XPD:REF name="Target">pROUusmyMEe83T+adoYxNgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">9qspGSMhRkCCxvpbpV3pHwAA</XPD:REF>
+<XPD:REF name="Views[1]">UXvFz4SF70+fd40rm2OxugAA</XPD:REF>
+<XPD:REF name="Views[2]">ogusr4Nq4UmyAMzSn4m+eAAA</XPD:REF>
+<XPD:REF name="Views[3]">8Lvmk+w/V0Wtxv8nvFFFrgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[12]" type="UMLTransition" guid="XbbQgW3wRU2NdCE0rC4K3wAA">
+<XPD:REF name="StateMachine">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:REF name="Source">tH7vDyeyAkGdgzJcKRTWfQAA</XPD:REF>
+<XPD:REF name="Target">u5AI9xgA2kmECItd2ab9hgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">qvWOktL/2UCRjKlaRwjA/QAA</XPD:REF>
+<XPD:REF name="Views[1]">6HW9SIUkTEyZ/tbEVYktRgAA</XPD:REF>
+<XPD:REF name="Views[2]">tg/xSl9FJ0Kq0IykhRBwcQAA</XPD:REF>
+<XPD:REF name="Views[3]">0zGcLIyex0KhjV58QSahhgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:ATTR name="#Partitions" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Partitions[0]" type="UMLPartition" guid="O8+9RPS4v0itYEIEWYQcNwAA">
+<XPD:ATTR name="Name" type="string">User</XPD:ATTR>
+<XPD:REF name="ActivityGraph">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">80Z7z8UynEe61NsTGcnptAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Partitions[1]" type="UMLPartition" guid="IWJCOqX5hkibEXczKaTX+wAA">
+<XPD:ATTR name="Name" type="string">Aplikacja mobilna</XPD:ATTR>
+<XPD:REF name="ActivityGraph">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">QhQWLdII5E6WmzAJcxKkJQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Partitions[2]" type="UMLPartition" guid="LuFDhAYahUuSUVQ0/SvXCQAA">
+<XPD:ATTR name="Name" type="string">Serwer</XPD:ATTR>
+<XPD:REF name="ActivityGraph">gCcDgW2tFU2S3Jz9+8CXaQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">qNe7q+Zh8UmBwtRcf986qgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="Behaviors[1]" type="UMLActivityGraph" guid="jAokZOk//0Ky/+NBg4inPAAA">
+<XPD:ATTR name="Name" type="string">ActivityGraph2</XPD:ATTR>
+<XPD:REF name="Context">7ApRMDmhE0+ezh7CCEI++QAA</XPD:REF>
+<XPD:OBJ name="Top" type="UMLCompositeState" guid="zNTZlm/ecUmu7P2W/JwCagAA">
+<XPD:ATTR name="Name" type="string">TOP</XPD:ATTR>
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:ATTR name="#Subvertices" type="integer">14</XPD:ATTR>
+<XPD:OBJ name="Subvertices[0]" type="UMLPseudostate" guid="5ijNoHHBtUua1CL9NsSzyQAA">
+<XPD:ATTR name="Name" type="string">Initial1</XPD:ATTR>
+<XPD:ATTR name="PseudostateKind" type="UMLPseudostateKind">pkInitial</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">Suu89/eZxEW8GfjIeebVYQAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">Sg078UR8pUe7C+EiZNCbKgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[1]" type="UMLActionState" guid="V/CDnUKw60OPbigy01a4hwAA">
+<XPD:ATTR name="Name" type="string">Kliknięcie na tekst przypomnienia hasła</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">7/HcDMt1SESejGRxaC7sNQAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">OV1kmLTvRk6kMimAYskfiwAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">Sg078UR8pUe7C+EiZNCbKgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[2]" type="UMLActionState" guid="fGtV7P+QakqBr14vPN1bBwAA">
+<XPD:ATTR name="Name" type="string">Aplikacja wyświetla formularz</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">HSL2o/q2q06WqQHO1EaSAwAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">wxN7QTfNREqPyvCAaiIT7wAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">OV1kmLTvRk6kMimAYskfiwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[3]" type="UMLActionState" guid="G1m+FTI6TEy2AzhDYC7i6wAA">
+<XPD:ATTR name="Name" type="string">Użytkownik wpisuje e-mail</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">n3aeaXcqo0Oc8K8Ur/qMugAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">d/TiBKM0tkCC9WGuYneh8AAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">wxN7QTfNREqPyvCAaiIT7wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[4]" type="UMLSignalSendState" guid="hKdqSpMV6EKfDGcggtWzNwAA">
+<XPD:ATTR name="Name" type="string">Wysłanie danych do serwera</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">QqbVCMEoHES8IbBOa9bG6gAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">tH64cOmAZUuNFWnDJSBWgAAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">d/TiBKM0tkCC9WGuYneh8AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[5]" type="UMLSignalAcceptState" guid="U5EYWIZM9kqkgUHGbPnakQAA">
+<XPD:ATTR name="Name" type="string">Odbiór danych z aplikacji</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">OLGCk4z9gUG4xH0z7AHjMQAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">2</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">mE/hWgiyE0uysPP0Cg+PhgAA</XPD:REF>
+<XPD:REF name="Outgoings[1]">mvuV/6v2tkSi5vNNXS6DbQAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">tH64cOmAZUuNFWnDJSBWgAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[6]" type="UMLPseudostate" guid="zl8DWTfRmEa0zyr3+OOicQAA">
+<XPD:ATTR name="Name" type="string">Decision1</XPD:ATTR>
+<XPD:ATTR name="PseudostateKind" type="UMLPseudostateKind">pkDecision</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[7]" type="UMLActionState" guid="RPoONofJL02pNqBTuI6JBwAA">
+<XPD:ATTR name="Name" type="string">Activity1</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[8]" type="UMLPseudostate" guid="/CY5eO42vkiNROayd3giIgAA">
+<XPD:ATTR name="Name" type="string">Decision2</XPD:ATTR>
+<XPD:ATTR name="PseudostateKind" type="UMLPseudostateKind">pkDecision</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">OJxLLpDBWEqKqjlvhieAfQAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">2</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">oRJ1++ChlEq1g+6ys0yOuQAA</XPD:REF>
+<XPD:REF name="Outgoings[1]">0dbLgTxR9kGv1v5Y5//EvgAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">2</XPD:ATTR>
+<XPD:REF name="Incomings[0]">mE/hWgiyE0uysPP0Cg+PhgAA</XPD:REF>
+<XPD:REF name="Incomings[1]">DoxyNAWsx0q3frnp7ckInAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[9]" type="UMLActionState" guid="nvZIUwQ6sECV1Zp4I7QSdgAA">
+<XPD:ATTR name="Name" type="string">Wyswietlanie komunikatu ze dane zostaly wyslane</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">+jBp1kRh1EWzByahXaulVAAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">PP3DOtwxXUmv1esqTsuDyAAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">2</XPD:ATTR>
+<XPD:REF name="Incomings[0]">oRJ1++ChlEq1g+6ys0yOuQAA</XPD:REF>
+<XPD:REF name="Incomings[1]">a3F+MLgqC0yBGE9PeQRPTQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[10]" type="UMLActionState" guid="2tuBI4nJN0ymvzN3bSj7vAAA">
+<XPD:ATTR name="Name" type="string">Wygenerowanie nowego hasla</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">+tt9dr+EDUuFbXxOi4FjeAAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">qghktDO6jEOT6dTPh+I4qwAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">0dbLgTxR9kGv1v5Y5//EvgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[11]" type="UMLActionState" guid="8ZyWJYn/10qe3orbJnpp+QAA">
+<XPD:ATTR name="Name" type="string">Wyslanie nowego hasla</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">Det48rTakk+IIHiG5lurNwAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">a3F+MLgqC0yBGE9PeQRPTQAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">qghktDO6jEOT6dTPh+I4qwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[12]" type="UMLActionState" guid="CneClzGJcUOb8R1qM0yGNQAA">
+<XPD:ATTR name="Name" type="string">Odczytanie nowego hasła</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">zVKb8Hi1I0y/ra2N2hJYZgAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">44gMW30dVkeuz2WhRwHi0gAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">2</XPD:ATTR>
+<XPD:REF name="Incomings[0]">44gMW30dVkeuz2WhRwHi0gAA</XPD:REF>
+<XPD:REF name="Incomings[1]">PP3DOtwxXUmv1esqTsuDyAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Subvertices[13]" type="UMLActionState" guid="LVGVujIvGk65SSEPuP/eGQAA">
+<XPD:ATTR name="Name" type="string">Weryfikacja adresu e-mail</XPD:ATTR>
+<XPD:REF name="ContainerState">zNTZlm/ecUmu7P2W/JwCagAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">snZ+lQttIUScihuJ5t5zEgAA</XPD:REF>
+<XPD:ATTR name="#Outgoings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Outgoings[0]">DoxyNAWsx0q3frnp7ckInAAA</XPD:REF>
+<XPD:ATTR name="#Incomings" type="integer">1</XPD:ATTR>
+<XPD:REF name="Incomings[0]">mvuV/6v2tkSi5vNNXS6DbQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
+<XPD:OBJ name="OwnedDiagrams[0]" type="UMLActivityDiagram" guid="ofuYF9mXZ0evgyroe2SEQwAA">
+<XPD:ATTR name="Name" type="string">ActivityDiagram1</XPD:ATTR>
+<XPD:REF name="DiagramOwner">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:OBJ name="DiagramView" type="UMLActivityDiagramView" guid="+R69yJMwcEuEb+vi2wtw1wAA">
+<XPD:REF name="Diagram">ofuYF9mXZ0evgyroe2SEQwAA</XPD:REF>
+<XPD:ATTR name="#OwnedViews" type="integer">28</XPD:ATTR>
+<XPD:OBJ name="OwnedViews[0]" type="UMLSwimlaneView" guid="AGwO1t8gKEaQ2s52GF5phwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">80</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">52</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">252</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">769</XPD:ATTR>
+<XPD:REF name="Model">HO7CaUF1R0izR8DMDRUdHAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="6p4vZsGu4EmRsRhCM/QDWgAA">
+<XPD:ATTR name="Text" type="string">Użytkownik</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[1]" type="UMLSwimlaneView" guid="fCBdS3KI1U2JEve0GKam2gAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">332</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">52</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">280</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">769</XPD:ATTR>
+<XPD:REF name="Model">FpGVS0vcqUiUE10LaORHNgAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="NNuCMTwgR0W4QqgX0D3wdAAA">
+<XPD:ATTR name="Text" type="string">Aplikacja mobilna</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[2]" type="UMLSwimlaneView" guid="7KjpV612iEC3PQZTm8Fx7QAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">612</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">52</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">240</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">769</XPD:ATTR>
+<XPD:REF name="Model">LUIqVIWT9EyxWF27SF2n4QAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="LabelView" guid="WZQAnXQSFEemcrW/+HbWjgAA">
+<XPD:ATTR name="Text" type="string">Serwer</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[3]" type="UMLNoteView" guid="Zui62MT1ukWn83hR9R/NUQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">80</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">20</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">141</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">32</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">Resetowanie hasła
+</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[4]" type="UMLPseudostateView" guid="Suu89/eZxEW8GfjIeebVYQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">200</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">120</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">20</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">20</XPD:ATTR>
+<XPD:REF name="Model">5ijNoHHBtUua1CL9NsSzyQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[5]" type="UMLActionStateView" guid="7/HcDMt1SESejGRxaC7sNQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">108</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">172</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">208</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
+<XPD:REF name="Model">V/CDnUKw60OPbigy01a4hwAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="t6amU8CWXUy/DbJHUWvSnAAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="VQBlgvX2LUOZMASC/M8VPgAA">
+<XPD:ATTR name="Text" type="string">Kliknięcie na tekst przypomnienia hasła</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="hoaUZ16jdEeZRFXV1coX3wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="By2vmyWX7EexYibCi1rybAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[6]" type="UMLActionStateView" guid="HSL2o/q2q06WqQHO1EaSAwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">404</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">172</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">166</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">64</XPD:ATTR>
+<XPD:REF name="Model">fGtV7P+QakqBr14vPN1bBwAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="fm5NIwUVYEmUAAc7qsTY3gAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="p14c4yd02UCT6Ex2otfLXQAA">
+<XPD:ATTR name="Text" type="string">Aplikacja wyświetla formularz</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="28XHXE06yUyYZgrG2MUslQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="6yKCKFNHOkqSO0JfGXcxqgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[7]" type="UMLActionStateView" guid="n3aeaXcqo0Oc8K8Ur/qMugAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">128</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">280</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">145</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">40</XPD:ATTR>
+<XPD:REF name="Model">G1m+FTI6TEy2AzhDYC7i6wAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="cvm8zNsPLE+Xk9zznMjx3gAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="oAnGI3gdz0CRl8sIrlkXTQAA">
+<XPD:ATTR name="Text" type="string">Użytkownik wpisuje e-mail</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="VmVTMxnJ0Ua3FRKVc2xlnQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="nfMdqY4c7EWz80wfem2CwAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[8]" type="UMLSignalSendStateView" guid="QqbVCMEoHES8IbBOa9bG6gAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">396</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">280</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">171</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">41</XPD:ATTR>
+<XPD:REF name="Model">hKdqSpMV6EKfDGcggtWzNwAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="wuC7xsAuWUKXd5g5CiJAZwAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="bbjuJM7cJ0mqu4h3G+YIlAAA">
+<XPD:ATTR name="Text" type="string">Wysłanie danych do serwera</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="OBsa+Yi9HE6qPKIIqLwQugAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="WmneXtNJqUeNuRSiPKGbEgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[9]" type="UMLSignalAcceptStateView" guid="OLGCk4z9gUG4xH0z7AHjMQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">664</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">268</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">172</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">48</XPD:ATTR>
+<XPD:REF name="Model">U5EYWIZM9kqkgUHGbPnakQAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="ojCdfby0bUWmnasrqe14GAAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="45fE5QO/mEiplUSG355mfgAA">
+<XPD:ATTR name="Text" type="string">Odbiór danych z aplikacji</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="VL/xIauJ2EGN2/xcw5AmuwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="D+E5GYzooEea2PVnsBCfPQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[10]" type="UMLPseudostateView" guid="OJxLLpDBWEqKqjlvhieAfQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">704</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">432</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">84</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">72</XPD:ATTR>
+<XPD:REF name="Model">/CY5eO42vkiNROayd3giIgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[11]" type="UMLActionStateView" guid="+jBp1kRh1EWzByahXaulVAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">340</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">392</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">261</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">68</XPD:ATTR>
+<XPD:REF name="Model">nvZIUwQ6sECV1Zp4I7QSdgAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="o9G4gdBfwUy3YtqKDAjQFwAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="qEwK+Ru1gEuC5TFCsGDwuQAA">
+<XPD:ATTR name="Text" type="string">Wyswietlanie komunikatu ze dane zostaly wyslane</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="zExGt38PvUm4XYriI4orGwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="Sbpf3cQWPUeXI+xN+sGTDgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[12]" type="UMLActionStateView" guid="+tt9dr+EDUuFbXxOi4FjeAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">660</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">528</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">168</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">52</XPD:ATTR>
+<XPD:REF name="Model">2tuBI4nJN0ymvzN3bSj7vAAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="sodSHm+/1USwWvbwp6Oo/AAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="SQP5aKWwQEKcoj3Ds6/91gAA">
+<XPD:ATTR name="Text" type="string">Wygenerowanie nowego hasla</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="qt81dODl7EqXTv+NZVtVCAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="hjTLXIY/ok+xpBx5biVhxwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[13]" type="UMLActionStateView" guid="Det48rTakk+IIHiG5lurNwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">656</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">616</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">168</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">40</XPD:ATTR>
+<XPD:REF name="Model">8ZyWJYn/10qe3orbJnpp+QAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="KemAr8wvU02hCTPhsiKEXQAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="+cm0xLFNQkOo4DeJHuZ3eAAA">
+<XPD:ATTR name="Text" type="string">Wyslanie nowego hasla</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="KwTSqLuAl0e3gcE/Q52lnQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="0ipzJgEqo0G5TTvdg2noIgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[14]" type="UMLActionStateView" guid="zVKb8Hi1I0y/ra2N2hJYZgAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">120</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">392</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">152</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">52</XPD:ATTR>
+<XPD:REF name="Model">CneClzGJcUOb8R1qM0yGNQAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="rM9jyziC7kOLC4Pa8HsQ4QAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="vrLsSaC0KEqtkJzgTEL5IgAA">
+<XPD:ATTR name="Text" type="string">Odczytanie nowego hasła</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="5q25FzjN80udT+iYv+jFjwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="N+RHj6WipUeiPV2g5WBeOwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[15]" type="UMLTransitionView" guid="9uPsMNwYPkakb5EILZrsuwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">704,461;600,445</XPD:ATTR>
+<XPD:REF name="Model">oRJ1++ChlEq1g+6ys0yOuQAA</XPD:REF>
+<XPD:REF name="Head">+jBp1kRh1EWzByahXaulVAAA</XPD:REF>
+<XPD:REF name="Tail">OJxLLpDBWEqKqjlvhieAfQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="3IxL6CgiG0uaodwg0wNG8wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">oRJ1++ChlEq1g+6ys0yOuQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="5SlnhX21AEqUebMpPtlsogAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">oRJ1++ChlEq1g+6ys0yOuQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="Gn10vKJStkunyVc/pG+/7wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">oRJ1++ChlEq1g+6ys0yOuQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[16]" type="UMLTransitionView" guid="RNHCsauXUkm5POujLklW0wAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">209,139;210,172</XPD:ATTR>
+<XPD:REF name="Model">Sg078UR8pUe7C+EiZNCbKgAA</XPD:REF>
+<XPD:REF name="Head">7/HcDMt1SESejGRxaC7sNQAA</XPD:REF>
+<XPD:REF name="Tail">Suu89/eZxEW8GfjIeebVYQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="92dbYg43ikKSS+AuWXD63QAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">Sg078UR8pUe7C+EiZNCbKgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="tFBW0hW7qE2Gf2v/MNmstAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">Sg078UR8pUe7C+EiZNCbKgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="LtjaJYjPxkC7TPWgEYKCagAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">Sg078UR8pUe7C+EiZNCbKgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[17]" type="UMLTransitionView" guid="FxZJLoIHn0CieJy9hbh1gQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">315,203;404,203</XPD:ATTR>
+<XPD:REF name="Model">OV1kmLTvRk6kMimAYskfiwAA</XPD:REF>
+<XPD:REF name="Head">HSL2o/q2q06WqQHO1EaSAwAA</XPD:REF>
+<XPD:REF name="Tail">7/HcDMt1SESejGRxaC7sNQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="Xzyq8TVgdUyzC0yBBIhXXwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">OV1kmLTvRk6kMimAYskfiwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="SsUdJ4IxW0uHzAfba59fuwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">OV1kmLTvRk6kMimAYskfiwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="vb6D9Ni8JEWHJE2SINhBDQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">OV1kmLTvRk6kMimAYskfiwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[18]" type="UMLTransitionView" guid="oTZ2DatN+0ubXv4O7praDQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">404,231;257,280</XPD:ATTR>
+<XPD:REF name="Model">wxN7QTfNREqPyvCAaiIT7wAA</XPD:REF>
+<XPD:REF name="Head">n3aeaXcqo0Oc8K8Ur/qMugAA</XPD:REF>
+<XPD:REF name="Tail">HSL2o/q2q06WqQHO1EaSAwAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="sW/T2HK6SkeVn37CGkkTugAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">wxN7QTfNREqPyvCAaiIT7wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="9kSds/IQpU2zGu+VK3TbfgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">wxN7QTfNREqPyvCAaiIT7wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="IB9iM8ov2UeRCbSKDoeYyAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">wxN7QTfNREqPyvCAaiIT7wAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[19]" type="UMLTransitionView" guid="7cQj+w7qJUiA+epMKD3+eQAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">272,299;396,300</XPD:ATTR>
+<XPD:REF name="Model">d/TiBKM0tkCC9WGuYneh8AAA</XPD:REF>
+<XPD:REF name="Head">QqbVCMEoHES8IbBOa9bG6gAA</XPD:REF>
+<XPD:REF name="Tail">n3aeaXcqo0Oc8K8Ur/qMugAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="6Hurvh+DnkCmPR+Jg9xRLwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">d/TiBKM0tkCC9WGuYneh8AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="WQ5tVK3cNUi3Hy5GtSHyhQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">d/TiBKM0tkCC9WGuYneh8AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="Wpmi8gdTpUikSfBu3x4i5AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">d/TiBKM0tkCC9WGuYneh8AAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[20]" type="UMLTransitionView" guid="W/k7R3Mkr0eHT6x58NV9XwAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">566,297;664,294</XPD:ATTR>
+<XPD:REF name="Model">tH64cOmAZUuNFWnDJSBWgAAA</XPD:REF>
+<XPD:REF name="Head">OLGCk4z9gUG4xH0z7AHjMQAA</XPD:REF>
+<XPD:REF name="Tail">QqbVCMEoHES8IbBOa9bG6gAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="iJCeKT8jeke9R+6fLrWI+wAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">tH64cOmAZUuNFWnDJSBWgAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="4uJSb6Hw70+c/E47zlqpEQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">tH64cOmAZUuNFWnDJSBWgAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="EMLS/APUPkm77Ztfkj8ZKwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">tH64cOmAZUuNFWnDJSBWgAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[21]" type="UMLTransitionView" guid="FztNtZJ460+n0N2ZZBZzFgAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">744,503;744,528</XPD:ATTR>
+<XPD:REF name="Model">0dbLgTxR9kGv1v5Y5//EvgAA</XPD:REF>
+<XPD:REF name="Head">+tt9dr+EDUuFbXxOi4FjeAAA</XPD:REF>
+<XPD:REF name="Tail">OJxLLpDBWEqKqjlvhieAfQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="aXru1lcgEkC5mnUcibHuRAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">0dbLgTxR9kGv1v5Y5//EvgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="U5f7KsAK2k+uNItUWbcWogAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">0dbLgTxR9kGv1v5Y5//EvgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="POTIM5VpCkq7gY8bAocrvQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">0dbLgTxR9kGv1v5Y5//EvgAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[22]" type="UMLTransitionView" guid="1UwbOWa6lEGSeKr4GIAB1gAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">742,579;740,616</XPD:ATTR>
+<XPD:REF name="Model">qghktDO6jEOT6dTPh+I4qwAA</XPD:REF>
+<XPD:REF name="Head">Det48rTakk+IIHiG5lurNwAA</XPD:REF>
+<XPD:REF name="Tail">+tt9dr+EDUuFbXxOi4FjeAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="cPmzmmzz/kqQZejFTutVaQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">qghktDO6jEOT6dTPh+I4qwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="XD4K6NmamEaxAFcObMGzBAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">qghktDO6jEOT6dTPh+I4qwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="sDhj37yIWk+8KBpk9YUBNQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">qghktDO6jEOT6dTPh+I4qwAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[23]" type="UMLTransitionView" guid="4jzMCJUhv0mRR9ARNJ1oNAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">715,616;514,459</XPD:ATTR>
+<XPD:REF name="Model">a3F+MLgqC0yBGE9PeQRPTQAA</XPD:REF>
+<XPD:REF name="Head">+jBp1kRh1EWzByahXaulVAAA</XPD:REF>
+<XPD:REF name="Tail">Det48rTakk+IIHiG5lurNwAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="EAyWNUZMKUuj/4MQ9xJe9AAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">a3F+MLgqC0yBGE9PeQRPTQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="grNLIf9ov0yniecDQEZ2RgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">a3F+MLgqC0yBGE9PeQRPTQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="0L14f+EcF0Sq1evfDOzuXgAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">a3F+MLgqC0yBGE9PeQRPTQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[24]" type="UMLActionStateView" guid="snZ+lQttIUScihuJ5t5zEgAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">676</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">368</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">145</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">44</XPD:ATTR>
+<XPD:REF name="Model">LVGVujIvGk65SSEPuP/eGQAA</XPD:REF>
+<XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="IVC5acVMrECw1geuMJ1/nQAA">
+<XPD:OBJ name="NameLabel" type="LabelView" guid="AA+PTRmFkkOWe7vv9tjBugAA">
+<XPD:ATTR name="Text" type="string">Weryfikacja adresu e-mail</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="LabelView" guid="6yTC14NYmkK5qLDdjAaGgQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="LabelView" guid="izZouvi11kq/chGLeiJ2WwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[25]" type="UMLTransitionView" guid="tpBgIyJZ7Eai44r2G5SUkAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">749,315;748,368</XPD:ATTR>
+<XPD:REF name="Model">mvuV/6v2tkSi5vNNXS6DbQAA</XPD:REF>
+<XPD:REF name="Head">snZ+lQttIUScihuJ5t5zEgAA</XPD:REF>
+<XPD:REF name="Tail">OLGCk4z9gUG4xH0z7AHjMQAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="yUaVZODTR0yBX0oD7cdAtwAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">mvuV/6v2tkSi5vNNXS6DbQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="FjlarlxHXkGnC72C2F3eswAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">mvuV/6v2tkSi5vNNXS6DbQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="wkrJiMgeBEqDKZb3krSuawAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">mvuV/6v2tkSi5vNNXS6DbQAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[26]" type="UMLTransitionView" guid="6imHjDdfHUOTOZJMpwr5zgAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">747,411;746,432</XPD:ATTR>
+<XPD:REF name="Model">DoxyNAWsx0q3frnp7ckInAAA</XPD:REF>
+<XPD:REF name="Head">OJxLLpDBWEqKqjlvhieAfQAA</XPD:REF>
+<XPD:REF name="Tail">snZ+lQttIUScihuJ5t5zEgAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="k3ZDJT+hvUGCKZMb6WqV5QAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">DoxyNAWsx0q3frnp7ckInAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="HaksitucvE+LG+BlzVlrFAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">DoxyNAWsx0q3frnp7ckInAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="vSuhjtZ2FEGHFHJS21R0UAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">DoxyNAWsx0q3frnp7ckInAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:OBJ name="OwnedViews[27]" type="UMLTransitionView" guid="GJ6DU1FvRkme00vc9d8DCAAA">
+<XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
+<XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">340,421;271,419</XPD:ATTR>
+<XPD:REF name="Model">PP3DOtwxXUmv1esqTsuDyAAA</XPD:REF>
+<XPD:REF name="Head">zVKb8Hi1I0y/ra2N2hJYZgAA</XPD:REF>
+<XPD:REF name="Tail">+jBp1kRh1EWzByahXaulVAAA</XPD:REF>
+<XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="s9NleP85zEOx27GrjQYWlAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">PP3DOtwxXUmv1esqTsuDyAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="StereotypeLabel" type="EdgeLabelView" guid="XjcwJS/SLUKy6KFTcw9nbQAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">30</XPD:ATTR>
+<XPD:REF name="Model">PP3DOtwxXUmv1esqTsuDyAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="PropertyLabel" type="EdgeLabelView" guid="7IfCcZNAb0Ow3UvNx3qEUAAA">
+<XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
+<XPD:ATTR name="Alpha" type="real">-1,5707963267949</XPD:ATTR>
+<XPD:ATTR name="Distance" type="real">15</XPD:ATTR>
+<XPD:REF name="Model">PP3DOtwxXUmv1esqTsuDyAAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+<XPD:ATTR name="#Transitions" type="integer">14</XPD:ATTR>
+<XPD:OBJ name="Transitions[0]" type="UMLTransition" guid="oRJ1++ChlEq1g+6ys0yOuQAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">/CY5eO42vkiNROayd3giIgAA</XPD:REF>
+<XPD:REF name="Target">nvZIUwQ6sECV1Zp4I7QSdgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">9uPsMNwYPkakb5EILZrsuwAA</XPD:REF>
+<XPD:REF name="Views[1]">3IxL6CgiG0uaodwg0wNG8wAA</XPD:REF>
+<XPD:REF name="Views[2]">5SlnhX21AEqUebMpPtlsogAA</XPD:REF>
+<XPD:REF name="Views[3]">Gn10vKJStkunyVc/pG+/7wAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[1]" type="UMLTransition" guid="Sg078UR8pUe7C+EiZNCbKgAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">5ijNoHHBtUua1CL9NsSzyQAA</XPD:REF>
+<XPD:REF name="Target">V/CDnUKw60OPbigy01a4hwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">RNHCsauXUkm5POujLklW0wAA</XPD:REF>
+<XPD:REF name="Views[1]">92dbYg43ikKSS+AuWXD63QAA</XPD:REF>
+<XPD:REF name="Views[2]">tFBW0hW7qE2Gf2v/MNmstAAA</XPD:REF>
+<XPD:REF name="Views[3]">LtjaJYjPxkC7TPWgEYKCagAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[2]" type="UMLTransition" guid="OV1kmLTvRk6kMimAYskfiwAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">V/CDnUKw60OPbigy01a4hwAA</XPD:REF>
+<XPD:REF name="Target">fGtV7P+QakqBr14vPN1bBwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">FxZJLoIHn0CieJy9hbh1gQAA</XPD:REF>
+<XPD:REF name="Views[1]">Xzyq8TVgdUyzC0yBBIhXXwAA</XPD:REF>
+<XPD:REF name="Views[2]">SsUdJ4IxW0uHzAfba59fuwAA</XPD:REF>
+<XPD:REF name="Views[3]">vb6D9Ni8JEWHJE2SINhBDQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[3]" type="UMLTransition" guid="wxN7QTfNREqPyvCAaiIT7wAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">fGtV7P+QakqBr14vPN1bBwAA</XPD:REF>
+<XPD:REF name="Target">G1m+FTI6TEy2AzhDYC7i6wAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">oTZ2DatN+0ubXv4O7praDQAA</XPD:REF>
+<XPD:REF name="Views[1]">sW/T2HK6SkeVn37CGkkTugAA</XPD:REF>
+<XPD:REF name="Views[2]">9kSds/IQpU2zGu+VK3TbfgAA</XPD:REF>
+<XPD:REF name="Views[3]">IB9iM8ov2UeRCbSKDoeYyAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[4]" type="UMLTransition" guid="d/TiBKM0tkCC9WGuYneh8AAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">G1m+FTI6TEy2AzhDYC7i6wAA</XPD:REF>
+<XPD:REF name="Target">hKdqSpMV6EKfDGcggtWzNwAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">7cQj+w7qJUiA+epMKD3+eQAA</XPD:REF>
+<XPD:REF name="Views[1]">6Hurvh+DnkCmPR+Jg9xRLwAA</XPD:REF>
+<XPD:REF name="Views[2]">WQ5tVK3cNUi3Hy5GtSHyhQAA</XPD:REF>
+<XPD:REF name="Views[3]">Wpmi8gdTpUikSfBu3x4i5AAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[5]" type="UMLTransition" guid="tH64cOmAZUuNFWnDJSBWgAAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">hKdqSpMV6EKfDGcggtWzNwAA</XPD:REF>
+<XPD:REF name="Target">U5EYWIZM9kqkgUHGbPnakQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">W/k7R3Mkr0eHT6x58NV9XwAA</XPD:REF>
+<XPD:REF name="Views[1]">iJCeKT8jeke9R+6fLrWI+wAA</XPD:REF>
+<XPD:REF name="Views[2]">4uJSb6Hw70+c/E47zlqpEQAA</XPD:REF>
+<XPD:REF name="Views[3]">EMLS/APUPkm77Ztfkj8ZKwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[6]" type="UMLTransition" guid="mE/hWgiyE0uysPP0Cg+PhgAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">U5EYWIZM9kqkgUHGbPnakQAA</XPD:REF>
+<XPD:REF name="Target">/CY5eO42vkiNROayd3giIgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[7]" type="UMLTransition" guid="0dbLgTxR9kGv1v5Y5//EvgAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">/CY5eO42vkiNROayd3giIgAA</XPD:REF>
+<XPD:REF name="Target">2tuBI4nJN0ymvzN3bSj7vAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">FztNtZJ460+n0N2ZZBZzFgAA</XPD:REF>
+<XPD:REF name="Views[1]">aXru1lcgEkC5mnUcibHuRAAA</XPD:REF>
+<XPD:REF name="Views[2]">U5f7KsAK2k+uNItUWbcWogAA</XPD:REF>
+<XPD:REF name="Views[3]">POTIM5VpCkq7gY8bAocrvQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[8]" type="UMLTransition" guid="qghktDO6jEOT6dTPh+I4qwAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">2tuBI4nJN0ymvzN3bSj7vAAA</XPD:REF>
+<XPD:REF name="Target">8ZyWJYn/10qe3orbJnpp+QAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">1UwbOWa6lEGSeKr4GIAB1gAA</XPD:REF>
+<XPD:REF name="Views[1]">cPmzmmzz/kqQZejFTutVaQAA</XPD:REF>
+<XPD:REF name="Views[2]">XD4K6NmamEaxAFcObMGzBAAA</XPD:REF>
+<XPD:REF name="Views[3]">sDhj37yIWk+8KBpk9YUBNQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[9]" type="UMLTransition" guid="a3F+MLgqC0yBGE9PeQRPTQAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">8ZyWJYn/10qe3orbJnpp+QAA</XPD:REF>
+<XPD:REF name="Target">nvZIUwQ6sECV1Zp4I7QSdgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">4jzMCJUhv0mRR9ARNJ1oNAAA</XPD:REF>
+<XPD:REF name="Views[1]">EAyWNUZMKUuj/4MQ9xJe9AAA</XPD:REF>
+<XPD:REF name="Views[2]">grNLIf9ov0yniecDQEZ2RgAA</XPD:REF>
+<XPD:REF name="Views[3]">0L14f+EcF0Sq1evfDOzuXgAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[10]" type="UMLTransition" guid="44gMW30dVkeuz2WhRwHi0gAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">CneClzGJcUOb8R1qM0yGNQAA</XPD:REF>
+<XPD:REF name="Target">CneClzGJcUOb8R1qM0yGNQAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[11]" type="UMLTransition" guid="mvuV/6v2tkSi5vNNXS6DbQAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">U5EYWIZM9kqkgUHGbPnakQAA</XPD:REF>
+<XPD:REF name="Target">LVGVujIvGk65SSEPuP/eGQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">tpBgIyJZ7Eai44r2G5SUkAAA</XPD:REF>
+<XPD:REF name="Views[1]">yUaVZODTR0yBX0oD7cdAtwAA</XPD:REF>
+<XPD:REF name="Views[2]">FjlarlxHXkGnC72C2F3eswAA</XPD:REF>
+<XPD:REF name="Views[3]">wkrJiMgeBEqDKZb3krSuawAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[12]" type="UMLTransition" guid="DoxyNAWsx0q3frnp7ckInAAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">LVGVujIvGk65SSEPuP/eGQAA</XPD:REF>
+<XPD:REF name="Target">/CY5eO42vkiNROayd3giIgAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">6imHjDdfHUOTOZJMpwr5zgAA</XPD:REF>
+<XPD:REF name="Views[1]">k3ZDJT+hvUGCKZMb6WqV5QAA</XPD:REF>
+<XPD:REF name="Views[2]">HaksitucvE+LG+BlzVlrFAAA</XPD:REF>
+<XPD:REF name="Views[3]">vSuhjtZ2FEGHFHJS21R0UAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Transitions[13]" type="UMLTransition" guid="PP3DOtwxXUmv1esqTsuDyAAA">
+<XPD:REF name="StateMachine">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:REF name="Source">nvZIUwQ6sECV1Zp4I7QSdgAA</XPD:REF>
+<XPD:REF name="Target">CneClzGJcUOb8R1qM0yGNQAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
+<XPD:REF name="Views[0]">GJ6DU1FvRkme00vc9d8DCAAA</XPD:REF>
+<XPD:REF name="Views[1]">s9NleP85zEOx27GrjQYWlAAA</XPD:REF>
+<XPD:REF name="Views[2]">XjcwJS/SLUKy6KFTcw9nbQAA</XPD:REF>
+<XPD:REF name="Views[3]">7IfCcZNAb0Ow3UvNx3qEUAAA</XPD:REF>
+</XPD:OBJ>
+<XPD:ATTR name="#Partitions" type="integer">3</XPD:ATTR>
+<XPD:OBJ name="Partitions[0]" type="UMLPartition" guid="HO7CaUF1R0izR8DMDRUdHAAA">
+<XPD:ATTR name="Name" type="string">Użytkownik</XPD:ATTR>
+<XPD:REF name="ActivityGraph">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">AGwO1t8gKEaQ2s52GF5phwAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Partitions[1]" type="UMLPartition" guid="FpGVS0vcqUiUE10LaORHNgAA">
+<XPD:ATTR name="Name" type="string">Aplikacja mobilna</XPD:ATTR>
+<XPD:REF name="ActivityGraph">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">fCBdS3KI1U2JEve0GKam2gAA</XPD:REF>
+</XPD:OBJ>
+<XPD:OBJ name="Partitions[2]" type="UMLPartition" guid="LUIqVIWT9EyxWF27SF2n4QAA">
+<XPD:ATTR name="Name" type="string">Serwer</XPD:ATTR>
+<XPD:REF name="ActivityGraph">jAokZOk//0Ky/+NBg4inPAAA</XPD:REF>
+<XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
+<XPD:REF name="Views[0]">7KjpV612iEC3PQZTm8Fx7QAA</XPD:REF>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:OBJ>
+</XPD:BODY>
+</XPD:PROJECT>

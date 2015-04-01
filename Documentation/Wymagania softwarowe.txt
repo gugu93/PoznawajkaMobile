@@ -1,0 +1,5 @@
+Czêœæ serwerowa:
+Ka¿da z platform powinna dzia³aæ pod kontrol¹ systemu Linux w wersji co najmniej 3.2. Wymagany jest dostêp do sieci, uprawnienia administratora (roota) oraz kompilator jêzyka Common Lisp o nazwie SBCL w wersji 1.2.7 (najnowszej) wraz z menad¿erem zaleznoœci i pakietów Quicklisp.
+Serwer wymaga równie¿ bazy danych MySQL w wersji 5.6.0 lub nowszej.
+
+W celu zainstalowania aplikacji potrzebne nam jest urz¹dzenie mobilne z zainstalowanym systemem Android w wersji minimum 2.3. Aplikacja podczas dzia³ania ³¹czy siê bardzo czêsto z serwerem, wiec konieczne jest aby w trakcie korzystania mieæ sta³y dostêp do Internetu. Chc¹c skorzystaæ z wszystkich funkcji mojego programu warto, ¿eby urz¹dzenie mia³o wybudowany modu³ GPS z powodów funkcjonalnych 
