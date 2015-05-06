@@ -4,8 +4,7 @@
   (:use #:cl))
 
 (defpackage #:pm.master
-  (:use #:cl
-        #:ningle))
+  (:use #:cl))
 
 (defpackage #:pm.worker
   (:use #:cl))
@@ -14,7 +13,16 @@
   (:use #:cl)
   (:export #:api-request))
 
-(defpackage #:pm.api
+(defpackage #:pm.api-listener
+  (:use #:cl
+        #:ningle)
+  (:export #:api-listener
+           #:start
+           #:stop))
+
+(defpackage #:pm.api-master
   (:use #:cl)
-  (:export #:version)
-  )
+  (:export #:version
+           #:export
+           #:echo))
+

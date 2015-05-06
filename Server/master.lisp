@@ -14,17 +14,7 @@
 (defgeneric delete-worker (worker-manager worker))
 (defgeneric get-worker (worker-manager))
 
+;;(defclass master-listener ())
 
-(defclass master-listener ()
-  ((ningle-app :accessor ningle-app
-               :initform (make-instance '<app>))
-   (clack-app :accessor clack-app
-              :initform nil)
-   ))
 
-(defmethod api-start ((this master-listener))
-  (set-routing this :pm.api)
-  (setf (clack-app this) (clack:clackup (lack:builder (ningle-app this)))))
-
-(defmethod api-stop ((this master-listener))
-  (clack:stop (clack-app this)))
+  
