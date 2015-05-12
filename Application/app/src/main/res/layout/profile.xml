@@ -61,8 +61,8 @@
             android:text="Email: kamil5@gmail.com"
             android:paddingLeft="10dp"
             android:paddingTop="20dp"
-            android:textSize="17dp"
-            android:id="@+id/" />
+            android:textSize="17dp"/>
+
 
         <TextView
             android:layout_width="wrap_content"
