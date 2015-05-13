@@ -8,6 +8,7 @@
   :depends-on (:ningle
                :cl-mysql
                :split-sequence
+               :clsql
                :cl-json)
   :components ((:file "package")
                (:file "pm")
@@ -17,6 +18,7 @@
                (:file "api-listener-router")
                (:file "api-master")
                (:file "common")
-               (:file "authenticator")
-               (:file "database")))
+               (:file "database")
+               (:file "database-schema")
+               (:file "authenticator")))
 

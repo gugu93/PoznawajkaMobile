@@ -24,5 +24,14 @@
   (:use #:cl)
   (:export #:version
            #:export
-           #:echo))
+           #:echo
+           #:chaos
+           #:chaos-param
+           #:defun
+           #:list))
+
+(defpackage #:pm.db
+  (:use #:cl
+        #:clsql
+        #:clsql-sys))
 
