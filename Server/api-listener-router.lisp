@@ -20,9 +20,9 @@
 (defmethod set-routing ((this api-listener))
   "create ningle routing table - all requests routed to package [package]"
   (let ((app (ningle-app this)))
-    ;; meta-route
     (setf (route app "/")
           (format nil "pm.api-listener: routed package: ~A~%" (routed-package this)))
+    ;; handle functions without arguments
     (setf (route app "/:fn-name" :method :GET)
           #'(lambda (params)
               (handler-case 
@@ -32,6 +32,7 @@
                 (error (condition)
                   (cl-json:encode-json-plist-to-string
                   `(:type error :condition ,(format nil "~A" condition)))))))
+    ;; handle functions with arguments, splitting with /
     (setf (route app "/:fn-name/*" :method :GET)
           #'(lambda (params)
               (handler-case 

@@ -1,56 +1,45 @@
-(in-package #:pm.worker)
+(in-package #:pm.db)
 
 (defclass database-interface ()
-  ((db-type)
-   (db-host)
-   (db-port)
-   (db-user)
-   (db-pass)
-   (db-name)))
+  ((db-handle :accessor db-handle)))
 
-(defgeneric find-matching (database-interface user))
-(defgeneric add-user (database-interface user))
-(defgeneric del-user (database-interface user))
-(defgeneric add-group (database-interface group))
-(defgeneric del-group (database-interface group))
-(defgeneric add-user-to-group (database-interface user group))
-(defgeneric del-user-from-group (database-interface user group))
-(defgeneric reset-password (database-interface user))
-(defgeneric change-password (database-interface user))
-(defgeneric change-user-data (database-interface user))
-(defgeneric add-relationship (database-interface relationship))
-(defgeneric fetch-user-notifications (database-interface user))
+(defgeneric db-connect (database-interface hostname database username password))
+(defmethod db-connect ((interface database-interface)
+                       (hostname string)
+                       (database string)
+                       (username string)
+                       (password string))
+  "Connects to selected MySQL database"
+  (setf (db-handle interface)
+        (connect (list hostname database username password)
+                 :database-type :mysql)))
+        
+(defgeneric add-item (database-interface item-to-add))
+(defmethod add-item ((interface database-interface)
+                (item database-item))
+  "Add database-item element to database"
+  (update-records-from-instance item
+                                :database (db-handle interface)))
+  
+(defgeneric delete-item (database-interface item-to-delete))
+(defmethod delete-item ((interface database-interface)
+                        (item database-item))
+  "Delete database-item element from database"
+  (delete-instance-records item
+                           :database (db-handle interface)))
 
-(defclass relationship ()
-  ((id)
-   (left-side)
-   (right-side)
-   (type)))
+(defgeneric list-items (database-interface item-class-to-list))
+(defmethod list-items ((interface database-interface)
+                       (item-class symbol))
+  (select item-class))
 
-(defgeneric add-to-left (relationship user))
-(defgeneric add-to-right (relationship user))
-(defgeneric delete-member (relationship user))
-(defgeneric delete-relationship (relationship))
-(defgeneric change-relationship (relationship))
 
-(defclass group ()
-  ((id)
-   (name)
-   (members)
-   (tags)))
+;; (defparameter *db* (clsql-sys:connect '("gen2.org" "pm" "pm-worker" "5xK1xWKudjT3DXbLVzuMCH5wEHhcLnPdJRtGsoyoccEhc2aSnb8WPfKVEnBijs7y") :database-type :mysql))
 
-(defgeneric add-member (group user))
-(defgeneric delete-member (group user))
-(defgeneric change-group (group))
-(defgeneric delete-group (group))
-
-(defclass user ()
-  ((id)
-   (first-name)
-   (second-name)
-   (sex)
-   (birth-date)
-   (tags)))
-
-(defgeneric change-user (user))
-(defgeneric delete-user (user))
+;; (clsql:update-records-from-instance
+;;    (make-instance 'post
+;; II  :title "1st!"
+;; II  :body "tresc postu"))
+;; (defparameter *db*
+;;   (clsql-sys:connect '("localhost" "pg_db" "pg_db" "ble")
+;; II     :database-type :postgresql :if-exists :old))

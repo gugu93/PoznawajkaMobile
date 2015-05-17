@@ -8,5 +8,3 @@
 (defun echo (message)
   `(:type echo :message ,message))
 
-(defun test ()
-  '(:type test :test "not exported"))
