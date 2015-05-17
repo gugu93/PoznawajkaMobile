@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/white"
-    android:layout_height="match_parent">
+    >
 
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="400px"
+        android:layout_height="0dp"
         android:id="@+id/imageView2"
+        android:layout_weight="10"
         android:src="@drawable/main_logo"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
         android:layout_gravity="center" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:textColor="@color/blue"
         android:text="Poznawajka Mobile. Zaloguj się lub zarejestruj, jeśli nie masz konta"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:paddingLeft="30dp"
+        android:layout_weight="5"
+        android:padding="5px"
+        android:gravity="center"
         android:id="@+id/textView"
         android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true" />
@@ -34,8 +36,9 @@
         android:layout_width="match_parent"
         android:id="@+id/emailLin"
         android:paddingTop="15dp"
-        android:paddingLeft="20dp"
-        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:paddingLeft="5px"
+        android:layout_height="0dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true">
 
@@ -64,8 +67,9 @@
         android:layout_width="match_parent"
         android:id="@+id/passwordLIn"
         android:paddingTop="15dp"
-        android:paddingLeft="20dp"
-        android:layout_height="wrap_content"
+        android:paddingLeft="5px"
+        android:layout_weight="3"
+        android:layout_height="0dp"
         android:layout_below="@+id/emailLin"
         android:layout_centerHorizontal="true">
 
@@ -92,8 +96,9 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_below="@+id/passwordLIn"
+        android:layout_weight="3"
         android:id="@+id/buttons"
         android:padding="10dp"
         android:layout_centerHorizontal="true">
@@ -119,7 +124,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
         android:orientation="vertical"
         android:layout_below="@id/buttons">
 
@@ -129,7 +135,7 @@
             android:text="Nie masz konta? Zarejestruj się!"
             android:textColor="#ff1d19ff"
             android:id="@+id/registerText"
-            android:paddingLeft="80dp"
+            android:gravity="center"
            />
 
         <TextView
@@ -138,8 +144,8 @@
             android:text="Nie pamietasz hasła?"
             android:textColor="#ff1d19ff"
             android:id="@+id/passwordReset"
-            android:paddingLeft="130dp"
+            android:gravity="center"
             />
         </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

@@ -44,14 +44,7 @@ public class ProfileActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
-        autoDialog= (TextView)findViewById(R.id.znajomiOnClick);
-        autoDialog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),AutoDialogActivity.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
 
