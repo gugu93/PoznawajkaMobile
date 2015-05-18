@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ObjectListItem"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:paddingLeft="@dimen/six_dips"
+    android:paddingRight="@dimen/six_dips"
+    android:paddingTop="@dimen/three_dips"
+    android:paddingBottom="@dimen/three_dips">
+
+
+
+    <ImageView
+        style="@style/ObjectListItem.Photo"
+        android:id="@+id/route_item_photo"
+        android:background="@drawable/icon13"
+        android:src="@color/main_grid_yellow"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/hundred_twenty_dips"
+        android:layout_weight="2"
+        android:background="@drawable/background_blue_yellow">
+
+        <TextView
+            style="@style/ObjectListItem.Name"
+            android:id="@+id/route_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/ten_dips"
+            android:paddingLeft="@dimen/ten_dips"
+            android:layout_alignParentTop="true"
+            tools:text="Nazwa trasy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:id="@+id/route_nPlaces"
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_margin="10dp"
+                tools:text="Liczba obiektów" />
+
+            <TextView
+
+                android:id="@+id/route_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:layout_margin="10dp"
+                tools:text="27km" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
