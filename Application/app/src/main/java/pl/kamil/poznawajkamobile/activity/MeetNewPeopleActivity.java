@@ -21,7 +21,7 @@ public class MeetNewPeopleActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nowy_znajomi);
         setTitle("Poznaj nowych znajomych");
-        pic = (ImageView)findViewById(R.id.imageViewAniaToMeet);
+        //pic = (ImageView)findViewById(R.id.imageViewAniaToMeet);
         pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +29,7 @@ public class MeetNewPeopleActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
-        text= (TextView)findViewById(R.id.textViewAniaToMeet);
+        //text= (TextView)findViewById(R.id.textViewAniaToMeet);
         text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

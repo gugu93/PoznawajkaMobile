@@ -14,15 +14,15 @@
     android:paddingBottom="@dimen/three_dips">
 
 
-
     <ImageView
         style="@style/ObjectListItem.Photo"
-        android:id="@+id/route_item_photo"
-        android:background="@drawable/icon13"
+        android:id="@+id/new_friend_item_photo"
         android:src="@color/main_grid_yellow"
         android:layout_weight="1"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/app_name" />
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <RelativeLayout
         android:layout_width="0dp"
@@ -30,15 +30,36 @@
         android:layout_weight="2"
         android:background="@drawable/background_blue_yellow">
 
-        <TextView
-            style="@style/ObjectListItem.Name"
-            android:id="@+id/route_title"
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/ten_dips"
-            android:paddingLeft="@dimen/ten_dips"
             android:layout_alignParentTop="true"
-            tools:text="Nazwa trasy" />
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ObjectListItem.Name"
+                android:id="@+id/new_friend_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten_dips"
+                android:paddingLeft="@dimen/ten_dips"
+                tools:text="Imię" />
+
+            <TextView
+                style="@style/ObjectListItem.Name"
+                android:id="@+id/new_friend_lastname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten_dips"
+                android:paddingLeft="@dimen/ten_dips"
+                tools:text="Nazwisko" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,7 +69,7 @@
 
             <TextView
 
-                android:id="@+id/route_nPlaces"
+                android:id="@+id/new_friend_age"
                 android:layout_width="0dp"
                 android:paddingLeft="10dp"
                 android:layout_height="wrap_content"
@@ -56,11 +77,11 @@
                 android:maxLines="2"
                 android:ellipsize="end"
                 android:layout_margin="10dp"
-                tools:text="Liczba obiektów" />
+                tools:text="wiek" />
 
             <TextView
 
-                android:id="@+id/route_distance"
+                android:id="@+id/new_friend_distance"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="bottom"

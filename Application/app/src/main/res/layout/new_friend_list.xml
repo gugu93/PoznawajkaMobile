@@ -6,6 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proponowani znajomi"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:padding="10px"
+        android:layout_gravity="center"
+        android:id="@+id/textView12" />
+
     <FrameLayout
         android:id="@+id/new_friend_list"
         android:layout_width="match_parent"
