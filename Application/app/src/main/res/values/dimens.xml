@@ -1,5 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="one_dip">1dp</dimen>
+    <dimen name="two_dips">2dp</dimen>
+    <dimen name="three_dips">3dp</dimen>
+    <dimen name="five_dips">5dp</dimen>
+    <dimen name="six_dips">6dp</dimen>
+    <dimen name="ten_dips">10dp</dimen>
+    <dimen name="twelve_dips">12dp</dimen>
+    <dimen name="fifteen_dips">15dp</dimen>
+    <dimen name="twenty_dips">20dp</dimen>
+    <dimen name="twenty_four_dips">24dp</dimen>
+    <dimen name="twenty_eight_dips">28dp</dimen>
+    <dimen name="thirty_dips">30dp</dimen>
+    <dimen name="forty_dips">40dp</dimen>
+    <dimen name="sixty_dips">60dp</dimen>
+    <dimen name="eighty_dips">80dp</dimen>
+    <dimen name="hundred_dips">100dp</dimen>
+    <dimen name="hundred_twenty_dips">120dp</dimen>
+    <dimen name="hundred_forty_dips">140dp</dimen>
+    <dimen name="hundred_sixty_dips">160dp</dimen>
+    <dimen name="tfh_dips">250dp</dimen>
+    <dimen name="text_ten">10sp</dimen>
+    <dimen name="text_twelve">12sp</dimen>
+    <dimen name="text_fourteen">14sp</dimen>
+    <dimen name="text_fifteen">14sp</dimen>
+    <dimen name="text_sixteen">16sp</dimen>
+    <dimen name="text_twenty">20sp</dimen>
+    <dimen name="text_twenty_five">25sp</dimen>
+    <dimen name="text_forty">40sp</dimen>
+    <dimen name="text_ab">32sp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tile_text">30sp</dimen>
+
+    <!-- Main grid -->
+    <dimen name="main_grid_text">12sp</dimen>
+    <dimen name="main_grid_icon_margin">10dp</dimen>
+    <dimen name="main_grid_text_margin">10dp</dimen>
+    <dimen name="main_grid_padding">40dp</dimen>
+    <dimen name="main_grid_margin">5dp</dimen>
+    <!--Object Description -->
+    <dimen name="object_description_icon_margin">10dp</dimen>
+
+
 </resources>

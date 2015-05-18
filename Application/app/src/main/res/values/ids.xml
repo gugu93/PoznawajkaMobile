@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_group" type="id" />
+    <item name="menu_drawer" type="id" />
+    <item name="menu_search" type="id" />
+    <item name="menu_rss_browse" type="id" />
+    <item name="menu_open_map_list" type="id" />
+    <item name="menu_open_map_object" type="id" />
+    <item name="menu_open_info" type="id" />
+    <item name="menu_rss_refresh" type="id" />
+    <item name="menu_planner" type="id"/>
+    <item name="menu_rss_animate" type="id" />
+    <item name="menu_login" type="id" />
+    <item name="menu_upload" type="id" />
+    <item name="menu_download" type="id" />
+    <item name="promoted" type="id" />
+    <item name="menu_comment" type="id" />
+    <item name="mapStreet" type="id" />
+    <item name="mapSat" type="id" />
+    <item name="share" type="id" />
+</resources>
