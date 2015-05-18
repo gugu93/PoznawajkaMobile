@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/white">
 
+    <FrameLayout
+        android:id="@+id/proponowane"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/main_grid"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0.5dp" />
 
     <pl.kamil.poznawajkamobile.views.MainGrid
         android:id="@+id/main_grid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"  />
+        android:layout_alignParentBottom="true"></pl.kamil.poznawajkamobile.views.MainGrid>
 
     <ImageButton
         android:id="@+id/main_menu"
@@ -20,8 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:background="@android:color/transparent"
-        android:src="@drawable/ic_menu_drawer"
-        android:padding="@dimen/five_dips"
-        android:layout_margin="@dimen/ten_dips" />
+        android:src="@drawable/ic_menu_drawer" />
 
 </RelativeLayout>
