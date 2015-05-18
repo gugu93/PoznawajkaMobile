@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 
 import com.example.kml.poznawajkamobile.R;
@@ -28,6 +29,7 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
 
     public static final String FRAGMENT_TAG = MainFragment.class.getSimpleName();
     private MainGrid mGrid;
+    private FrameLayout proponowane;
     private MainGridAdapter mAdapter;
     private Fragment promoted;
 
@@ -62,6 +64,7 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mGrid = (MainGrid) view.findViewById(R.id.main_grid);
+        proponowane = (FrameLayout) view.findViewById(R.id.proponowane);
         mGrid.setOnMainGridItemClickListener(this);
         ImageButton menu = (ImageButton) view.findViewById(R.id.main_menu);
         menu.setImageDrawable(GraphicUtils.generateStateList(getActivity(),
@@ -78,8 +81,9 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        int height = Math.round(Utils.getScreenHeight(getActivity()) * 0.75f);
-        mGrid.getLayoutParams().width = Math.round(height * 3 / 4);
+        int height = Math.round(Utils.getScreenHeight(getActivity()) * 0.67f);
+        mGrid.getLayoutParams().width = Math.round(height * 4 / 5);
+        proponowane.getLayoutParams().width = mGrid.getLayoutParams().width;
         ArrayList<MenuModel> m = createData();
         mAdapter = new MainGridAdapter(this.getActivity().getApplicationContext(),m);
         mGrid.setAdapter(mAdapter);

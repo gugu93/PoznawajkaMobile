@@ -12,7 +12,7 @@
         android:layout_above="@+id/main_grid"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="0.5dp" />
+        android:layout_marginBottom="1dp" />
 
     <pl.kamil.poznawajkamobile.views.MainGrid
         android:id="@+id/main_grid"
@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:background="@android:color/transparent"
-        android:src="@drawable/ic_menu_drawer" />
+        android:src="@drawable/ic_menu_drawer"
+        android:padding="@dimen/five_dips" />
 
 </RelativeLayout>

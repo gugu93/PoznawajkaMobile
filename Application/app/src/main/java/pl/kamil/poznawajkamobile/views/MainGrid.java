@@ -31,10 +31,9 @@ public class MainGrid extends LinearLayout {
 
     private void init() {
         LayoutParams params = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
-        params.gravity = Gravity.CENTER;
+        params.gravity = Gravity.BOTTOM;
         setLayoutParams(params);
         setOrientation(VERTICAL);
-       // setPadding(5, 5, 5, 5);
     }
 
     public void setOnMainGridItemClickListener(OnMainGridItemClickListener listener) {
@@ -44,7 +43,7 @@ public class MainGrid extends LinearLayout {
     public void setAdapter(Adapter adapter) {
         removeAllViews();
         if (adapter != null) {
-                portraitFill(adapter);
+            portraitFill(adapter);
         }
     }
 
@@ -123,8 +122,8 @@ public class MainGrid extends LinearLayout {
         params.gravity = Gravity.CENTER;
         params.weight = 1f;
         if (order == 3) {
-                params.topMargin = 10;
-            }
+            params.topMargin = 10;
+        }
         line.setLayoutParams(params);
         line.setOrientation(HORIZONTAL);
         lines.add(line);
@@ -153,7 +152,7 @@ public class MainGrid extends LinearLayout {
         }
     }
 
-    public void updateItemBackground(int id, int  id2) {
+    public void updateItemBackground(int id, int id2) {
         ImageView view = (ImageView) findViewById(id);
         if (view != null) {
             Utils.getPicasso(getContext()).load(id2).centerCrop().resize(200, 200).into(view);
