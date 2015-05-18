@@ -9,6 +9,8 @@
         <item name="android:textViewStyle">@style/FontTextView</item>
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
     </style>
 
     <style name="NoActionBar" parent="@style/Theme.AppCompat.Light">
@@ -28,8 +30,7 @@
         <item name="displayOptions">useLogo|showHome</item>
     </style>
 
-    <style name="ActionModeStyle" parent="ActionBar">
-    </style>
+    <style name="ActionModeStyle" parent="ActionBar"></style>
 
     <style name="FontTextView" parent="android:Widget.TextView">
         <item name="fontPath">MyriadPro-Regular.ttf</item>
@@ -48,14 +49,17 @@
     </style>
 
     <style name="ObjectListItem" />
+
     <style name="ObjectListItem.Photo">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">@dimen/hundred_twenty_dips</item>
     </style>
+
     <style name="ObjectListItem.Name">
         <item name="android:textSize">@dimen/text_sixteen</item>
         <item name="android:textColor">@color/text_white_black</item>
     </style>
+
     <style name="ObjectListItem.Address">
         <item name="android:textColor">@color/text_white_black</item>
     </style>
