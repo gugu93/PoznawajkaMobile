@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:text="Znaleźliśmy dla Ciebie ludzi których musisz poznać!"
         android:id="@+id/textView"
+        android:textColor="@color/blue"
         android:gravity="center"
         android:textSize="30dp"
         android:textStyle="bold"
