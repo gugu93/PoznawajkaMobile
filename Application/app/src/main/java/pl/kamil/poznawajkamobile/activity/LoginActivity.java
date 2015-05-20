@@ -26,7 +26,8 @@ public class LoginActivity extends ActionBarActivity {
         exitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               finish();
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
             }
         });
         myZalogujButton = (Button) findViewById(R.id.buttonLOGIN);
