@@ -81,8 +81,8 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        int height = Math.round(Utils.getScreenHeight(getActivity()) * 0.67f);
-        mGrid.getLayoutParams().width = Math.round(height * 4 / 5);
+        int height = Math.round(Utils.getScreenHeight(getActivity()) * 0.75f);
+        mGrid.getLayoutParams().width = Math.round(height * 7 / 10);
         proponowane.getLayoutParams().width = mGrid.getLayoutParams().width;
         ArrayList<MenuModel> m = createData();
         mAdapter = new MainGridAdapter(this.getActivity().getApplicationContext(),m);

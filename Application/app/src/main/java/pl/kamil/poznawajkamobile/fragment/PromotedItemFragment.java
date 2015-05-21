@@ -18,10 +18,11 @@ import pl.kamil.poznawajkamobile.utils.Utils;
 
 public class PromotedItemFragment extends AbstractFragment {
 
-    private TextView mObjectName;
-    private ImageView mObjectPhoto;
-    private TextView mObjectAddress;
-    private TextView mDistane;
+    private TextView mFriendName;
+    private ImageView mFriendPhoto;
+    private TextView mFriendSurname;
+    private TextView mFriendDistanceTO;
+    private TextView mFriendAge;
     private boolean isParkingMachine = false;
     private int id;
     private int age;
@@ -36,6 +37,7 @@ public class PromotedItemFragment extends AbstractFragment {
         return fragment;
     }
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,28 +50,31 @@ public class PromotedItemFragment extends AbstractFragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.promoted_item, container, false);
+        return inflater.inflate(R.layout.new_friend_item, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mObjectName = (TextView) view.findViewById(R.id.promoted_title);
-        mObjectPhoto = (ImageView) view.findViewById(R.id.promoted_photo);
-        mObjectAddress = (TextView) view.findViewById(R.id.promoted_address);
-        mDistane = (TextView) view.findViewById(R.id.promoted_distance);
-        mObjectName.setText(name + " " + surname + " Wiek " + age);
-
+        mFriendName = (TextView) view.findViewById(R.id.new_promoted_friend_name);
+        mFriendAge = (TextView) view.findViewById(R.id.new_promoted_friend_age);
+        mFriendPhoto = (ImageView) view.findViewById(R.id.new_promoted_friend_photo);
+        mFriendSurname = (TextView) view.findViewById(R.id.new_promoted_friend_lastname);
+        mFriendDistanceTO = (TextView) view.findViewById(R.id.new_promoted_friend_distance);
+        mFriendName.setText(this.name);
+        mFriendSurname.setText(this.surname);
+        mFriendAge.setText("Wiek " + this.age);
+        mFriendDistanceTO.setText("2km");
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         Utils.getPicasso(getActivity())
-                .load(R.drawable.zaslepka)
-                .error(R.color.main_grid_yellow)
+                .load(R.drawable.ona)
+                .error(R.color.white)
                 .resizeDimen(R.dimen.hundred_forty_dips, R.dimen.hundred_forty_dips)
-                .into(mObjectPhoto);
+                .into(mFriendPhoto);
     }
 
 }

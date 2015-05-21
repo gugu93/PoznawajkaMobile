@@ -57,7 +57,7 @@
     </style>
 
     <style name="ObjectListItem.Name">
-        <item name="android:textSize">@dimen/text_sixteen</item>
+        <item name="android:textSize">@dimen/text_fourteen</item>
         <item name="android:textColor">@color/text_white_black</item>
     </style>
 

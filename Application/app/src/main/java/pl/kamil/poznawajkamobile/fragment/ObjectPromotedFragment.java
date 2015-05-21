@@ -75,7 +75,6 @@ public class ObjectPromotedFragment extends AbstractFragment implements ViewPage
 
     @Override
     public void onPageScrolled(int i, float v, int i2) {
-
     }
 
     @Override
@@ -85,14 +84,12 @@ public class ObjectPromotedFragment extends AbstractFragment implements ViewPage
 
     @Override
     public void onPageScrollStateChanged(int i) {
-
     }
 
 
     private class PromotedPagerAdapter extends FragmentPagerAdapter {
 
         private ArrayList<ProposedPersonModel> mList;
-
         public PromotedPagerAdapter(FragmentManager fm, ArrayList<ProposedPersonModel> list) {
             super(fm);
             mList = list;
