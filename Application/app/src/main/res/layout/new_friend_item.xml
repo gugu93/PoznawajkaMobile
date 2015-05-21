@@ -15,48 +15,46 @@
 
 
     <ImageView
-        style="@style/ObjectListItem.Photo"
-        android:id="@+id/new_friend_item_photo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/eighty_dips"
+        android:id="@+id/new_promoted_friend_photo"
+        android:scaleType="centerCrop"
+        android:background="@drawable/zaslepka"
         android:src="@color/main_grid_yellow"
         android:layout_weight="1"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/app_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:contentDescription="@string/app_name" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="@dimen/hundred_twenty_dips"
+        android:layout_height="@dimen/eighty_dips"
         android:layout_weight="2"
-        android:background="@drawable/background_blue_yellow">
-
-
+        android:orientation="vertical"
+        android:background="@drawable/background_main_friend_transparent_red">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:layout_weight="2"
+            android:orientation="vertical">
 
             <TextView
                 style="@style/ObjectListItem.Name"
-                android:id="@+id/new_friend_name"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+                android:id="@+id/new_promoted_friend_name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/ten_dips"
+                android:textColor="@android:color/black"
                 android:paddingLeft="@dimen/ten_dips"
                 tools:text="Imię" />
 
             <TextView
                 style="@style/ObjectListItem.Name"
-                android:id="@+id/new_friend_lastname"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/ten_dips"
+                android:id="@+id/new_promoted_friend_lastname"
+                android:layout_width="wrap_content"
                 android:paddingLeft="@dimen/ten_dips"
+                android:textColor="@android:color/black"
+                android:layout_height="wrap_content"
+
                 tools:text="Nazwisko" />
 
         </LinearLayout>
@@ -64,33 +62,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:id="@+id/linearLayout3">
 
             <TextView
-
-                android:id="@+id/new_friend_age"
-                android:layout_width="0dp"
-                android:paddingLeft="10dp"
+                android:id="@+id/new_promoted_friend_age"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/ten_dips"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:maxLines="2"
-                android:ellipsize="end"
-                android:layout_margin="10dp"
+                android:maxLines="1"
                 tools:text="wiek" />
 
             <TextView
-
-                android:id="@+id/new_friend_distance"
+                android:id="@+id/new_promoted_friend_distance"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:gravity="bottom"
-                android:layout_margin="10dp"
+                android:layout_weight="1"
                 tools:text="27km" />
-
         </LinearLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
 </LinearLayout>
