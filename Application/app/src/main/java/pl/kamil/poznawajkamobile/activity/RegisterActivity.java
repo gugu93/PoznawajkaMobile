@@ -2,37 +2,39 @@ package pl.kamil.poznawajkamobile.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.kml.poznawajkamobile.R;
 
 
 public class RegisterActivity extends ActionBarActivity {
+    private TextView imie;
+    private TextView nazwisko;
+    private TextView plec;
+    private TextView wiek;
+    private TextView stanCywilny;
+    private TextView preferencje;
+    private TextView osobowosc;
+    private TextView email;
+    private Button exitButton;
+    private Button registerButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
+        imie = (TextView) findViewById(R.id.timie);
+        nazwisko = (TextView) findViewById(R.id.tnazwisko);
+        plec = (TextView) findViewById(R.id.tplec);
+        wiek = (TextView) findViewById(R.id.twiek);
+        stanCywilny = (TextView) findViewById(R.id.tstan);
+        preferencje = (TextView) findViewById(R.id.tpreferencje);
+        osobowosc = (TextView) findViewById(R.id.tcechy);
+        email = (TextView) findViewById(R.id.tmail);
+        exitButton = (Button) findViewById(R.id.button_powrot);
+        registerButton = (Button) findViewById(R.id.button_register);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.register, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
