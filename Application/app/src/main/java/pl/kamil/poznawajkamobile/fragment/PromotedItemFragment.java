@@ -41,11 +41,13 @@ public class PromotedItemFragment extends AbstractFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.id = getActivity().getIntent().getIntExtra(Constant.EXTRA_ID, 0);
-        this.age = getActivity().getIntent().getIntExtra(Constant.EXTRA_AGE, 1);
-        this.name = getActivity().getIntent().getStringExtra(Constant.EXTRA_NAME);
-        this.surname = getActivity().getIntent().getStringExtra(Constant.EXTRA_SURNAME);
-        this.icon = getActivity().getIntent().getStringExtra(Constant.EXTRA_PHOTO);
+        if (getArguments() != null) {
+            this.id = getActivity().getIntent().getIntExtra(Constant.EXTRA_ID, 0);
+            this.age = getActivity().getIntent().getIntExtra(Constant.EXTRA_AGE, 1);
+            this.name = getActivity().getIntent().getStringExtra(Constant.EXTRA_NAME);
+            this.surname = getActivity().getIntent().getStringExtra(Constant.EXTRA_SURNAME);
+            this.icon = getActivity().getIntent().getStringExtra(Constant.EXTRA_PHOTO);
+        }
     }
 
     @Override

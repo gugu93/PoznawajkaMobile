@@ -256,21 +256,24 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3">
+        android:layout_weight="3"
+        android:layout_gravity="bottom">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Powrót"
-            android:id="@+id/button_powrot" />
+            android:id="@+id/button_powrot"
+            android:layout_gravity="bottom" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Zarejestruj"
-            android:id="@+id/button_register" />
+            android:id="@+id/button_register"
+            android:layout_gravity="bottom" />
     </LinearLayout>
 
 

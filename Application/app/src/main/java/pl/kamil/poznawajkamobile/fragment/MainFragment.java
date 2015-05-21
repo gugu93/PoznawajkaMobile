@@ -106,6 +106,7 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
         return m;
     }
 
+
 //    @Override
 //    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
 //        switch (loader.getId()) {

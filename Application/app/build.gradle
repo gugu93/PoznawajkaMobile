@@ -3,19 +3,34 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 20
     buildToolsVersion "20.0.0"
-
     defaultConfig {
         applicationId "pl.kamil.poznawajkamobile"
         minSdkVersion 10
         targetSdkVersion 20
         versionCode 1
         versionName "1.0"
+        signingConfig signingConfigs.debug
     }
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+            pseudoLocalesEnabled false
+            zipAlignEnabled false
         }
+        release {
+            debuggable false
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('keystore/poznawajka_debug.jks')
+            storePassword "Adam123#"
+            keyAlias "debug"
+            keyPassword "Adam123#"
+        }
+    }
+    productFlavors {
     }
 }
 dependencies {
