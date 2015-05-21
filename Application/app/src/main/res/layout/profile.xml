@@ -33,17 +33,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
 
-            android:gravity="left"
             android:id="@+id/avatar">
 
             <ImageView
                 android:paddingLeft="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/avatarImg"
-                android:layout_centerHorizontal="true"
+
                 android:src="#56221819"
-                android:layout_alignParentTop="true" />
+               />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,8 +50,7 @@
                 android:text="Zmien zdjęcie"
                 android:textColor="#ff1d19ff"
                 android:id="@+id/zmienzdjecie"
-                android:layout_below="@+id/avatarImg"
-                android:layout_centerHorizontal="true" />
+                />
 
 
         </LinearLayout>
