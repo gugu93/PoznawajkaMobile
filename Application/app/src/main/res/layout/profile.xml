@@ -27,12 +27,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
-        <RelativeLayout
+        <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:layout_below="@id/profil"
+
             android:gravity="left"
             android:id="@+id/avatar">
 
@@ -55,7 +55,7 @@
                 android:layout_centerHorizontal="true" />
 
 
-        </RelativeLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
@@ -66,32 +66,76 @@
             android:id="@+id/dane"
             android:layout_toRightOf="@+id/avatar">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email: kamil5@gmail.com"
-                android:paddingLeft="10dp"
-                android:paddingTop="20dp"
-                android:textSize="17dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: "
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test@emial.com"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/profileEmail" />
+                </LinearLayout>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Imie Kamil"
-                android:paddingLeft="10dp"
-                android:paddingTop="20dp"
-                android:textSize="20dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nazwisko Paszkiewicz"
-                android:paddingLeft="10dp"
-                android:paddingTop="20dp"
-                android:textSize="20dp"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Imie: "
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adrian"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/profileName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nazwisko: "
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nowak"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/profileLastName" />
+            </LinearLayout>
 
 
         </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -100,21 +144,49 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
 
-        <TextView
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Preferencje Brunetki"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:textSize="20dp"/>
+            android:layout_height="wrap_content">
 
-        <TextView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nazwisko: "
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nowak"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/profilePreferences" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wyglad Blondyn"
-            android:paddingLeft="10dp"
-            android:paddingTop="20dp"
-            android:textSize="20dp"/>
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nazwisko: "
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nowak"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/profileAppearance" />
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
@@ -134,7 +206,7 @@
                 android:paddingTop="20dp"
                 android:layout_width="300px"
                 android:layout_height="300px"
-                android:id="@+id/imageView3"
+                android:id="@+id/profile_gallery"
                 android:src="#56221819"
                 android:layout_above="@+id/linearLayout2"
                 android:layout_alignParentLeft="true" />
@@ -159,9 +231,8 @@
                 android:paddingTop="20dp"
                 android:layout_width="300px"
                 android:layout_height="300px"
-                android:id="@+id/imageView4"
+                android:id="@+id/profile_friends"
                 android:src="#56221819"
-                android:layout_above="@+id/linearLayout2"
                 android:layout_alignRight="@+id/linearLayout2" />
 
             <TextView
@@ -170,8 +241,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Znajomi"
                 android:id="@+id/textView11"
-                android:layout_alignTop="@+id/imageView4"
-                android:layout_alignLeft="@+id/imageView4" />
+                 />
         </LinearLayout>
 
     </LinearLayout>

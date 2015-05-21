@@ -1,17 +1,24 @@
 package pl.kamil.poznawajkamobile.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.kml.poznawajkamobile.R;
 
 import java.util.ArrayList;
 
+import pl.kamil.poznawajkamobile.activity.GalleryActivity;
+import pl.kamil.poznawajkamobile.activity.MeetNewPeopleActivity;
+import pl.kamil.poznawajkamobile.activity.ProfileActivity;
+import pl.kamil.poznawajkamobile.activity.ResetPasswordActivity;
 import pl.kamil.poznawajkamobile.models.MenuModel;
 
 public class MainGridAdapter extends BaseAdapter {
@@ -51,15 +58,46 @@ public class MainGridAdapter extends BaseAdapter {
                 case 0:
                     //icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon1));
                     //TODO ZDJECIE PROFILOWE
+                    icon.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent0 = new Intent(mContext.getApplicationContext(), ProfileActivity.class);
+                            mContext.startActivity(intent0);
+                        }
+                    });
                     break;
                 case 1:
                     icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon02));
+                    icon.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
+                            Intent intent1 = new Intent(mContext.getApplicationContext(), MeetNewPeopleActivity.class);
+                            mContext.startActivity(intent1);
+                        }
+                    });
                     break;
                 case 2:
                     icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon03));
+                    icon.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
+                            Intent intent2 = new Intent(mContext.getApplicationContext(), MeetNewPeopleActivity.class);
+                            mContext.startActivity(intent2);
+                        }
+                    });
                     break;
                 case 3:
                     icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon04));
+                    icon.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
+                            Intent intent1 = new Intent(mContext.getApplicationContext(), GalleryActivity.class);
+                            mContext.startActivity(intent1);
+                        }
+                    });
                     break;
                 case 4:
                     icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon05));
