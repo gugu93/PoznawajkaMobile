@@ -26,6 +26,10 @@ public class MainActivity extends AbstractMenuActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+    }
+
     public void onIconClick() {
         mMenuDrawer.toggleMenu();
         mMenuList.setSelection(mMenuList.getCount() - 1);
