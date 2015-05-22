@@ -51,7 +51,7 @@ public class LoginActivity extends AbstractActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        Intent intent = new Intent(getApplicationContext(), AuthorizeService.class);
+        Intent intent = new Intent(this, AuthorizeService.class);
         bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
     }
 
@@ -123,7 +123,6 @@ public class LoginActivity extends AbstractActivity {
 
 
     public void showConnectionQuestion() {
-        if (Utils.isConnectionAvailable(this)) {
             if (mBound) { //TODO tutaj wywala nulla. Nie wiem dlaczego.
                 //zrobilem identycznie jak tutaj //http://developer.android.com/guide/components/bound-services.html
                 //4h na tym siedzialem, moze Ty dokminisz dlaczego tutaj jest null inaczej jestesmy w dupie.
@@ -143,7 +142,6 @@ public class LoginActivity extends AbstractActivity {
                     setMode(true);
                 }
             }
-        }
     }
 
     public void onEventMainThread(CheckFinishEvent event) {

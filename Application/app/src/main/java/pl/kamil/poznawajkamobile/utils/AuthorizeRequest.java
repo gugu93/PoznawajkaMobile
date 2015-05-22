@@ -36,7 +36,7 @@ public class AuthorizeRequest extends AsyncTask<String, Void, String> {
     @Override
     protected String doInBackground(String... params) {
         try {
-            String url = "https://adres:port/authorize/";
+            String url = "https://127.0.0.1:8080?";
             url += URLEncoder.encode("user", "UTF-8") + "=" + URLEncoder.encode(params[0], "UTF-8") + "&";
             url += URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(params[1], "UTF-8");
             Headers.Builder headersBuilder = new Headers.Builder();

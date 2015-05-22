@@ -95,6 +95,9 @@
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.AbstractMenuActivity"
             android:label="@string/title_activity_abstract_menu"></activity>
+
+        <service android:name="pl.kamil.poznawajkamobile.utils.AuthorizeService" />
+
     </application>
 
 
