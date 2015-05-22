@@ -38,7 +38,7 @@ dependencies {
     compile files('src/libs/cwac-merge-1.0.4.jar')
     compile 'com.android.support:support-v4:20.0.0'
     compile 'com.android.support:appcompat-v7:20.0.0'
-    compile 'com.google.android.gms:play-services:6.5.87'
+    compile 'com.google.android.gms:play-services:4.4.52'
     compile 'com.google.code.gson:gson:2.3'
     compile 'org.chalup.microorm:microorm:0.4.1'
     compile 'org.mapsforge:mapsforge-map-android:0.4.3'

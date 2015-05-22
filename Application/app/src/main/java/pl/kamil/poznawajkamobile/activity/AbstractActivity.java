@@ -11,7 +11,6 @@ import android.text.TextUtils;
 import android.view.MenuItem;
 
 import com.example.kml.poznawajkamobile.R;
-import com.google.android.gms.analytics.GoogleAnalytics;
 import com.joanzapata.android.iconify.Iconify;
 
 import pl.kamil.poznawajkamobile.utils.Constant;
@@ -59,21 +58,6 @@ abstract public class AbstractActivity extends ActionBarActivity {
         return arguments;
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        if (hasGoogleServices) {
-            GoogleAnalytics.getInstance(this).reportActivityStart(this);
-        }
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (hasGoogleServices) {
-            GoogleAnalytics.getInstance(this).reportActivityStop(this);
-        }
-    }
 
     @Override
     protected void attachBaseContext(Context newBase) {

@@ -10,9 +10,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.example.kml.poznawajkamobile.R;
+
+import pl.kamil.poznawajkamobile.utils.LoginActivity;
 
 
 public class ResetPasswordActivity extends ActionBarActivity {
