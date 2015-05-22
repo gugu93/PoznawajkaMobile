@@ -6,6 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,24 +15,25 @@ import com.example.kml.poznawajkamobile.R;
 
 
 public class MeetNewPeopleActivity extends ActionBarActivity {
-    private ImageView pic;
-    private TextView text;
+    private CheckBox checkLocation;
+    private CheckBox checkPreferences;
+    private CheckBox checkRandom;
+    private Button buttonReturn;
+    private Button buttonSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nowy_znajomi);
         setTitle("Poznaj nowych znajomych");
-        //pic = (ImageView)findViewById(R.id.imageViewAniaToMeet);
-        pic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),OtherProfilActivity.class);
-                startActivity(intent);
-            }
-        });
-        //text= (TextView)findViewById(R.id.textViewAniaToMeet);
-        text.setOnClickListener(new View.OnClickListener() {
+
+        checkLocation= (CheckBox)findViewById(R.id.checkLocation);
+        checkPreferences= (CheckBox)findViewById(R.id.checkPreferences);
+        checkRandom= (CheckBox)findViewById(R.id.checkRandom);
+        buttonSearch = (Button)findViewById(R.id.buttonSearch);
+        buttonReturn = (Button)findViewById(R.id.buttonReturn);
+
+        buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),OtherProfilActivity.class);

@@ -4,14 +4,57 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.kml.poznawajkamobile.R;
 
 
 public class OtherProfilActivity extends ActionBarActivity {
 
+
+    private TextView nameOtherProfile;
+    private TextView lastNameOtherProfile;
+    private TextView preferenceOtherProfile;
+    private TextView appearenceOtherProfile;
+    private Button buttonRequest;
+    private Button buttonRate;
+    private Button buttonAddToFriends;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        nameOtherProfile = (TextView)findViewById(R.id.nameOtherProfile);
+        lastNameOtherProfile = (TextView)findViewById(R.id.lastNameOtherProfile);
+        preferenceOtherProfile = (TextView)findViewById(R.id.preferenceOtherProfile);
+        appearenceOtherProfile = (TextView)findViewById(R.id.appearenceOtherProfile);
+
+        buttonRequest = (Button)findViewById(R.id.buttonRequest);
+        buttonRate = (Button)findViewById(R.id.buttonRate);
+        buttonAddToFriends = (Button)findViewById(R.id.buttonAddToFriends);
+
+        buttonRequest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+            }
+        });
+        buttonRate.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        buttonAddToFriends.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inna_osoba);
     }
