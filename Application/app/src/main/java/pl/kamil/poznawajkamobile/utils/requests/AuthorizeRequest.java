@@ -1,7 +1,8 @@
-package pl.kamil.poznawajkamobile.utils;
+package pl.kamil.poznawajkamobile.utils.requests;
 
 import android.os.AsyncTask;
 
+import com.google.common.base.Strings;
 import com.squareup.okhttp.Headers;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
@@ -16,31 +17,30 @@ import org.xml.sax.SAXException;
 
 import java.io.IOException;
 import java.io.StringReader;
+import java.net.URLEncoder;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import pl.kamil.poznawajkamobile.fragment.DownloadListener;
+import pl.kamil.poznawajkamobile.utils.listners.AuthorizeListner;
 
-public class MakeHttpRequest extends AsyncTask<Boolean, Void, String> {
+public class AuthorizeRequest extends AsyncTask<String, Void, String> {
 
-    private static final String TAG = MakeHttpRequest.class.getSimpleName();
+    private static final String TAG = AuthorizeRequest.class.getSimpleName();
     private static OkHttpClient client = new OkHttpClient();
-    private DownloadListener mListener;
+    private AuthorizeListner mListener;
 
-    public MakeHttpRequest(DownloadListener listener) {
+    public AuthorizeRequest(AuthorizeListner listener) {
         mListener = listener;
     }
 
     @Override
-    protected String doInBackground(Boolean... params) {
+    protected String doInBackground(String... params) {
         try {
-            String url = "url";
-//            for (Map.Entry<String, String> entry : UpdateUtils.getStatisticParam(mListener.getContext(), params[0]).entrySet()) {
-//                url += entry.getKey() + "=" + URLEncoder.encode(entry.getValue(), "UTF-8") + "&";
-//            } robienie zapytania url z integracja url
-            url = url.substring(0, url.length() - 1);
+            String url = "https://127.0.0.1:8080?";
+            url += URLEncoder.encode("user", "UTF-8") + "=" + URLEncoder.encode(params[0], "UTF-8") + "&";
+            url += URLEncoder.encode("password", "UTF-8") + "=" + URLEncoder.encode(params[1], "UTF-8");
             Headers.Builder headersBuilder = new Headers.Builder();
             headersBuilder.add("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/20100101 Firefox/11.0");
             headersBuilder.add("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8");
@@ -63,8 +63,8 @@ public class MakeHttpRequest extends AsyncTask<Boolean, Void, String> {
 
     @Override
     protected void onPostExecute(String result) {
-//        UpdateInfo info = null;
-//        if (!Strings.isNullOrEmpty(result)) {
+        if (!Strings.isNullOrEmpty(result)) {
+            mListener.onAuthorize("OK");
 //            Document doc = getDomElement(result);
 //            NodeList nl = doc.getElementsByTagName(Constant.UPDATE_XML_ROOT_TAG);
 //            if (nl.getLength() > 0) {
@@ -79,8 +79,9 @@ public class MakeHttpRequest extends AsyncTask<Boolean, Void, String> {
 //                    mListener.setInfo(info);
 //                }
 //            }
-//        }
-        mListener.onCheckFinished("Sdsadsa");
+        } else {
+            mListener.onAuthorize("Blad serwera");
+        }
     }
 
     public Document getDomElement(String xml) {

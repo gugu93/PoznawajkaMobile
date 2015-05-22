@@ -1,4 +1,4 @@
-package pl.kamil.poznawajkamobile.utils;
+package pl.kamil.poznawajkamobile.utils.listners;
 
 import android.content.Context;
 

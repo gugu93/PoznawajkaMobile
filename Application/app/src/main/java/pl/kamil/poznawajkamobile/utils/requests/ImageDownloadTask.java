@@ -1,6 +1,5 @@
-package pl.kamil.poznawajkamobile.utils;
+package pl.kamil.poznawajkamobile.utils.requests;
 
-import android.content.Context;
 import android.os.AsyncTask;
 
 import java.io.File;
@@ -10,25 +9,26 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class ImageDownloadTask extends AsyncTask<String, Void, Void> {
+import pl.kamil.poznawajkamobile.utils.listners.AvatarListner;
 
-    private Context mContext;
+public class ImageDownloadTask extends AsyncTask<String, Void, Boolean> {
+    private AvatarListner mContext;
 
-    public ImageDownloadTask(Context context) {
+    public ImageDownloadTask(AvatarListner context) {
         mContext = context;
     }
 
     @Override
-    protected Void doInBackground(String... params) {
+    protected Boolean doInBackground(String... params) {
         String source = params[0];
         String destination = params[1];
 
         try {
             URL url = new URL(source);
             InputStream is = url.openStream();
-            File f = new File(destination);
+            File f = new File(destination, "avatar.jpg");
             if (!f.exists()) {
-                FileOutputStream os = new FileOutputStream(destination);
+                FileOutputStream os = new FileOutputStream(f);
 
                 byte[] b = new byte[2048];
                 int length;
@@ -36,16 +36,23 @@ public class ImageDownloadTask extends AsyncTask<String, Void, Void> {
                 while ((length = is.read(b)) != -1) {
                     os.write(b, 0, length);
                 }
-
                 is.close();
                 os.close();
             }
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
+            return false;
         } catch (IOException e) {
             e.printStackTrace();
+            return false;
         }
-        return null;
+        return true;
+    }
+
+    @Override
+    protected void onPostExecute(Boolean aBoolean) {
+        super.onPostExecute(aBoolean);
+        mContext.onComplete(aBoolean);
     }
 }

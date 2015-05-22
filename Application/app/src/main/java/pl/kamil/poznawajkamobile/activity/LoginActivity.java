@@ -1,4 +1,4 @@
-package pl.kamil.poznawajkamobile.utils;
+package pl.kamil.poznawajkamobile.activity;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -6,19 +6,24 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.util.Base64;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.kml.poznawajkamobile.R;
 
-import pl.kamil.poznawajkamobile.activity.AbstractActivity;
-import pl.kamil.poznawajkamobile.activity.MainActivity;
-import pl.kamil.poznawajkamobile.activity.RegisterActivity;
-import pl.kamil.poznawajkamobile.activity.ResetPasswordActivity;
-import pl.kamil.poznawajkamobile.utils.AuthorizeService.AuthorizeBinder;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
+
+import pl.kamil.poznawajkamobile.utils.Preferences;
+import pl.kamil.poznawajkamobile.utils.Utils;
+import pl.kamil.poznawajkamobile.utils.services.AuthorizeService;
+import pl.kamil.poznawajkamobile.utils.services.AuthorizeService.AuthorizeBinder;
 
 
 public class LoginActivity extends AbstractActivity {
@@ -28,16 +33,15 @@ public class LoginActivity extends AbstractActivity {
     private TextView register;
     private EditText email;
     private EditText password;
-    private AuthorizeService authorizeServiceE;
     private ProgressBar bar;
-    private String mInfo;
     private Preferences mPreferences;
+    private AuthorizeService authorizeService;
     private Boolean mBound = false;
     private ServiceConnection mConnection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
             AuthorizeBinder binder = (AuthorizeBinder) service;
-            authorizeServiceE = binder.getService();
+            authorizeService = binder.getService();
             mBound = true;
         }
 
@@ -66,25 +70,13 @@ public class LoginActivity extends AbstractActivity {
 
     @Override
     public void onBackPressed() {
-//        if (authorizeService == null || !authorizeService.isWorking()) {
-//            super.onBackPressed();
-//        } else {
-//            DialogUtil.getTextDialog(
-//                    this, "UWAGA", "Anulujesz pobieranie danych",
-//                    new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            finish();
-//                        }
-//                    });
-//        }
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        mPreferences = new Preferences(this);
+        mPreferences = getPreferences();
         exitButton = (Button) findViewById(R.id.buttonEXIT);
         email = (EditText) findViewById(R.id.editTextEmail);
         password = (EditText) findViewById(R.id.editTextPassword);
@@ -100,7 +92,7 @@ public class LoginActivity extends AbstractActivity {
         myZalogujButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showConnectionQuestion();
+                makeConnection();
             }
         });
         resetPassword = (TextView) findViewById(R.id.passwordReset);
@@ -122,31 +114,35 @@ public class LoginActivity extends AbstractActivity {
     }
 
 
-    public void showConnectionQuestion() {
-            if (mBound) { //TODO tutaj wywala nulla. Nie wiem dlaczego.
-                //zrobilem identycznie jak tutaj //http://developer.android.com/guide/components/bound-services.html
-                //4h na tym siedzialem, moze Ty dokminisz dlaczego tutaj jest null inaczej jestesmy w dupie.
+    public void makeConnection() {
+        if (Utils.isConnectionAvailable(this)) {
+            if (mBound) {
                 String loginMail = email.getText().toString();
-                String loginPassword = password.getText().toString();
+                MessageDigest mda = null;
+                try {
+                    mda = MessageDigest.getInstance("SHA-512", "BC");
+                } catch (NoSuchAlgorithmException e) {
+                    e.printStackTrace();
+                } catch (NoSuchProviderException e) {
+                    e.printStackTrace();
+                }
+                assert mda != null;
+                byte[] digestPassword = mda.digest(password.getText().toString().getBytes());
+                String hash = Base64.encodeToString(digestPassword, Base64.DEFAULT);
                 mPreferences.setString("login", loginMail);
-                mPreferences.setString("password", loginPassword);
+                mPreferences.setString("password", hash);
                 setMode(false);
-                if (authorizeServiceE != null) {
-                    authorizeServiceE.start(loginMail, loginPassword);
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    if (authorizeServiceE.isAuthorized())
-                        startActivity(intent);
-                    else
-                        setMode(true);
+                authorizeService.start(loginMail, mPreferences.getString("password"));
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                if (authorizeService.isAuthorized())
+                    startActivity(intent);
+                else
+                    setMode(true);
                 } else {
                     setMode(true);
                 }
-            }
-    }
-
-    public void onEventMainThread(CheckFinishEvent event) {
-        mInfo = event.getInfo();
-        if (mInfo != null) {
+        } else {
+            Toast.makeText(this, "BRAK POLACZENIA Z INTERNETEM", Toast.LENGTH_LONG).show();
         }
     }
 

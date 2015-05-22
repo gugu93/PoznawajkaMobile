@@ -13,8 +13,6 @@ import android.widget.EditText;
 
 import com.example.kml.poznawajkamobile.R;
 
-import pl.kamil.poznawajkamobile.utils.LoginActivity;
-
 
 public class ResetPasswordActivity extends ActionBarActivity {
     private Button buttonExitReset;

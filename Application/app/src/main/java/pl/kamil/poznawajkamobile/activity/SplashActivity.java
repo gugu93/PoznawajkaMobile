@@ -9,7 +9,6 @@ import com.example.kml.poznawajkamobile.R;
 
 import pl.kamil.poznawajkamobile.utils.Constant;
 import pl.kamil.poznawajkamobile.utils.GoogleMapUtils;
-import pl.kamil.poznawajkamobile.utils.LoginActivity;
 
 public class SplashActivity extends ActionBarActivity {
 

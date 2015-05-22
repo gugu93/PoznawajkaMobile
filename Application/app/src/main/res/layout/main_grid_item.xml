@@ -9,8 +9,13 @@
 
     <pl.kamil.poznawajkamobile.views.SquareRelativeLayout
         android:layout_width="match_parent"
-
         android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main_grid_progress"
+            android:visibility="gone" />
 
         <ImageView
             android:id="@+id/main_grid_background"

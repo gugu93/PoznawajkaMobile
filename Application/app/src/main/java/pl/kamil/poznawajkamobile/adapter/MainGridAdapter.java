@@ -8,8 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.kml.poznawajkamobile.R;
 
@@ -18,12 +18,12 @@ import java.util.ArrayList;
 import pl.kamil.poznawajkamobile.activity.GalleryActivity;
 import pl.kamil.poznawajkamobile.activity.MeetNewPeopleActivity;
 import pl.kamil.poznawajkamobile.activity.ProfileActivity;
-import pl.kamil.poznawajkamobile.activity.ResetPasswordActivity;
 import pl.kamil.poznawajkamobile.models.MenuModel;
 
 public class MainGridAdapter extends BaseAdapter {
     private Context mContext;
     private ArrayList<MenuModel> mList;
+    public ProgressBar avatar;
 
     public MainGridAdapter(Context context, ArrayList list) {
         mContext = context;
@@ -52,11 +52,14 @@ public class MainGridAdapter extends BaseAdapter {
         if (view == null) {
             view = inflater.inflate( R.layout.main_grid_item , null);
             TextView textView = (TextView) view.findViewById(R.id.main_grid_title);
+            ProgressBar progressBar = (ProgressBar) view.findViewById(R.id.main_grid_progress);
             textView.setText(menuItem.getName());
             ImageView icon = (ImageView) view.findViewById(R.id.main_grid_background);
             switch (i){
                 case 0:
                     //icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon1));
+                    avatar = progressBar;
+                    progressBar.setVisibility(View.VISIBLE);
                     //TODO ZDJECIE PROFILOWE
                     icon.setOnClickListener(new View.OnClickListener() {
                         @Override

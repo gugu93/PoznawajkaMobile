@@ -4,7 +4,6 @@ package pl.kamil.poznawajkamobile.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,10 +29,7 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
     public static final String FRAGMENT_TAG = MainFragment.class.getSimpleName();
     private MainGrid mGrid;
     private FrameLayout proponowane;
-    private MainGridAdapter mAdapter;
-    private Fragment promoted;
-
-
+    public MainGridAdapter mAdapter;
 //    private Handler handler = new Handler() {
 //        @Override
 //        public void handleMessage(Message msg) {
@@ -50,10 +46,6 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
         return fragment;
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

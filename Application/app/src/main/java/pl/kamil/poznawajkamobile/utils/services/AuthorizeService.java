@@ -1,10 +1,15 @@
-package pl.kamil.poznawajkamobile.utils;
+package pl.kamil.poznawajkamobile.utils.services;
 
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
+
+import pl.kamil.poznawajkamobile.utils.Preferences;
+import pl.kamil.poznawajkamobile.utils.UpdateUtils;
+import pl.kamil.poznawajkamobile.utils.listners.AuthorizeListner;
+import pl.kamil.poznawajkamobile.utils.requests.AuthorizeRequest;
 
 public class AuthorizeService extends Service implements AuthorizeListner {
 
@@ -24,10 +29,6 @@ public class AuthorizeService extends Service implements AuthorizeListner {
         mPreferences = new Preferences(this);
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-    }
 
     public void start(String login, String passwd) {
         working = true;
