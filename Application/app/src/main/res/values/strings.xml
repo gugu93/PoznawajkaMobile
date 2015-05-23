@@ -12,8 +12,10 @@
     <string name="title_activity_abstract_menu"> </string>
     <string name="title_activity_meet_new_ppl">Meet New People</string>
     <string name="title_activity_gallery">My Gallery</string>
+    <string name="title_activity_listmobile">My Gallery</string>
     <string name="title_activity_prepostion">PrepostionActivity</string>
     <string name="title_activity_reset_password">ResetPasswordActivity</string>
+
     <string name="title_activity_register">Sign Up!</string>
     <string name="title_activity_other_profil">OtherProfilActivity</string>
     <string name="title_activity_auto_dialog">AutoDialogActivity</string>

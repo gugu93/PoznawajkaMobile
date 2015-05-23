@@ -57,6 +57,10 @@
             android:label="@string/title_activity_gallery"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name="pl.kamil.poznawajkamobile.activity.ListMobileActivity"
+            android:label="@string/title_activity_listmobile"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name="pl.kamil.poznawajkamobile.activity.AppointmentActivity"
             android:label="@string/title_activity_prepostion"
             android:screenOrientation="portrait"></activity>

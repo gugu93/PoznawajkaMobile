@@ -16,6 +16,7 @@ import com.example.kml.poznawajkamobile.R;
 import java.util.ArrayList;
 
 import pl.kamil.poznawajkamobile.activity.GalleryActivity;
+import pl.kamil.poznawajkamobile.activity.ListMobileActivity;
 import pl.kamil.poznawajkamobile.activity.MeetNewPeopleActivity;
 import pl.kamil.poznawajkamobile.activity.ProfileActivity;
 import pl.kamil.poznawajkamobile.models.MenuModel;
@@ -88,7 +89,7 @@ public class MainGridAdapter extends BaseAdapter {
                         @Override
                         public void onClick(View view) {
                             Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
-                            Intent intent2 = new Intent(mContext.getApplicationContext(), MeetNewPeopleActivity.class);
+                            Intent intent2 = new Intent(mContext.getApplicationContext(), ListMobileActivity.class);
                             intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             mContext.startActivity(intent2);
                         }
