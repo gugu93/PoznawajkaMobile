@@ -6,4 +6,7 @@
         <attr name="trim_length" format="integer" />
         <attr name="android:text" />
     </declare-styleable>
+    <declare-styleable name="MyGallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
 </resources>

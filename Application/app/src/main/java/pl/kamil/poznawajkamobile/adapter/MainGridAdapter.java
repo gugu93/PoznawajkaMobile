@@ -65,6 +65,7 @@ public class MainGridAdapter extends BaseAdapter {
                         @Override
                         public void onClick(View view) {
                             Intent intent0 = new Intent(mContext.getApplicationContext(), ProfileActivity.class);
+                            intent0.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             mContext.startActivity(intent0);
                         }
                     });
@@ -76,6 +77,7 @@ public class MainGridAdapter extends BaseAdapter {
                         public void onClick(View view) {
                             Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
                             Intent intent1 = new Intent(mContext.getApplicationContext(), MeetNewPeopleActivity.class);
+                            intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             mContext.startActivity(intent1);
                         }
                     });
@@ -87,6 +89,7 @@ public class MainGridAdapter extends BaseAdapter {
                         public void onClick(View view) {
                             Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
                             Intent intent2 = new Intent(mContext.getApplicationContext(), MeetNewPeopleActivity.class);
+                            intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             mContext.startActivity(intent2);
                         }
                     });
@@ -97,8 +100,9 @@ public class MainGridAdapter extends BaseAdapter {
                         @Override
                         public void onClick(View view) {
                             Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
-                            Intent intent1 = new Intent(mContext.getApplicationContext(), GalleryActivity.class);
-                            mContext.startActivity(intent1);
+                            Intent intent3 = new Intent(mContext.getApplicationContext(), GalleryActivity.class);
+                            intent3.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent3);
                         }
                     });
                     break;

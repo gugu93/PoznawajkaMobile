@@ -137,7 +137,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="0dp">
@@ -150,7 +150,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nazwisko: "
+                android:text="Preferencje: "
                 android:paddingLeft="10dp"
                 android:paddingTop="20dp"
                 android:textSize="20dp"/>
@@ -158,7 +158,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nowak"
+                android:text="Blondyni"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:id="@+id/profilePreferences" />
@@ -172,7 +172,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nazwisko: "
+                android:text="Wygląd: "
                 android:paddingLeft="10dp"
                 android:paddingTop="20dp"
                 android:textSize="20dp"/>
@@ -180,7 +180,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nowak"
+                android:text="Brunet"
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:id="@+id/profileAppearance" />
@@ -202,8 +202,8 @@
 
             <ImageView
                 android:paddingTop="20dp"
-                android:layout_width="300px"
-                android:layout_height="300px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/profile_gallery"
                 android:src="#56221819"
                 android:layout_above="@+id/linearLayout2"
@@ -227,8 +227,8 @@
 
             <ImageView
                 android:paddingTop="20dp"
-                android:layout_width="300px"
-                android:layout_height="300px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/profile_friends"
                 android:src="#56221819"
                 android:layout_alignRight="@+id/linearLayout2" />
