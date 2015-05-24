@@ -2,7 +2,6 @@ package pl.kamil.poznawajkamobile.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +16,7 @@ import java.util.ArrayList;
 
 import pl.kamil.poznawajkamobile.activity.GalleryActivity;
 import pl.kamil.poznawajkamobile.activity.ListMobileActivity;
+import pl.kamil.poznawajkamobile.activity.MapActivity;
 import pl.kamil.poznawajkamobile.activity.MeetNewPeopleActivity;
 import pl.kamil.poznawajkamobile.activity.ProfileActivity;
 import pl.kamil.poznawajkamobile.models.MenuModel;
@@ -76,7 +76,6 @@ public class MainGridAdapter extends BaseAdapter {
                     icon.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
                             Intent intent1 = new Intent(mContext.getApplicationContext(), MeetNewPeopleActivity.class);
                             intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             mContext.startActivity(intent1);
@@ -88,7 +87,6 @@ public class MainGridAdapter extends BaseAdapter {
                     icon.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
                             Intent intent2 = new Intent(mContext.getApplicationContext(), ListMobileActivity.class);
                             intent2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             mContext.startActivity(intent2);
@@ -100,7 +98,6 @@ public class MainGridAdapter extends BaseAdapter {
                     icon.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Log.e("@@@@@@@@@@@@@@@@@@@@@", "@@@@@@@@@@@@@22");
                             Intent intent3 = new Intent(mContext.getApplicationContext(), GalleryActivity.class);
                             intent3.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             mContext.startActivity(intent3);
@@ -109,6 +106,14 @@ public class MainGridAdapter extends BaseAdapter {
                     break;
                 case 4:
                     icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon05));
+                    icon.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent4 = new Intent(mContext.getApplicationContext(), MapActivity.class);
+                            intent4.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent4);
+                        }
+                    });
                     break;
                 case 5:
                     icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon06));

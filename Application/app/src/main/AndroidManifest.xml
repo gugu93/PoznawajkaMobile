@@ -41,78 +41,89 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.ProfileActivity"
             android:label="@string/title_activity_logged"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.MeetNewPeopleActivity"
             android:label="@string/title_activity_meet_new_ppl"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.GalleryActivity"
             android:label="@string/title_activity_gallery"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.ListMobileActivity"
             android:label="@string/title_activity_listmobile"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.AppointmentActivity"
             android:label="@string/title_activity_prepostion"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.ResetPasswordActivity"
             android:label="@string/title_activity_reset_password"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.RegisterActivity"
             android:label="@string/title_activity_register"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.OtherProfilActivity"
             android:label="@string/title_activity_other_profil"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.AutoDialogActivity"
             android:label="@string/title_activity_auto_dialog"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.SplashActivity"
             android:label="@string/title_activity_splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.AbstractActivity"
-            android:label="@string/title_activity_abstract"></activity>
+            android:label="@string/title_activity_abstract" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.MainActivity"
             android:label="@string/title_activity_main"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="pl.kamil.poznawajkamobile.activity.AbstractMenuActivity"
-            android:label="@string/title_activity_abstract_menu"></activity>
+            android:label="@string/title_activity_abstract_menu" />
 
         <service android:name="pl.kamil.poznawajkamobile.utils.services.AuthorizeService" />
         <service android:name="pl.kamil.poznawajkamobile.utils.services.AvatarService" />
         <service android:name="pl.kamil.poznawajkamobile.utils.services.ProposedFriendsService" />
 
+        <activity
+            android:name="pl.kamil.poznawajkamobile.activity.MapActivity"
+            android:label="@string/title_activity_map"
+            android:parentActivityName="pl.kamil.poznawajkamobile.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pl.kamil.poznawajkamobile.activity.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDaZEkv7Icqe6bS4ggl9R41hsMCagZ_Nc0" />
     </application>
 
 
-    <meta-data
-        android:name="com.google.android.gms.version"
-        android:value="@integer/google_play_services_version" />
-    <meta-data
-        android:name="com.google.android.maps.v2.API_KEY"
-        android:value="AIzaSyDaZEkv7Icqe6bS4ggl9R41hsMCagZ_Nc0" />
 
 
 </manifest>

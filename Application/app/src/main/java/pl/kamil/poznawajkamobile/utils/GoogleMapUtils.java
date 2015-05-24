@@ -1,9 +1,10 @@
 package pl.kamil.poznawajkamobile.utils;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.FeatureInfo;
 import android.content.pm.PackageManager;
-import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
 import android.widget.Toast;
 
 import com.example.kml.poznawajkamobile.R;
@@ -13,6 +14,7 @@ import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 
 import pl.kamil.poznawajkamobile.activity.AbstractActivity;
+import pl.kamil.poznawajkamobile.fragment.GMapFragment;
 
 public class GoogleMapUtils {
 
@@ -91,6 +93,22 @@ public class GoogleMapUtils {
             mMarker = BitmapDescriptorFactory.fromResource(R.drawable.ic_marker);
         }
         return mMarker;
+    }
+
+    public enum MapInstance {
+        GOOGLE_MAP(GMapFragment.FRAGMENT_TAG);
+
+        private String tag;
+
+        MapInstance(String tag) {
+            this.tag = tag;
+        }
+
+        public Fragment getInstance(Intent intent) {
+            if (this.equals(GOOGLE_MAP)) {
+                return GMapFragment.newInstance(intent);
+            } else return null;
+        }
     }
 
 
