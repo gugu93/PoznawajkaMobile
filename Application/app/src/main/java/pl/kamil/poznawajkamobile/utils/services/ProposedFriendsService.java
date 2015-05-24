@@ -12,12 +12,12 @@ import java.io.File;
 
 import pl.kamil.poznawajkamobile.utils.Preferences;
 import pl.kamil.poznawajkamobile.utils.UpdateUtils;
-import pl.kamil.poznawajkamobile.utils.listners.AvatarListner;
-import pl.kamil.poznawajkamobile.utils.requests.ImageDownloadTask;
+import pl.kamil.poznawajkamobile.utils.listners.ProposedFriendsListner;
+import pl.kamil.poznawajkamobile.utils.requests.ProposedFriendsRequest;
 
-public class AvatarService extends Service implements AvatarListner {
+public class ProposedFriendsService extends Service implements ProposedFriendsListner {
 
-    private final IBinder mBinder = new AvatarBinder();
+    private final IBinder mBinder = new ProposedFriendsBinder();
     private boolean hasExternalStorage = UpdateUtils.hasExternalStorage();
     private Preferences mPreferences;
     private boolean working = false;
@@ -40,14 +40,13 @@ public class AvatarService extends Service implements AvatarListner {
         File dir = new File(sdCard.getAbsolutePath() + "/photos/");
         dir.mkdirs();
         //TODO napisac adres bezwgledny do avatara na slawka serwerze(login parametr)
-        ImageDownloadTask task = new ImageDownloadTask(this);
+        ProposedFriendsRequest task = new ProposedFriendsRequest(this);
         task.execute(login, dir.getPath());
     }
 
     @Override
-    public void onComplete(Boolean result) {
+    public void onCompleteRequest(String result) {
         working = false;
-        succes = result;
     }
 
     @Override
@@ -60,9 +59,9 @@ public class AvatarService extends Service implements AvatarListner {
         return mBinder;
     }
 
-    public class AvatarBinder extends Binder {
-        public AvatarService getService() {
-            return AvatarService.this;
+    public class ProposedFriendsBinder extends Binder {
+        public ProposedFriendsService getService() {
+            return ProposedFriendsService.this;
         }
     }
 

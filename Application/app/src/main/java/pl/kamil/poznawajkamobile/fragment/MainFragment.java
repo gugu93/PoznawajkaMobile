@@ -25,7 +25,6 @@ import pl.kamil.poznawajkamobile.views.MainGrid;
 
 
 public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGridItemClickListener {
-
     public static final String FRAGMENT_TAG = MainFragment.class.getSimpleName();
     private MainGrid mGrid;
     private FrameLayout proponowane;
@@ -77,7 +76,7 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
         mGrid.getLayoutParams().width = Math.round(height * 7 / 10);
         proponowane.getLayoutParams().width = mGrid.getLayoutParams().width;
         ArrayList<MenuModel> m = createData();
-        mAdapter = new MainGridAdapter(this.getActivity().getApplicationContext(),m);
+        mAdapter = new MainGridAdapter(getActivity(), m);
         mGrid.setAdapter(mAdapter);
     }
 
@@ -87,7 +86,7 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
         MenuModel b = new MenuModel(2, "SZUKAJ ZNAJOMYCH", "icon1.jpg");
         MenuModel c = new MenuModel(3, "ZNAJOMI", "icon2.jpg");
         MenuModel d = new MenuModel(4, "GALERIA", "icon3.jpg");
-        MenuModel e = new MenuModel(5, "USTAWIENIA", "icon4.jpg");
+        MenuModel e = new MenuModel(5, "MAPA", "icon4.jpg");
         MenuModel f = new MenuModel(6, "O PROGRAMIE", "icon5.jpg");
         m.add(a);
         m.add(b);

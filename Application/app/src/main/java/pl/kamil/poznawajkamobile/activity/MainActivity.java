@@ -6,56 +6,68 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.view.View;
 
 import com.example.kml.poznawajkamobile.R;
 
 import pl.kamil.poznawajkamobile.fragment.MainFragment;
 import pl.kamil.poznawajkamobile.fragment.ObjectPromotedFragment;
 import pl.kamil.poznawajkamobile.utils.services.AvatarService;
+import pl.kamil.poznawajkamobile.utils.services.AvatarService.AvatarBinder;
+import pl.kamil.poznawajkamobile.utils.services.ProposedFriendsService;
 
 public class MainActivity extends AbstractMenuActivity {
-    private MainFragment f;
-    private ObjectPromotedFragment p;
     private AvatarService avatarService;
-    private Boolean mBound = false;
-    private ServiceConnection mConnection = new ServiceConnection() {
+    private Boolean mBoundAvatar = false;
+    private ServiceConnection mConnectionAvatar = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {
-            AvatarService.AvatarBinder binder = (AvatarService.AvatarBinder) service;
+            AvatarBinder binder = (AvatarBinder) service;
             avatarService = binder.getService();
-            mBound = true;
+            mBoundAvatar = true;
+            avatarService.start(getPreferences().getString("login"));
+        }
+        @Override
+        public void onServiceDisconnected(ComponentName arg0) {
+            mBoundAvatar = false;
+        }
+    };
+    private ProposedFriendsService mProposedFriendsService;
+    private Boolean mBoundFriends = false;
+    private ServiceConnection mConnectionFriends = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName className, IBinder service) {
+            ProposedFriendsService.ProposedFriendsBinder binder = (ProposedFriendsService.ProposedFriendsBinder) service;
+            mProposedFriendsService = binder.getService();
+            mBoundFriends = true;
+            mProposedFriendsService.start(getPreferences().getString("login"));
         }
 
         @Override
         public void onServiceDisconnected(ComponentName arg0) {
-            mBound = false;
+            mBoundFriends = false;
         }
     };
 
     @Override
-    public void onStart() {
-        super.onStart();
-        Intent intent = new Intent(this, AvatarService.class);
-        bindService(intent, mConnection, Context.BIND_AUTO_CREATE);
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        if (mBound) {
-            unbindService(mConnection);
-            mBound = false;
+    public void onStop() {
+        super.onStop();
+        if (mBoundAvatar) {
+            unbindService(mConnectionAvatar);
+            mBoundAvatar = false;
         }
-    }
+        if (mBoundFriends) {
+            unbindService(mConnectionFriends);
+            mBoundFriends = false;
+        }
 
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment);
-        f = MainFragment.newInstance(getIntent());
-        p = ObjectPromotedFragment.newInstance(getIntent());
+        MainFragment f = MainFragment.newInstance(getIntent());
+        ObjectPromotedFragment p = ObjectPromotedFragment.newInstance(getIntent());
         if (savedInstanceState == null && findViewById(R.id.fragment_container) != null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.fragment_container, f, MainFragment.FRAGMENT_TAG)
@@ -66,21 +78,13 @@ public class MainActivity extends AbstractMenuActivity {
                     .replace(R.id.proponowane, p, ObjectPromotedFragment.FRAGMENT_TAG)
                     .commit();
         }
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        if (mBound) avatarService.start(getPreferences().getString("login"));
-        if (mBound) {
-            if (avatarService.isSucces()) {
-                f.mAdapter.avatar.setVisibility(View.INVISIBLE);
-            } else {
-                f.mAdapter.avatar.setVisibility(View.INVISIBLE);
-            }
-        }
-    }
+        Intent intentAvatarService = new Intent(this, AvatarService.class);
+        bindService(intentAvatarService, mConnectionAvatar, Context.BIND_AUTO_CREATE);
 
+        Intent intentProposedFriends = new Intent(this, ProposedFriendsService.class);
+        bindService(intentProposedFriends, mConnectionFriends, Context.BIND_AUTO_CREATE);
+    }
     @Override
     public void onBackPressed() {
     }

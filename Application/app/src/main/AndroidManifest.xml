@@ -102,6 +102,7 @@
 
         <service android:name="pl.kamil.poznawajkamobile.utils.services.AuthorizeService" />
         <service android:name="pl.kamil.poznawajkamobile.utils.services.AvatarService" />
+        <service android:name="pl.kamil.poznawajkamobile.utils.services.ProposedFriendsService" />
 
     </application>
 
