@@ -1,19 +1,37 @@
-(in-package #:pm.db)
+(in-package #:pm.worker)
 
 (defclass database-interface ()
-  ((db-handle :accessor db-handle)))
+  ((db-handle :accessor db-handle)
+   (hostname :type string
+             :accessor hostname
+             :initarg :hostname)
+   (database :type string
+             :accessor database
+             :initarg :database)
+   (username :type string
+             :accessor username
+             :initarg :username)
+   (password :type string
+             :accessor password
+             :initarg :password)))
 
-(defgeneric db-connect (database-interface hostname database username password))
-(defmethod db-connect ((interface database-interface)
-                       (hostname string)
-                       (database string)
-                       (username string)
-                       (password string))
-  "Connects to selected MySQL database"
-  (setf (db-handle interface)
-        (connect (list hostname database username password)
+(defmethod connect-db ((this database-interface))
+  "Connect to database"
+  (setf (db-handle this)
+        (connect (list (hostname this)
+                       (database this)
+                       (username this)
+                       (password this))
                  :database-type :mysql)))
-        
+
+(defmethod disconnect-db ((this database-interface))
+  "Disconnect from database"
+  (disconnect :database (db-handle this)))
+
+(defmethod initialize-instance :after ((this database-interface) &key)
+  (connect-db this))
+
+
 (defgeneric add-item (database-interface item-to-add))
 (defmethod add-item ((interface database-interface)
                 (item database-item))
@@ -31,15 +49,21 @@
 (defgeneric list-items (database-interface item-class-to-list))
 (defmethod list-items ((interface database-interface)
                        (item-class symbol))
-  (select item-class))
+  "List items of specific class in database"
+  (mapcar #'car
+          (select item-class)))
 
+(defgeneric find-item (database-interface item-class-to-search search-key lookup-value &key test-fun))
+(defmethod find-item ((interface database-interface)
+                      (item-class-to-search symbol)
+                      (search-key symbol)
+                      lookup-value
+                      &key (test-fun #'string=))
+  "Find items of type ITEM-CLASS-TO-SEARCH, with SEARCH-KEY string= to LOOKUP-VALUE."
+  (find lookup-value
+        (list-items interface item-class-to-search)
+        :test (lambda (pattern tested-sequence)
+                (funcall test-fun pattern
+                         (funcall search-key
+                                  tested-sequence)))))
 
-;; (defparameter *db* (clsql-sys:connect '("gen2.org" "pm" "pm-worker" "5xK1xWKudjT3DXbLVzuMCH5wEHhcLnPdJRtGsoyoccEhc2aSnb8WPfKVEnBijs7y") :database-type :mysql))
-
-;; (clsql:update-records-from-instance
-;;    (make-instance 'post
-;; II  :title "1st!"
-;; II  :body "tresc postu"))
-;; (defparameter *db*
-;;   (clsql-sys:connect '("localhost" "pg_db" "pg_db" "ble")
-;; II     :database-type :postgresql :if-exists :old))

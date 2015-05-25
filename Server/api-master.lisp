@@ -8,3 +8,5 @@
 (defun echo (message)
   `(:type echo :message ,message))
 
+;;(defun ping ()
+;;  "Select random worker and ping"

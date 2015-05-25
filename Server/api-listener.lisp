@@ -1,7 +1,11 @@
+
 (in-package #:pm.api-listener)
 
 (defclass api-listener ()
-  ((routed-package :accessor routed-package
+  ((listen-port :type interger
+                :initarg :listen-port
+                :accessor listen-port)
+  (routed-package :accessor routed-package
                    :initarg :routed-package
                    :initform nil
                    :type keyword)
@@ -21,11 +25,14 @@
       :interactive (lambda ()
                      (format t "Enter name of package to route: ")
                      (multiple-value-list (eval (read))))
-      (setf (routed-package this) new-package))))
+      (setf (routed-package this) new-package)))
+  (start this))
 
 (defmethod start ((this api-listener))
   (set-routing this)
-  (setf (clack-app this) (clack:clackup (lack:builder (ningle-app this)))))
+  (setf (clack-app this)
+        (clack:clackup (lack:builder (ningle-app this))
+                       :port (listen-port this))))
 
 (defmethod stop ((this api-listener))
   (clack:stop (clack-app this)))
