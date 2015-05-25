@@ -1,4 +1,4 @@
-package com.example.kml.poznawajkamobile;
+package com.example.kml.lib;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
