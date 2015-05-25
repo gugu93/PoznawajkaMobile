@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Witaj w Poznawajka Mobile. Zarejestruj się jako nowy użytkownik i zacznij korzystać z najlepszej platformy randkowej"
+        android:gravity="center"
+        android:layout_weight="4"
+        android:id="@+id/title" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Imie"
+                android:id="@+id/textView2" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Podaj imie"
+                android:textSize="15dp"
+                android:paddingTop="10dp"
+                android:ems="10"
+                android:id="@+id/timie" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+               android:paddingLeft="10dp"
+               android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Nazwisko"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Podaj nazwisko"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:ems="10"
+                android:id="@+id/tnazwisko"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Płeć"
+                android:id="@+id/textView4" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Podaj płeć"
+                android:textSize="17dp"
+                android:paddingTop="10dp"
+                android:ems="10"
+                android:id="@+id/tplec"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Wiek"
+                android:id="@+id/textView5" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Podaj Imie"
+                android:paddingTop="10dp"
+                android:textSize="17dp"
+                android:ems="10"
+                android:id="@+id/twiek"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Stan cywilny"
+                android:id="@+id/textView6" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Podaj stan cywilny"
+                android:paddingTop="17dp"
+                android:textSize="17dp"
+                android:ems="10"
+                android:id="@+id/tstan"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Preferencje"
+                android:id="@+id/textView7" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Wybierz preferencje"
+                android:textSize="17dp"
+                android:paddingTop="17dp"
+                android:ems="10"
+                android:id="@+id/tpreferencje"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Osobowość"
+                android:id="@+id/textView8" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Wybierz cechy"
+                android:textSize="17dp"
+                android:paddingTop="17dp"
+                android:ems="10"
+                android:id="@+id/tcechy"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingLeft="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Email"
+                android:id="@+id/textView9" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Podaj email"
+                android:textSize="17dp"
+                android:paddingTop="17dp"
+                android:ems="10"
+                android:id="@+id/tmail"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Powrót"
+            android:id="@+id/button_powrot"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Zarejestruj"
+            android:id="@+id/button_register"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="poznawajkamobile.pz2.aplicationandroid.fragment.ConnectionFragment"
+        android:title="0"
+        android:summary="0" />
+
+</preference-headers>

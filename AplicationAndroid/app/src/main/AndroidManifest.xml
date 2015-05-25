@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kml.poznawajkamobile">
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- This is used by http client -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.pemissions.RECEIVE_BOOT_COMPLETED" />
+    <!-- Google Play Services -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <permission
+        android:name="com.example.kml.poznawajkamobile.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.ProfileActivity"
+            android:label="@string/title_activity_logged"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.MeetNewPeopleActivity"
+            android:label="@string/title_activity_meet_new_ppl"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.GalleryActivity"
+            android:label="@string/title_activity_gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.ListMobileActivity"
+            android:label="@string/title_activity_listmobile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.AppointmentActivity"
+            android:label="@string/title_activity_prepostion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.OtherProfilActivity"
+            android:label="@string/title_activity_other_profil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.AutoDialogActivity"
+            android:label="@string/title_activity_auto_dialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.AbstractActivity"
+            android:label="@string/title_activity_abstract" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.AbstractMenuActivity"
+            android:label="@string/title_activity_abstract_menu" />
+
+        <service android:name="poznawajkamobile.pz2.aplicationandroid.utils.services.AuthorizeService" />
+        <service android:name="poznawajkamobile.pz2.aplicationandroid.utils.services.AvatarService" />
+        <service android:name="poznawajkamobile.pz2.aplicationandroid.utils.services.ProposedFriendsService" />
+
+        <activity
+            android:name="poznawajkamobile.pz2.aplicationandroid.activity.MapActivity"
+            android:label="@string/title_activity_map"
+            android:parentActivityName="poznawajkamobile.pz2.aplicationandroid.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="poznawajkamobile.pz2.aplicationandroid.activity.MainActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDaZEkv7Icqe6bS4ggl9R41hsMCagZ_Nc0" />
+    </application>
+
+
+
+
+</manifest>
