@@ -1,4 +1,4 @@
-(in-package #:pm.db)
+(in-package #:pm.worker)
 
 (defclass database-item () ())
 
@@ -10,8 +10,8 @@
               :initard :id)
    (us_UserName :type (string 50)
                 :db-constraints :not-null
-                :accessor name
-                :initarg :name)
+                :accessor username
+                :initarg :username)
    (us_UserPassword :type (string 100)
                     :db-constraints :not-null
                     :initarg :password
@@ -41,10 +41,12 @@
 (clsql:def-view-class user-info (database-item)
   ((ui_UserId :type integer
               :accessor user-id
+              :db-kind :key
+              :db-constraints :not-null
               :initarg :user-id)
    (ui_Name :type (string 100)
-            :initarg :name
-            :accessor name)
+            :initarg :first-name
+            :accessor first-name)
    (ui_LastName :type (string 100) 
                 :initarg last-name
                 :accessor last-name)
@@ -67,16 +69,28 @@
             :initarg gps-y
             :accessor gps-y)
    (ui_Age :type integer
-           :initart :age
+           :initarg :age
            :accessor age))
   (:base-table "users_info"))
 
-(def-view-class user-prov ()
-  ((id :type integer :accessor id)
-   (user-id :type integer :accessor user-id)
-   (target-id :type integer :accessor target-id)
-   (prov-type :type integer :accessor prov-type)
-   (message :type string :accessor message)))
+(clsql:def-view-class user-prov (database-item)
+  ((pr_Id :type integer
+          :db-constraints :auto-increment
+          :initarg :id
+          :accessor id)
+   (pr_UserId :type integer
+              :initarg :user-id
+              :accessor user-id)
+   (pr_TargetUserId :type integer
+                    :initarg :target-id
+                    :accessor target-id)
+   (pr_TypeProv :type integer
+                :initarg :prov-type
+                :accessor prov-type)
+   (pr_Message :type (string 500)
+               :initarg :message
+               :accessor message))
+  (:base-table "user_prov"))
 
 (def-view-class user-rating ()
   ((id :type integer :accessor id)

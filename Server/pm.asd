@@ -9,16 +9,19 @@
                :cl-mysql
                :split-sequence
                :clsql
-               :cl-json)
+               :cl-json
+               :ironclad
+               :alexandria
+               :drakma)
   :components ((:file "package")
                (:file "pm")
+               (:file "test")
                (:file "master")
                (:file "worker")
                (:file "api-listener")
                (:file "api-listener-router")
                (:file "api-master")
-               (:file "common")
-               (:file "database")
+               (:file "util")
                (:file "database-schema")
-               (:file "authenticator")))
+               (:file "database")))
 
