@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;
 import poznawajkamobile.pz2.aplicationandroid.utils.listners.AvatarListner;
 
 public class ImageDownloadTask extends AsyncTask<String, Void, Boolean> {
@@ -20,13 +21,14 @@ public class ImageDownloadTask extends AsyncTask<String, Void, Boolean> {
 
     @Override
     protected Boolean doInBackground(String... params) {
-        String source = params[0];
+        String urlS = "https://127.0.0.1:8080?avatar=1";
+        String login = params[0];
         String destination = params[1];
 
         try {
-            URL url = new URL(source);
+            URL url = new URL(urlS);
             InputStream is = url.openStream();
-            File f = new File(destination, "avatar.jpg");
+            File f = new File(destination, login );
             if (!f.exists()) {
                 FileOutputStream os = new FileOutputStream(f);
 

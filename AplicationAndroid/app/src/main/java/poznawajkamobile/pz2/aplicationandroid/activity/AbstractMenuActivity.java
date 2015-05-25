@@ -35,9 +35,6 @@ public class AbstractMenuActivity extends AbstractActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-
-
-        
         mMenuDrawer = MenuDrawer.attach(this, MenuDrawer.Type.OVERLAY, Position.LEFT);
         mMenuDrawer.setMenuView(R.layout.drawer);
         mMenuDrawer.setDropShadowEnabled(true);

@@ -86,7 +86,7 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
         MenuModel b = new MenuModel(2, "SZUKAJ ZNAJOMYCH", "icon1.jpg");
         MenuModel c = new MenuModel(3, "ZNAJOMI", "icon2.jpg");
         MenuModel d = new MenuModel(4, "GALERIA", "icon3.jpg");
-        MenuModel e = new MenuModel(5, "MAPA", "icon4.jpg");
+        MenuModel e = new MenuModel(5, "MAPA ZNAJOMOSCI", "icon4.jpg");
         MenuModel f = new MenuModel(6, "O PROGRAMIE", "icon5.jpg");
         m.add(a);
         m.add(b);

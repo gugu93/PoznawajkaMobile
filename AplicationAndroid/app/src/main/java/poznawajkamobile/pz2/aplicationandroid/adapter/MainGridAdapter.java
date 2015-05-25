@@ -14,6 +14,7 @@ import com.example.kml.poznawajkamobile.R;
 
 import java.util.ArrayList;
 
+import poznawajkamobile.pz2.aplicationandroid.activity.AboutActivity;
 import poznawajkamobile.pz2.aplicationandroid.activity.GalleryActivity;
 import poznawajkamobile.pz2.aplicationandroid.activity.ListMobileActivity;
 import poznawajkamobile.pz2.aplicationandroid.activity.MapActivity;
@@ -25,6 +26,7 @@ public class MainGridAdapter extends BaseAdapter {
     private Context mContext;
     private ArrayList<MenuModel> mList;
     public ProgressBar avatar;
+    public ImageView avatarView;
 
     public MainGridAdapter(Context context, ArrayList list) {
         mContext = context;
@@ -58,7 +60,7 @@ public class MainGridAdapter extends BaseAdapter {
             ImageView icon = (ImageView) view.findViewById(R.id.main_grid_background);
             switch (i){
                 case 0:
-                    //icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon1));
+                    avatarView = icon;
                     avatar = progressBar;
                     progressBar.setVisibility(View.VISIBLE);
                     //TODO ZDJECIE PROFILOWE
@@ -117,6 +119,14 @@ public class MainGridAdapter extends BaseAdapter {
                     break;
                 case 5:
                     icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon06));
+                    icon.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent4 = new Intent(mContext.getApplicationContext(), AboutActivity.class);
+                            intent4.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            mContext.startActivity(intent4);
+                        }
+                    });
                     break;
                 default:
                     icon.setImageDrawable(mContext.getResources().getDrawable(R.drawable.icon02));

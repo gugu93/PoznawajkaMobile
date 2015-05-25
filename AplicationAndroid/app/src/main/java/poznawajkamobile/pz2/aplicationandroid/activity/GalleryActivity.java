@@ -1,67 +1,106 @@
 package poznawajkamobile.pz2.aplicationandroid.activity;
 
 import android.app.AlertDialog;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.os.Environment;
+import android.os.IBinder;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Gallery;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.kml.poznawajkamobile.R;
+import com.squareup.picasso.Picasso;
+
+import java.io.File;
+import java.util.ArrayList;
+
+import poznawajkamobile.pz2.aplicationandroid.models.GaleryModel;
+import poznawajkamobile.pz2.aplicationandroid.utils.Utils;
+import poznawajkamobile.pz2.aplicationandroid.utils.services.AvatarService;
+import poznawajkamobile.pz2.aplicationandroid.utils.services.GalerryService;
 
 
-public class GalleryActivity extends ActionBarActivity {
+public class GalleryActivity extends AbstractActivity {
+    private GalerryService galleryService;
+    private Boolean mBoundGalerry = false;
+    private ServiceConnection mConnectionGallery = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName className, IBinder service) {
+            GalerryService.GalleryBinder binder = (GalerryService.GalleryBinder) service;
+            galleryService = binder.getService();
+            mBoundGalerry = true;
+            galleryService.start(getPreferences().getString("login"));
+            initGallery(galleryService.list);
 
-
-    //the images to display
-    Integer[] imageIDs = {
-            R.drawable.pic1,
-            R.drawable.pic2,
-            R.drawable.pic3,
-            R.drawable.pic4,
-            R.drawable.pic5
+        }
+        @Override
+        public void onServiceDisconnected(ComponentName arg0) {
+            mBoundGalerry = false;
+        }
     };
+
+    Integer[] imageIDs = {
+            R.drawable.photo1,
+            R.drawable.photo2,
+            R.drawable.photo3,
+            R.drawable.photo4,
+            R.drawable.photo5
+    };
+
+
+
+    public void initGallery(ArrayList<GaleryModel> list){
+        if (list != null){
+
+        }else {
+            Gallery gallery = (Gallery) findViewById(R.id.gallery1);
+            gallery.setAdapter(new ImageAdapter(this));
+            gallery.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                    ImageView imageView = (ImageView) findViewById(R.id.image1);
+                    imageView.setImageResource(imageIDs[position]);
+                    imageView.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+
+                        }
+                    });
+                }
+            });
+        }
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mBoundGalerry) {
+            unbindService(mConnectionGallery);
+            mBoundGalerry = false;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gallery);
-
-
-
-        Gallery gallery = (Gallery) findViewById(R.id.gallery1);
-        gallery.setAdapter(new ImageAdapter(this));
-        gallery.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View v, int position,long id)
-            {
-                Toast.makeText(getBaseContext(), "pic" + (position + 1) + " selected",
-                        Toast.LENGTH_SHORT).show();
-                // display the images selected
-                ImageView imageView = (ImageView) findViewById(R.id.image1);
-                imageView.setImageResource(imageIDs[position]);
-                imageView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-
-
-                    }
-                });
-            }
-        });
+        Intent intentGalerryService = new Intent(this, GalerryService.class);
+        bindService(intentGalerryService, mConnectionGallery, Context.BIND_AUTO_CREATE);
     }
 
     private void openAlert(View view) {
         final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(GalleryActivity.this);
 
-        alertDialogBuilder.setTitle("Informac!");
+        alertDialogBuilder.setTitle("Informacja!");
         alertDialogBuilder.setMessage("Czy chcesz ustawi? zdj?cie jako profilowe");
         // set positive button: Yes message
         alertDialogBuilder.setNegativeButton("Tak", new DialogInterface.OnClickListener() {
@@ -84,7 +123,6 @@ public class GalleryActivity extends ActionBarActivity {
         public ImageAdapter(Context c)
         {
             context = c;
-            // sets a grey background; wraps around the images
             TypedArray a =obtainStyledAttributes(R.styleable.MyGallery);
             itemBackground = a.getResourceId(R.styleable.MyGallery_android_galleryItemBackground, 0);
             a.recycle();
@@ -105,28 +143,10 @@ public class GalleryActivity extends ActionBarActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
             ImageView imageView = new ImageView(context);
             imageView.setImageResource(imageIDs[position]);
-            imageView.setLayoutParams(new Gallery.LayoutParams(100, 100));
+            imageView.setLayoutParams(new Gallery.LayoutParams(300, 300));
             imageView.setBackgroundResource(itemBackground);
             return imageView;
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.gallery, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }

@@ -24,5 +24,6 @@
     <string name="title_activity_map">" "</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_about">AboutActivity</string>
 
 </resources>

@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.kml.poznawajkamobile.R;
 
+import java.util.AbstractList;
 import java.util.ArrayList;
 
 import poznawajkamobile.pz2.aplicationandroid.activity.AbstractActivity;
@@ -51,27 +52,44 @@ public class ObjectPromotedFragment extends AbstractFragment implements ViewPage
         mPager = (ViewPager) view.findViewById(R.id.promoted_pager);
         mPager.setOnPageChangeListener(this);
         mIndicator = (DotPagerIndicator) view.findViewById(R.id.promoted_indicator);
-        mIndicator.setDotSpacing(10);
-        mIndicator.setActiveDot(0);
-        ArrayList<ProposedPersonModel> mList = createFakeData();
-        mIndicator.setDotsAmount(mList.size());
-        mPager.setAdapter(new PromotedPagerAdapter(getFragmentManager(), mList));
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                mIndicator.refresh();
-            }
-        }, 100);
     }
 
     public ArrayList<ProposedPersonModel> createFakeData() {
         ArrayList<ProposedPersonModel> list = new ArrayList<ProposedPersonModel>();
-        list.add(new ProposedPersonModel(1, 20, "Kamila", "Gonet", "image1"));
-        list.add(new ProposedPersonModel(2, 24, "Anna", "Wlazlo", "image2"));
-        list.add(new ProposedPersonModel(3, 18, "Aga", "Sura", "image3"));
-        list.add(new ProposedPersonModel(4, 19, "Iza", "Gonet", "image4"));
+        list.add(new ProposedPersonModel(1, 20, "Kamila", "Gonet", "image1",50.9f,19f));
+        list.add(new ProposedPersonModel(2, 24, "Anna", "Wlazlo", "image2",19f,50f));
+        list.add(new ProposedPersonModel(3, 18, "Aga", "Sura", "image3",40f,40f));
+        list.add(new ProposedPersonModel(4, 19, "Iza", "Gonet", "image4",30f,40f));
+        list.add(new ProposedPersonModel(5, 22, "Ola", "Jemiolo", "image5",44f,30f));
         return list;
     }
+
+    public void setData(ArrayList<ProposedPersonModel> list){
+        if(list!=null) {
+            mIndicator.setDotSpacing(10);
+            mIndicator.setDotsAmount(list.size());
+            mPager.setAdapter(new PromotedPagerAdapter(getFragmentManager(), list));
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIndicator.refresh();
+                }
+            }, 100);
+        }else {
+            mIndicator.setDotSpacing(10);
+            mIndicator.setActiveDot(0);
+            ArrayList<ProposedPersonModel> mList = createFakeData();
+            mIndicator.setDotsAmount(mList.size());
+            mPager.setAdapter(new PromotedPagerAdapter(getFragmentManager(), mList));
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mIndicator.refresh();
+                }
+            }, 100);
+        }
+    }
+
 
     @Override
     public void onPageScrolled(int i, float v, int i2) {
@@ -104,6 +122,8 @@ public class ObjectPromotedFragment extends AbstractFragment implements ViewPage
             intent.putExtra(Constant.EXTRA_NAME, model.getName());
             intent.putExtra(Constant.EXTRA_SURNAME, model.getSurname());
             intent.putExtra(Constant.EXTRA_PHOTO, model.getIcon());
+            intent.putExtra(Constant.EXTRA_GPSX, model.getGps_x());
+            intent.putExtra(Constant.EXTRA_GPSY, model.getGps_y());
             return PromotedItemFragment.newInstance(intent);
         }
 

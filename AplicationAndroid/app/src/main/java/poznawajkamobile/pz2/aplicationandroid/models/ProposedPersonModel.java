@@ -6,12 +6,33 @@ public class ProposedPersonModel {
     public String name;
     public String surname;
     public String icon;
+    public Float gps_x;
+    public Float gps_y;
 
+    public Float getGps_x() {
+        return gps_x;
+    }
 
-    public ProposedPersonModel(int id, String name, String icon) {
+    public void setGps_x(Float gps_x) {
+        this.gps_x = gps_x;
+    }
+
+    public Float getGps_y() {
+        return gps_y;
+    }
+
+    public void setGps_y(Float gps_y) {
+        this.gps_y = gps_y;
+    }
+
+    public ProposedPersonModel(int id,int age, String name,String surname, String icon,Float gps_x,Float gps_y) {
         this.id = id;
         this.name = name;
+        this.age = age;
+        this.surname = surname;
         this.icon = icon;
+        this.gps_x = gps_x;
+        this.gps_y = gps_y;
     }
 
     public ProposedPersonModel(int id, int age, String name, String surname, String icon) {

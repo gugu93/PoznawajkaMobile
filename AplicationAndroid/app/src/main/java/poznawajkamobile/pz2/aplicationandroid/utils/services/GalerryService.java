@@ -6,22 +6,29 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.Environment;
 import android.os.IBinder;
-import android.util.Log;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.File;
+import java.util.ArrayList;
 
+import poznawajkamobile.pz2.aplicationandroid.models.GaleryModel;
+import poznawajkamobile.pz2.aplicationandroid.models.ProposedPersonModel;
 import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;
 import poznawajkamobile.pz2.aplicationandroid.utils.UpdateUtils;
-import poznawajkamobile.pz2.aplicationandroid.utils.listners.AvatarListner;
+import poznawajkamobile.pz2.aplicationandroid.utils.listners.GaleryListner;
+import poznawajkamobile.pz2.aplicationandroid.utils.requests.DownloadGalleryTask;
 import poznawajkamobile.pz2.aplicationandroid.utils.requests.ImageDownloadTask;
 
-public class AvatarService extends Service implements AvatarListner {
+public class GalerryService extends Service implements GaleryListner {
 
-    private final IBinder mBinder = new AvatarBinder();
+    private final IBinder mBinder = new GalleryBinder();
     private boolean hasExternalStorage = UpdateUtils.hasExternalStorage();
     private Preferences mPreferences;
     private boolean working = false;
     private boolean succes = false;
+    public ArrayList<GaleryModel> list;
 
     @Override
     public void onCreate() {
@@ -38,14 +45,29 @@ public class AvatarService extends Service implements AvatarListner {
         File sdCard = Environment.getExternalStorageDirectory();
         File dir = new File(sdCard.getAbsolutePath() + "/photos/");
         dir.mkdirs();
-        ImageDownloadTask task = new ImageDownloadTask(this);
+        DownloadGalleryTask task = new DownloadGalleryTask(this);
         task.execute(login, dir.getPath());
     }
 
     @Override
-    public void onComplete(Boolean result) {
+    public void onFinish(String result) {
         working = false;
-        succes = result;
+        working = false;
+        JSONArray contacts = null;
+        try {
+            JSONObject jsonObj = new JSONObject(result);
+            contacts = jsonObj.getJSONArray("photos");
+            for (int i = 0; i < contacts.length(); i++) {
+                JSONObject c = contacts.getJSONObject(i);
+                int id = c.getInt("id");
+                int userID = c.getInt("userId");
+                String name = c.getString("name");
+                list.add(new GaleryModel(id,name,userID));
+            }
+        }
+        catch (Exception e){
+            list = null;
+        }
     }
 
     @Override
@@ -58,9 +80,9 @@ public class AvatarService extends Service implements AvatarListner {
         return mBinder;
     }
 
-    public class AvatarBinder extends Binder {
-        public AvatarService getService() {
-            return AvatarService.this;
+    public class GalleryBinder extends Binder {
+        public GalerryService getService() {
+            return GalerryService.this;
         }
     }
 

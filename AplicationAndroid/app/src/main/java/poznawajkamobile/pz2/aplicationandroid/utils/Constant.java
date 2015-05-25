@@ -19,6 +19,8 @@ public class Constant {
     public static final String EXTRA_NAME = "_name";
     public static final String EXTRA_SURNAME = "_surname";
     public static final String EXTRA_PHOTO = "_photo";
+    public static final String EXTRA_GPSX = "_gpsx";
+    public static final String EXTRA_GPSY = "_gpsy";
 
 
 }
