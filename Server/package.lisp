@@ -46,7 +46,11 @@
            #:get-test-query
            #:get-list-users
            #:get-user-info
-           #:get-test-query))
+           #:get-test-query
+           #:post-user-delete
+           #:post-friendship
+           #:post-friendship-delete
+           #:get-friendship-list))
 
 (defpackage #:pm.api-master
   (:use #:cl)
