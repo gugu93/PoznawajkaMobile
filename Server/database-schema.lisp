@@ -25,7 +25,7 @@
 (clsql:def-view-class friendship (database-item)
   ((uf_Id :type integer
           :db-kind :key
-          :db-constraints :not-null
+          :db-constraints '(:not-null :auto-increment)
           :initarg :id
           :accessor id)
    (uf_UserId :type integer
@@ -34,7 +34,7 @@
               :accessor user-id)
    (uf_UserFriendId :type integer
                     :db-constraints :not-null
-                    :initard friend-id
+                    :initarg :friend-id
                     :accessor friend-id))
   (:base-table "user_friendship"))
 

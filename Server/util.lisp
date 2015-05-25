@@ -7,10 +7,10 @@
                 'string
                 (append (list username
                               (pm.worker::password
-                               (pm.worker::find-item database
-                                                     'pm.worker::user
-                                                     'pm.worker::username
-                                                     username)))
+                               (car (pm.worker::find-item database
+                                                          'pm.worker::user
+                                                          'pm.worker::username
+                                                          username))))
                         arguments-list))))
     
     (string= checksum

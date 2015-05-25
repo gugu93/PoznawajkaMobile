@@ -53,17 +53,14 @@
   (mapcar #'car
           (select item-class)))
 
-(defgeneric find-item (database-interface item-class-to-search search-key lookup-value &key test-fun))
-(defmethod find-item ((interface database-interface)
+(defgeneric find-items (database-interface item-class-to-search search-key lookup-value &key test-fun))
+(defmethod find-items ((interface database-interface)
                       (item-class-to-search symbol)
                       (search-key symbol)
                       lookup-value
                       &key (test-fun #'string=))
-  "Find items of type ITEM-CLASS-TO-SEARCH, with SEARCH-KEY string= to LOOKUP-VALUE."
-  (find lookup-value
-        (list-items interface item-class-to-search)
-        :test (lambda (pattern tested-sequence)
-                (funcall test-fun pattern
-                         (funcall search-key
-                                  tested-sequence)))))
-
+  "find items of type item-class-to-search, with search-key string= to lookup-value."
+  (remove-if-not (lambda (item)
+                   (funcall test-fun lookup-value
+                            (funcall search-key item)))
+                 (list-items interface item-class-to-search)))
