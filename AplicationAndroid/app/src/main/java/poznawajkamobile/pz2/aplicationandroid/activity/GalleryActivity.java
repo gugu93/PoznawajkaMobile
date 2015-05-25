@@ -71,8 +71,6 @@ public class GalleryActivity extends AbstractActivity {
                     imageView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-
-
                         }
                     });
                 }

@@ -106,6 +106,7 @@
         <service android:name="poznawajkamobile.pz2.aplicationandroid.utils.services.AvatarService" />
         <service android:name="poznawajkamobile.pz2.aplicationandroid.utils.services.ProposedFriendsService" />
         <service android:name="poznawajkamobile.pz2.aplicationandroid.utils.services.GalerryService" />
+        <service android:name="poznawajkamobile.pz2.aplicationandroid.utils.services.ListFriendsService" />
 
         <activity
             android:name="poznawajkamobile.pz2.aplicationandroid.activity.MapActivity"
