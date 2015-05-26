@@ -49,12 +49,15 @@
   "create ningle routing table - all requests routed to package [package]"
   (let ((app (ningle-app this)))
     (setf (route app "/")
-          (format nil "pm.api-listener: ~A routed package: ~A~%" this (routed-package this)))
+          (progn
+            (incf (pm.api-listener:requests-taken this))
+            (format nil "pm.api-listener: ~A routed package: ~A~%" this (routed-package this))))
     ;;
     ;; handle functions without arguments
     ;;
     (setf (route app "/:fn-name" :method :get)
           #'(lambda (params)
+              (incf (pm.api-listener:requests-taken this))
               (handler-case 
                   (cl-json:encode-json-plist-to-string
                    (apply (string-http-fun this params :get)
@@ -64,6 +67,7 @@
                   `(:type error :condition ,(format nil "~a" condition))))))
           (route app "/:fn-name" :method :post)
           #'(lambda (params)
+              (incf (pm.api-listener:requests-taken this))
               (handler-case 
                   (cl-json:encode-json-plist-to-string
                    (apply (string-http-fun this params :post)
@@ -76,6 +80,7 @@
           ;;
           (route app "/:fn-name/*" :method :get)
           #'(lambda (params)
+              (incf (pm.api-listener:requests-taken this))
               (handler-case 
                   (cl-json:encode-json-plist-to-string
                    (apply (string-http-fun this params :get)
@@ -85,6 +90,7 @@
                   `(:type error :condition ,(format nil "~A" condition))))))
           (route app "/:fn-name/*" :method :post)
           #'(lambda (params)
+              (incf (pm.api-listener:requests-taken this))
               (handler-case 
                   (cl-json:encode-json-plist-to-string
                    (apply (string-http-fun this params :post)

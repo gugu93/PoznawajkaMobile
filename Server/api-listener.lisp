@@ -9,6 +9,9 @@
                    :initarg :routed-package
                    :initform nil
                    :type keyword)
+   (requests-taken :accessor requests-taken
+                   :initform 0
+                   :type integer)
    (ningle-app :accessor ningle-app
                :initform (make-instance '<app>))
    (clack-app :accessor clack-app

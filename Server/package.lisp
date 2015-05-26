@@ -8,8 +8,14 @@
   (:use #:cl))
 
 (defpackage #:pm.master
-  (:use #:cl)
+  (:use #:cl
+        #:clsql
+        #:clsql-sys
+        #:ningle)
   (:export #:master
+           #:add-worker
+           #:update-workers
+           #:get-worker
            #:start
            #:stop))
 
@@ -23,6 +29,7 @@
   (:export #:api-listener
            #:listen-port
            #:routed-package 
+           #:requests-taken
            #:start
            #:stop))
 
@@ -32,17 +39,11 @@
         #:clsql-sys
         #:ningle)
   (:export #:worker
-           #:add-item
-           #:delete-item
-           #:list-items
-           #:find-item
-           #:database-interface
-           #:db-handle
            ;; API functions
            #:post-user
            #:get-api-describe
            #:get-version
-           #:get-echo
+           #:get-status
            #:get-test-query
            #:get-list-users
            #:get-user-info
@@ -51,9 +52,3 @@
            #:post-friendship
            #:post-friendship-delete
            #:get-friendship-list))
-
-(defpackage #:pm.api-master
-  (:use #:cl)
-  (:export #:version
-           #:echo))
-

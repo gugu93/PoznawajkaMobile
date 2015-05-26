@@ -20,7 +20,6 @@
                (:file "worker")
                (:file "api-listener")
                (:file "api-listener-router")
-               (:file "api-master")
                (:file "util")
                (:file "database-schema")
                (:file "database")))

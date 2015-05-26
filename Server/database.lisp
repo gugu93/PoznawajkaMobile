@@ -36,6 +36,7 @@
 (defmethod add-item ((interface database-interface)
                 (item database-item))
   "Add database-item element to database"
+  ;; (reconnect :database (db-handle interface))
   (update-records-from-instance item
                                 :database (db-handle interface)))
   
@@ -43,6 +44,7 @@
 (defmethod delete-item ((interface database-interface)
                         (item database-item))
   "Delete database-item element from database"
+  ;; (reconnect :database (db-handle interface))
   (delete-instance-records item
                            :database (db-handle interface)))
 
@@ -59,7 +61,8 @@
                       (search-key symbol)
                       lookup-value
                       &key (test-fun #'string=))
-  "find items of type item-class-to-search, with search-key string= to lookup-value."
+  "Find items of type item-class-to-search, with search-key string= to lookup-value."
+  ;; (reconnect :database (db-handle interface))
   (remove-if-not (lambda (item)
                    (funcall test-fun lookup-value
                             (funcall search-key item)))

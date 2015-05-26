@@ -12,10 +12,10 @@
                                 :initarg :listen-port
                                 :initform 1121
                                 :accessor listen-port)
-  (pm.api-listener:routed-package :accessor routed-package
-                                  :initarg :routed-package
-                                  :initform :pm.worker
-                                  :type keyword)))
+   (pm.api-listener:routed-package :accessor routed-package
+                                   :initarg :routed-package
+                                   :initform :pm.worker
+                                   :type keyword)))
 
 ;; everything has to return plist
 
@@ -29,10 +29,14 @@
                                        " ")))
 
 (defmethod get-version ((this worker))
-  '(:type version :version 0.0.4))
+  "Return version of the worker"
+  '(:type get-version :version 0.1.0))
 
-(defmethod get-echo ((this worker) (message string))
-  `(:type echo :message ,message))
+(defmethod get-status ((this worker))
+  "Return worker status"
+  (let ((requests-taken (pm.api-listener:requests-taken this)))
+    (setf (pm.api-listener:requests-taken this) 0)
+    `(:type get-status :status ok :requests-taken ,requests-taken)))
 
 (defmethod get-list-users ((this worker))
   `(:type get-users-list :user-list ,(mapcar (lambda (user)
