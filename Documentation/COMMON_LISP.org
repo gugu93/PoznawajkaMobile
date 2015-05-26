@@ -1,0 +1,32 @@
+* Common Lisp
+Common Lisp (CL) jest dialektem Lisp(u). Ustandaryzowany przez ANSI (ANSI INCITS 226-1994 (R2004), X3.226-1994 (R1999)).
+Standard Common Lisp powstał na podstawie i po dopracowaniu języka Maclisp, zaprojektowanego orygnalnie na komputery PDP-6. Co ważne, Common Lisp sam w sobie nie jest implementacją a specyfikacją języka. Na potrzeby naszej pracy licencjackiej wykorzystamy implementację SBCL (Steel Bank Common Lisp).
+Common Lisp jest językiem wieloparadygmatowym: proceduralnym, funkcjonalnym, obiektowym oraz meta-językiem. Jest bardzo dynamiczny, dzięki czemu pozwala na ewolucyjnyą i przyrostową inżynierię kodu, umożliwia częściową rekompilację działających programów (CL jest językiem kompilowanym, mimo że wykazuje cechy języka interpretowanego).
+* Cechy charakterystyczne
+** REPL (Read-Eval-Print-Loop)
+** Dynamika (partial recompilation, easy to implement run-time binary upgrade mechanism with FASL files)
+** CLOS (Common Lisp Object System)
+Zaawansowany system objektowy w standardzie Common Lisp, radykalnie różniący się od systemów obiektowych znanych z języków takich jak C++ czy Java.
+*** Podstawowym budulcem CLOS są klasy, instancje klas, funkcje generyczne i ich metody (definiowane za pomocą makr).
+*** Klasy mogą posiadać wiele superklas (rodziców po których dziedziczą).
+*** Metody mogą być specjalizowane dla dowolnego ale i każdego argumentu.
+*** Sloty („atrybuty”) mogą być alokowane przez klasę (wszystkie instancje współdzielą slot) lub w instancji.
+*** Metody nie „należą” do klas. Są definiowane osobno, nie współdzielą z klasą przestrzeni nazw. Nie posiadają specjalnego dostępu do slotów (nie posiadają odpowiednika „self”).
+*** Metody są grupowane w funkcje generyczne, które są wywoływalne jak zwykłe funkcje.
+** Makra
+Marka w Common Lispie zastępują w użyciu funkcje, jednak w przeciwieństwie do nich nie służą do zwrócenia wyniku ewaluacji polecenia, ale do wygenerowania kodu wykorzystanego dalej w ewaluacji. 
+Pozwalają one programiście na swobodę rzadko spotykaną w innych językach, tym bardziej w językach kompilowanych. Makra dosłownie umożliwiają tworzenie kodu który tworzy kod (lub nawet kolejne makra). Dzęki temu Common Lisp jest z chęcią wykorzystywany przy tworzeniu tzw. DSL (Domain Specific Languages) - na przykład komercyjne wykorzystanie Common Lispu w kompilatorze DSL-VHDL (Opis algorytmu do działania automatu na giełdzie generujący fizyczne urządzenie w oparciu o układy FPGA).
+** Bardzo zaawansowana obsłua wyjątków
+*** Conditions – obiekty opisujące sytuacje wyjątkowe
+*** Handlers - definiują działania w przypadku sytuacji wyjątkowej
+*** Restarts - wyjścia z sytuacji wyszukiwane przez Handler.
+Dodatkowo restarty mogą być w formie interaktywnej prezentowane użytkownikowi (dając mu szansę ręcznej naprawy problemu w trakcie wykonywania programu, nawet w formie REPL w aktualnym kontekście wykonywania.
+* Przykładowe zastosowania
+** D-Wave Two
+Pierwszy, realnie działający, komercyjny komputer kwantowy - procesor programowany w Common Lispie.
+** Deep Space 1 - eksperymentalna sonda kosmiczna stworzona przez JPL (Jet Propulsion Laboratory)
+Remote Agent, działający w zmodyfikowanym Harlequin Common Lisp, był autonomicznym systemem kontroli sondy kosmicznej którą sterował w maju 1999 roku. Co niesamowite, opisywany wcześniej REPL wraz z możliwością częściowej rekompilacji programu był wykorzystywany w zdalnym usuwani błędów w sondzie już po wystrzeleniu, na odległość 100 milionów mili, na urządzeniu wartym miliony dolarów. Remote Agent został okrzyknięty jako „NASA Software of the Year”.
+** Dynamic Analysis and Replanning Tool (DART), wykorzystywane przez DARPA w trakcie badań nad sztuczną inteligencją.
+** MAXIMA, system obliczeń komputerowych.
+** Authorizer's Assistant, system do analizy zapytań kart kredytowych American Express.
+** ITA Software, wyszukiwarka najtańszych połączeń lotniczych (z której korzystają na przykład Orbitz oraz Kayak.com).
