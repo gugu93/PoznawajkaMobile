@@ -95,7 +95,6 @@ public class AbstractMenuActivity extends AbstractActivity {
             mMenuDrawer.closeMenu();
             return;
         }
-
         super.onBackPressed();
     }
 }

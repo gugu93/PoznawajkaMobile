@@ -11,8 +11,10 @@ import android.widget.CheckBox;
 
 import com.example.kml.poznawajkamobile.R;
 
+import poznawajkamobile.pz2.aplicationandroid.utils.Constant;
 
-public class MeetNewPeopleActivity extends ActionBarActivity {
+
+public class MeetNewPeopleActivity extends AbstractActivity {
     private CheckBox checkLocation;
     private CheckBox checkPreferences;
     private CheckBox checkRandom;
@@ -34,7 +36,8 @@ public class MeetNewPeopleActivity extends ActionBarActivity {
         buttonSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),OtherProfilActivity.class);
+                Intent intent = new Intent(getApplicationContext(),ListMobileActivity.class);
+//                intent.putExtra(Constant.EXTRA_SEARCH,checkLocation.isChecked() ? 0 : checkPreferences.isChecked() ? 1 : 2);
                 startActivity(intent);
             }
         });

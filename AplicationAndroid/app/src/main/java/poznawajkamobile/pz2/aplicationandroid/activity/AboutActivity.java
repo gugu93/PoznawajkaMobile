@@ -7,7 +7,7 @@ import android.view.MenuItem;
 
 import com.example.kml.poznawajkamobile.R;
 
-public class AboutActivity extends ActionBarActivity {
+public class AboutActivity extends AbstractActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

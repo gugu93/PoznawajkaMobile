@@ -25,7 +25,7 @@ public class SplashActivity extends ActionBarActivity {
                 public void run() {
                     startActivity(new Intent(SplashActivity.this, LoginActivity.class));
                 }
-            }, 1500);
+            }, 4000);
         }
     }
 

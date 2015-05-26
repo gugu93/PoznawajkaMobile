@@ -49,6 +49,7 @@ public class ListMobileActivity extends ListActivity {
 
 		}else{
 			setListAdapter(new MobileArrayAdapter(this,createFakeData()));
+            getListView().setBackgroundColor(getResources().getColor(R.color.main_place));
 		}
 	}
 

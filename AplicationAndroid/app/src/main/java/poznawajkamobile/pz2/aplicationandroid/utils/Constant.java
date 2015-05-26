@@ -21,6 +21,7 @@ public class Constant {
     public static final String EXTRA_PHOTO = "_photo";
     public static final String EXTRA_GPSX = "_gpsx";
     public static final String EXTRA_GPSY = "_gpsy";
+    public static final String EXTRA_SEARCH = "_search";
 
 
 }

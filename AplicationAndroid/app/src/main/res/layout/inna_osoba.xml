@@ -2,7 +2,8 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/main_place">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -128,18 +129,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Popros o spotkanie!"
+            android:background="@color/Orange"
+
             android:id="@+id/buttonRequest" />
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Wystaw ocene użytkownikowi!"
-            android:id="@+id/buttonRate" />
+            android:id="@+id/buttonRate"
+            android:background="@color/Orange"
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Dodaj Anie do znajomych!"
-            android:id="@+id/buttonAddToFriends" />
+            android:id="@+id/buttonAddToFriends"
+            android:background="@color/Orange"
+            />
 
     </LinearLayout>
 

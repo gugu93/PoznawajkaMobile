@@ -95,7 +95,7 @@ public class PromotedItemFragment extends AbstractLocationFragment {
                         * Math.cos(Math.toRadians(lat2)) * Math.sin(dLon / 2) * Math.sin(dLon / 2));
         float c = (float) (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)));
         Float d = earthRadius * c;
-        return d.intValue()/10;
+        return d.intValue()/1000;
     }
 
 

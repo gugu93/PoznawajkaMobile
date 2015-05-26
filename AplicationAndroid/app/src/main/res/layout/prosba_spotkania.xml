@@ -3,7 +3,8 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/main_place">
 
     <TextView
         android:layout_width="wrap_content"
@@ -151,13 +152,17 @@
             android:layout_height="wrap_content"
             android:text="Odrzuć"
             android:layout_weight="1"
+            android:background="@color/Orange"
+
             android:id="@+id/buttonReject" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Poznaj dane do kontaktu"
+            android:background="@color/Orange"
+
+            android:text="Poznaj "
             android:id="@+id/button2" />
     </LinearLayout>
 
