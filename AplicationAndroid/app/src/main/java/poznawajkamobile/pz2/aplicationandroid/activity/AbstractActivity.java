@@ -2,20 +2,15 @@ package poznawajkamobile.pz2.aplicationandroid.activity;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBarActivity;
 import android.text.TextUtils;
-import android.view.MenuItem;
 
 import com.example.kml.poznawajkamobile.R;
-import com.joanzapata.android.iconify.Iconify;
 
 import poznawajkamobile.pz2.aplicationandroid.utils.Constant;
 import poznawajkamobile.pz2.aplicationandroid.utils.GoogleMapUtils;
-import poznawajkamobile.pz2.aplicationandroid.utils.GraphicUtils;
 import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 

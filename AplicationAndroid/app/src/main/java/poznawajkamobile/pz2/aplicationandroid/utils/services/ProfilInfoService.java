@@ -11,7 +11,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.util.ArrayList;
 
 import poznawajkamobile.pz2.aplicationandroid.models.FriendItemModel;
 import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;

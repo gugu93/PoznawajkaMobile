@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 
 import com.example.kml.poznawajkamobile.R;
 
-import java.util.AbstractList;
 import java.util.ArrayList;
 
 import poznawajkamobile.pz2.aplicationandroid.activity.AbstractActivity;

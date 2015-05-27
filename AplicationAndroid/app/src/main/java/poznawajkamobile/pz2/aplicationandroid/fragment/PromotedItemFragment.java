@@ -12,11 +12,8 @@ import android.widget.TextView;
 
 import com.example.kml.poznawajkamobile.R;
 
-import org.mapsforge.map.util.MapPositionUtil;
-
 import poznawajkamobile.pz2.aplicationandroid.activity.AbstractActivity;
 import poznawajkamobile.pz2.aplicationandroid.utils.Constant;
-import poznawajkamobile.pz2.aplicationandroid.utils.GoogleMapUtils;
 import poznawajkamobile.pz2.aplicationandroid.utils.Utils;
 
 

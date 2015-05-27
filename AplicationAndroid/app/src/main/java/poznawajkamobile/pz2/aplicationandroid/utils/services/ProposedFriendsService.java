@@ -6,15 +6,12 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.Environment;
 import android.os.IBinder;
-import android.util.Log;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import poznawajkamobile.pz2.aplicationandroid.models.ProposedPersonModel;
 import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;

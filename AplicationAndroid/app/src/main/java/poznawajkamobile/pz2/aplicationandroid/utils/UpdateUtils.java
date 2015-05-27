@@ -1,6 +1,5 @@
 package poznawajkamobile.pz2.aplicationandroid.utils;
 
-import android.content.Context;
 import android.os.Environment;
 
 public class UpdateUtils {

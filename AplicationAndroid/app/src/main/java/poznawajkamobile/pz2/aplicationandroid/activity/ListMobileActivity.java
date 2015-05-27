@@ -7,10 +7,8 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.widget.ImageView;
-import android.widget.ListView;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.ListView;
 
 import com.example.kml.poznawajkamobile.R;
 
@@ -18,9 +16,7 @@ import java.util.ArrayList;
 
 import poznawajkamobile.pz2.aplicationandroid.adapter.MobileArrayAdapter;
 import poznawajkamobile.pz2.aplicationandroid.models.FriendItemModel;
-import poznawajkamobile.pz2.aplicationandroid.models.ProposedPersonModel;
 import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;
-import poznawajkamobile.pz2.aplicationandroid.utils.services.GalerryService;
 import poznawajkamobile.pz2.aplicationandroid.utils.services.ListFriendsService;
 
 public class ListMobileActivity extends ListActivity {
@@ -35,7 +31,6 @@ public class ListMobileActivity extends ListActivity {
 			Preferences p = new Preferences(getApplicationContext());
 			friendsService.start(p.getString("login"));
 			initListFriends(friendsService.list);
-
 		}
 		@Override
 		public void onServiceDisconnected(ComponentName arg0) {

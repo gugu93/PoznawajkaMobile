@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <attr name="fontPath" format="string" />
-
-    <declare-styleable name="ExpandableTextView">
-        <attr name="trim_length" format="integer" />
-        <attr name="android:text" />
-    </declare-styleable>
     <declare-styleable name="MyGallery">
         <attr name="android:galleryItemBackground" />
     </declare-styleable>

@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Binder;
 import android.os.Environment;
 import android.os.IBinder;
-import android.util.Log;
 
 import java.io.File;
 

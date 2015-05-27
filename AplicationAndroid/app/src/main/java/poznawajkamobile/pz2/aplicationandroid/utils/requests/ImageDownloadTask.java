@@ -9,7 +9,6 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;
 import poznawajkamobile.pz2.aplicationandroid.utils.listners.AvatarListner;
 
 public class ImageDownloadTask extends AsyncTask<String, Void, Boolean> {

@@ -57,26 +57,22 @@ public class SpecialDrawerAdapter extends BaseAdapter {
 
 
     public enum SpecialDrawerItem {
-     SETTINGS(R.string.drawer_settings, Iconify.IconValue.fa_sliders);
+     SETTINGS("ZACZEPKI", Iconify.IconValue.fa_bullseye),
+     BUG("ZGLOS BUGA", Iconify.IconValue.fa_bug),
+     FB("INTEGRACJA Z FACEBOOKIEM", Iconify.IconValue.fa_facebook_square);
 
-        public int title;
+        public String title;
         public Iconify.IconValue icon;
-        public Class<?> cls;
         public static Intent intent = new Intent(Intent.ACTION_SEND);
 
 
-        SpecialDrawerItem(int title, Iconify.IconValue icon, Class<?> cls) {
-            this.title = title;
-            this.icon = icon;
-            this.cls = cls;
-        }
-
-        SpecialDrawerItem(int title, Iconify.IconValue icon){
+        SpecialDrawerItem(String title, Iconify.IconValue icon) {
             this.title = title;
             this.icon = icon;
         }
 
-        public int getTitle() {
+
+        public String getTitle() {
             return title;
         }
 

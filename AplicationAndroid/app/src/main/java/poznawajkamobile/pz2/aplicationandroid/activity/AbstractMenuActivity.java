@@ -71,7 +71,7 @@ public class AbstractMenuActivity extends AbstractActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         super.onCreateOptionsMenu(menu);
-        MenuItem item = menu.add(R.id.menu_group, R.id.menu_drawer, 1000, R.string.navigation_drawer_open);
+        MenuItem item = menu.add(R.id.menu, R.id.menu2, 1000, R.string.navigation_drawer_open);
         item.setIcon(R.drawable.ic_menu_drawer);
         MenuItemCompat.setShowAsAction(item, MenuItemCompat.SHOW_AS_ACTION_ALWAYS);
         return true;
@@ -80,7 +80,7 @@ public class AbstractMenuActivity extends AbstractActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_drawer:
+            case R.id.menu2:
                 mMenuDrawer.toggleMenu();
                 return true;
             default:

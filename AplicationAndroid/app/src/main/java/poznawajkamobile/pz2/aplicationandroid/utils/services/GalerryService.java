@@ -14,12 +14,10 @@ import java.io.File;
 import java.util.ArrayList;
 
 import poznawajkamobile.pz2.aplicationandroid.models.GaleryModel;
-import poznawajkamobile.pz2.aplicationandroid.models.ProposedPersonModel;
 import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;
 import poznawajkamobile.pz2.aplicationandroid.utils.UpdateUtils;
 import poznawajkamobile.pz2.aplicationandroid.utils.listners.GaleryListner;
 import poznawajkamobile.pz2.aplicationandroid.utils.requests.DownloadGalleryTask;
-import poznawajkamobile.pz2.aplicationandroid.utils.requests.ImageDownloadTask;
 
 public class GalerryService extends Service implements GaleryListner {
 

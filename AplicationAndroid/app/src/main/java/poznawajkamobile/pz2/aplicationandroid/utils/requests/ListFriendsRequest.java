@@ -24,7 +24,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 import poznawajkamobile.pz2.aplicationandroid.utils.listners.FriendListListner;
-import poznawajkamobile.pz2.aplicationandroid.utils.listners.ProposedFriendsListner;
 
 public class ListFriendsRequest extends AsyncTask<String, Void, String> {
 

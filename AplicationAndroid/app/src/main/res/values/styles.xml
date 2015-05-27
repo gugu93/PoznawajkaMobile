@@ -2,7 +2,6 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light">
-        <item name="actionModeStyle">@style/ActionModeStyle</item>
         <item name="actionBarStyle">@style/ActionBar</item>
         <item name="android:buttonStyle">@style/Button</item>
         <item name="actionMenuTextColor">@color/my_red</item>
@@ -31,10 +30,7 @@
         <item name="displayOptions">useLogo|showHome</item>
     </style>
 
-    <style name="ActionModeStyle" parent="ActionBar"></style>
-
     <style name="FontTextView" parent="android:Widget.TextView">
-        <item name="fontPath">MyriadPro-Regular.ttf</item>
     </style>
 
     <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">

@@ -7,12 +7,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import com.example.kml.poznawajkamobile.R;
 
 import java.util.ArrayList;
 
 import poznawajkamobile.pz2.aplicationandroid.models.FriendItemModel;
-import poznawajkamobile.pz2.aplicationandroid.models.MenuModel;
 import poznawajkamobile.pz2.aplicationandroid.utils.Utils;
 
 

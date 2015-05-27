@@ -14,12 +14,10 @@ import java.io.File;
 import java.util.ArrayList;
 
 import poznawajkamobile.pz2.aplicationandroid.models.FriendItemModel;
-import poznawajkamobile.pz2.aplicationandroid.models.ProposedPersonModel;
 import poznawajkamobile.pz2.aplicationandroid.utils.Preferences;
 import poznawajkamobile.pz2.aplicationandroid.utils.UpdateUtils;
 import poznawajkamobile.pz2.aplicationandroid.utils.listners.MapFriendsListner;
 import poznawajkamobile.pz2.aplicationandroid.utils.requests.MapFriendsRequest;
-import poznawajkamobile.pz2.aplicationandroid.utils.requests.ProposedFriendsRequest;
 
 public class MapFriendsService extends Service implements MapFriendsListner {
 

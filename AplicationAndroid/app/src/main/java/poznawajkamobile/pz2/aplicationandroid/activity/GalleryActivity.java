@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.content.res.TypedArray;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.IBinder;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,14 +17,10 @@ import android.widget.Gallery;
 import android.widget.ImageView;
 
 import com.example.kml.poznawajkamobile.R;
-import com.squareup.picasso.Picasso;
 
-import java.io.File;
 import java.util.ArrayList;
 
 import poznawajkamobile.pz2.aplicationandroid.models.GaleryModel;
-import poznawajkamobile.pz2.aplicationandroid.utils.Utils;
-import poznawajkamobile.pz2.aplicationandroid.utils.services.AvatarService;
 import poznawajkamobile.pz2.aplicationandroid.utils.services.GalerryService;
 
 

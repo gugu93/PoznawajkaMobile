@@ -5,8 +5,6 @@ import android.support.v4.app.ListFragment;
 import android.view.Menu;
 import android.view.MenuInflater;
 
-import poznawajkamobile.pz2.aplicationandroid.activity.AbstractActivity;
-
 public class AbstractListFragment extends ListFragment {
 
 

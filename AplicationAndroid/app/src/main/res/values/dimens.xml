@@ -34,15 +34,10 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="tile_text">30sp</dimen>
-
-    <!-- Main grid -->
     <dimen name="main_grid_text">12sp</dimen>
     <dimen name="main_grid_icon_margin">10dp</dimen>
     <dimen name="main_grid_text_margin">10dp</dimen>
     <dimen name="main_grid_padding">40dp</dimen>
     <dimen name="main_grid_margin">5dp</dimen>
-    <!--Object Description -->
-    <dimen name="object_description_icon_margin">10dp</dimen>
-
 
 </resources>

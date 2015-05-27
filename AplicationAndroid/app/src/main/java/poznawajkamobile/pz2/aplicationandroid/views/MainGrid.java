@@ -6,13 +6,9 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Adapter;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import java.io.File;
 import java.util.ArrayList;
-
-import poznawajkamobile.pz2.aplicationandroid.utils.Utils;
 
 
 public class MainGrid extends LinearLayout {

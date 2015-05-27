@@ -23,7 +23,6 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import poznawajkamobile.pz2.aplicationandroid.utils.listners.MapFriendsListner;
 import poznawajkamobile.pz2.aplicationandroid.utils.listners.ProfilInfoListner;
 
 public class ProfilInfoRequest extends AsyncTask<String, Void, String> {

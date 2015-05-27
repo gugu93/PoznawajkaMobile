@@ -22,16 +22,11 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.maps.model.Polygon;
-import com.google.android.gms.maps.model.PolygonOptions;
-import com.google.android.gms.maps.model.Polyline;
 import com.joanzapata.android.iconify.Iconify;
 import com.squareup.picasso.Picasso;
 
 import org.apache.commons.lang3.StringEscapeUtils;
-import org.mapsforge.map.model.Model;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -75,7 +70,7 @@ public class GMapFragment extends SupportMapFragment implements GoogleMap.OnInfo
         mMapUtils.checkMapsReady();
         if (getMap() != null) {
             getMap().setMyLocationEnabled(true);
-            getMap().animateCamera(CameraUpdateFactory.newLatLngZoom(DEFAULT_POSITION, 14), 1, null);
+            getMap().animateCamera(CameraUpdateFactory.newLatLngZoom(DEFAULT_POSITION, 10), 1, null);
         }
         if (getMap() != null) {
             getMap().setOnMyLocationChangeListener(new GoogleMap.OnMyLocationChangeListener() {
@@ -85,7 +80,7 @@ public class GMapFragment extends SupportMapFragment implements GoogleMap.OnInfo
                             LatLngBounds.Builder builder = new LatLngBounds.Builder();
                             builder.include(startPosition);
                             LatLngBounds bounds = builder.build();
-                            int padding = 100; // offset from edges of the map in pixels
+                            int padding = 10; // offset from edges of the map in pixels
                             CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngBounds(bounds, padding);
                             getMap().moveCamera(cameraUpdate);
                             getMap().animateCamera(cameraUpdate);
@@ -98,7 +93,7 @@ public class GMapFragment extends SupportMapFragment implements GoogleMap.OnInfo
                             LatLngBounds.Builder builder = new LatLngBounds.Builder();
                             builder.include(startPosition);
                             LatLngBounds bounds = builder.build();
-                            int padding = 100; // offset from edges of the map in pixels
+                            int padding = 10; // offset from edges of the map in pixels
                             CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngBounds(bounds, padding);
                             getMap().moveCamera(cameraUpdate);
                             getMap().animateCamera(cameraUpdate);
@@ -229,8 +224,8 @@ public class GMapFragment extends SupportMapFragment implements GoogleMap.OnInfo
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
-        Terrain = menu.add(R.id.menu_group, R.id.mapStreet, 11, "Terrain");
-        Satellite = menu.add(R.id.menu_group, R.id.mapSat, 11, "Satelita");
+        Terrain = menu.add(R.id.menu, R.id.mapStreet, 11, "Terrain");
+        Satellite = menu.add(R.id.menu, R.id.mapSat, 11, "Satelita");
         Terrain = Terrain.setVisible(false);
         MenuItemCompat.setShowAsAction(Terrain, MenuItemCompat.SHOW_AS_ACTION_ALWAYS);
         MenuItemCompat.setShowAsAction(Satellite, MenuItemCompat.SHOW_AS_ACTION_ALWAYS);

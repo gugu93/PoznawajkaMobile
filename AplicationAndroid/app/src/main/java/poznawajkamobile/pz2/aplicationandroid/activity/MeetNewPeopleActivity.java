@@ -2,7 +2,6 @@ package poznawajkamobile.pz2.aplicationandroid.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -10,8 +9,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 
 import com.example.kml.poznawajkamobile.R;
-
-import poznawajkamobile.pz2.aplicationandroid.utils.Constant;
 
 
 public class MeetNewPeopleActivity extends AbstractActivity {

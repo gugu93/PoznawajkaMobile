@@ -1,36 +1,18 @@
 package poznawajkamobile.pz2.aplicationandroid.utils;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Point;
-import android.graphics.drawable.Drawable;
 import android.location.Location;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.Build;
-import android.support.v7.widget.SearchView;
-import android.util.DisplayMetrics;
 import android.view.Display;
-import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import com.joanzapata.android.iconify.Iconify;
 import com.squareup.picasso.LruCache;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.UrlConnectionDownloader;
-
-import org.mapsforge.core.graphics.Paint;
-import org.mapsforge.core.graphics.Style;
-import org.mapsforge.map.android.graphics.AndroidGraphicFactory;
 
 import java.text.DecimalFormatSymbols;
 import java.util.Locale;

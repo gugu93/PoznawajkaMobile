@@ -10,7 +10,6 @@ import android.os.IBinder;
 import com.example.kml.poznawajkamobile.R;
 
 import poznawajkamobile.pz2.aplicationandroid.fragment.GMapFragment;
-import poznawajkamobile.pz2.aplicationandroid.utils.services.AvatarService;
 import poznawajkamobile.pz2.aplicationandroid.utils.services.MapFriendsService;
 
 public class MapActivity extends AbstractActivity {
