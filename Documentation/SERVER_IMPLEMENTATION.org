@@ -1,0 +1,21 @@
+* Szczegóły implementacyjne
+** Ogólna architektura
+Część serwerowa naszego projektu jest podzielona na dwie części, nazwane MASTER oraz WORKER.
+Pierwsza z nich, bardzo minimalna, zajmuje się load-balancingiem zapytań na poszczególnie instancje, działająych na innych maszynach, WORKER-ów. Cała komunikacja opiera się o zasady REST API, z wykorzystaniem protokołu HTTP oraz formatu serializacji danych JSON. Cały kod był projektowany z myślą o łatwym dalszym rozwijaniu.
+Druga część, czyli WORKER, zajmuje się bezpośrednim obsługiwaniem zapytań od klientów.
+** Load-balancing
+Load-balancing w naszej aplikacji realizowany jest w następującym schemacie:
+*** Każdy WORKER zlicza obsłużone zapytania
+*** MASTER okresowo odpytuje wszystkie WORKER-y o liczbę obsłużonych zapytań
+*** Każdy WORKER po odpowiedzi resetuje licznik
+*** MASTER na pytanie klienta o dostępnego WORKER-a odpowiada tym z najmniejszą liczbą obsłużonych zapytań (najmniej obciążonym)
+*** Klient kontaktuje się bezpośrednio z wybranym WORKER-em.
+** Interfejs HTTP-to-LISP
+W celu łatwiejszego utrzymania, rozwijania oraz lepszej separacji w naszej aplikacji zaimplementowaliśmy specjalny router API. Jego zadaniem jest, wykorzystując specyficzne właściwości i dynamikę języka Common Lisp, auomatyczne tłumaczenie zapytać REST API bezpośrednio na wywołania metod klas implementujących API. Dzięki temu uzyskaliśmy uniwersalny kod który pozwala nam skupić się na pisaniu faktycznej funkcjonalności aplikacji i nie zajmowaniu się w zupełności protokołem (realna logika aplikacji jest implementowana tylko i wyłącznie o standardowe struktury stosowane w Common Lispie). Interfejs ten jest używany bez jakichkowliek zmian zarówno w obydwu częściach (MASTER oraz WORKER).
+** Serwer HTTP
+   Serwer HTTP bazuje na sprawdzonym rozwiązaniu, tj. minimalistycznym, ale dającym ogromne możliwości frameworku ningle bazującym na Clack, wykorzystującym serwer Hunchentoot do obsługi zapytań.
+** Baza danych
+Dzięki wykorzystaniu biblioteki cl-sql oraz naszemu interfejsowi bazodanowemu w zupełności nie musimy w naszej aplikacji odnosić się do bezpośrednich zapytań SQL. Każda tabela jest reprezentowana przez odpowiednie klasy któ¬e możemy tworzyć, kasować, modyfikować oraz wyszukiwać w ramach potrzeb.
+Jako silnik bazy danych wykorzystujemy bazę MySQL działającą na osobnej maszynie. W przyszłości, w celu obsługi większej liczby połączeń, planujemy wdrożyć klastrowanie wielu instancji MySQL.
+** Utrzymanie aplikacji i niezwodność
+Dzięki mechanizmowi SWANK dostępnym dla języka Common Lisp jesteśmy w stanie w czasie rzeczywistym podłączyć się do instancji REPL-a już działającej aplikacji, debugować oraz wprowadzać potrzebne poprawki. Dzięki temu oraz load-balancingowi WORKER-ów mamy możliwość zapewnienia niemal stu procentowego czasu działania naszej usługi z perspektywy klienta,
