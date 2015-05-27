@@ -29,14 +29,7 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
     private MainGrid mGrid;
     private FrameLayout proponowane;
     public MainGridAdapter mAdapter;
-//    private Handler handler = new Handler() {
-//        @Override
-//        public void handleMessage(Message msg) {
-//            if (msg.what == Constant.LOADER_MAIN_GRID) {
-//                getBaseActivity().goToAndClear(UpdateActivity.class);
-//            }
-//        }
-//    };
+
 
     public static MainFragment newInstance(Intent intent) {
         MainFragment fragment = new MainFragment();
@@ -98,135 +91,14 @@ public class MainFragment extends AbstractFragment implements  MainGrid.OnMainGr
     }
 
 
-//    @Override
-//    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-//        switch (loader.getId()) {
-//            case Constant.LOADER_MAIN_GRID:
-//                if (data != null && data.getCount() > 0) {
-//                    mAdapter = new MainGridAdapter(getActivity(), data);
-//                    mGrid.setAdapter(mAdapter);
-//                } else {
-//                    firstTimeLaunched=true;
-//                    handler.sendEmptyMessage(Constant.LOADER_MAIN_GRID);
-//                }
-//                if (!firstTimeLaunched)startLoader(Constant.LOADER_LAST_NEWS);
-//                break;
-//            case Constant.LOADER_LAST_NEWS:
-//                if (data != null && data.getCount() > 0) {
-//                    while (data.moveToNext()) {
-//                        RssModel rss = new RssModel(data);
-//                        if (!Strings.isNullOrEmpty(rss.getImage())) {
-//                            mGrid.updateItemBackground(Constant.NEWS_ID, rss.getImage());
-//                            break;
-//                        }
-//                    }
-//                }
-//                startLoader(Constant.LOADER_LAST_EVENT);
-//                break;
-//            case Constant.LOADER_LAST_EVENT:
-//                if (data != null && data.getCount() > 0) {
-//                    while (data.moveToNext()) {
-//                        CalendarEventModel event = new CalendarEventModel(data);
-//                        if (!Strings.isNullOrEmpty(event.getImage())) {
-//                            mGrid.updateItemBackground(Constant.EVENTS_ID, event.getImage());
-//                            break;
-//                        }
-//                    }
-//                }
-//                startLoader(Constant.LOADER_LAST_PLANNER);
-//                break;
-//            case Constant.LOADER_LAST_PLANNER:
-//                if (data != null && data.getCount() > 0) {
-//                    data.moveToFirst();
-//                    plannerModel = new PlannerModel(data);
-//                    switch (plannerModel.getObject_type())
-//                    {
-//                        case 1: //object
-//                        startLoader(Constant.LOADER_ADDRESS);
-//                        break;
-//                        case 2: //route
-//                        startLoader(Constant.LOADER_ROUTE);
-//                        break;
-//                        case 3: //event
-//                        startLoader(Constant.LOADER_CALENDAR);
-//                        break;
-//                    }
-//                }
-//                else {
-//                    mGrid.updateItemBackground(Constant.PLANNER_ID,Utils.getResource("icon9", "drawable", getActivity()));
-//                }
-//                break;
-//            case Constant.LOADER_ADDRESS:
-//
-//                if (data != null && data.getCount() > 0) {
-//                    data.moveToFirst();
-//                    AddressModel addressModel = new AddressModel(data);
-//                    String photoAddress = getPhotoUrl(addressModel);
-//
-//                    if (!Strings.isNullOrEmpty(photoAddress)) {
-//                        mGrid.updateItemBackground(Constant.PLANNER_ID, photoAddress);
-//                    }
-//                }
-//                break;
-//            case Constant.LOADER_ROUTE:
-//
-//                if (data != null && data.getCount() > 0) {
-//                    data.moveToFirst();
-//                    RouteModel route = new RouteModel(data);
-//
-//                    if (!Strings.isNullOrEmpty(route.getLogo())) {
-//                        Preferences prefs = new Preferences(getActivity());
-//                        String filesDir = getActivity().getFilesDir().getAbsolutePath() + "/";
-//                        filesDir += (prefs.getUpdateInfo() != null)
-//                                ? prefs.getUpdateInfo().getVersion()
-//                                : Constant.APP_VERSION;
-//                        File image = new File(filesDir + "/" + route.getLogo());
-//                        File imageWithSpace = new File(filesDir + "/" + route.getLogo() + " ");
-//                        if (image.exists()) {
-//                            mGrid.updateItemBackground(Constant.PLANNER_ID,image );
-//                        }
-//                        if (imageWithSpace.exists()) {
-//                            mGrid.updateItemBackground(Constant.PLANNER_ID, imageWithSpace);
-//                        }
-//                    }
-//                }
-//                break;
-//            case Constant.LOADER_CALENDAR:
-//
-//                if (data != null && data.getCount() > 0) {
-//                    data.moveToFirst();
-//                    CalendarEventModel calendarEventModel = new CalendarEventModel(data);
-//                    if (!Strings.isNullOrEmpty(calendarEventModel.getImage())) {
-//                        mGrid.updateItemBackground(Constant.PLANNER_ID, calendarEventModel.getImage());
-//                    }
-//                }
-//                break;
-//        }
-//    }
-//
-//    @Override
-//    public void onLoaderReset(Loader<Cursor> cursorLoader) { }
+
 
     @Override
     public void onItemClick(View view, int position) {
         if (mAdapter != null) {
-//            Cursor data = (Cursor) mAdapter.getItem(position);
-//            MenuItemModel menuItem = new MenuItemModel(data);
-//            new ModelIntentBuilder(getActivity(), menuItem)
-//                .performAction();
+
         }
     }
 
-//
-//    public String getPhotoUrl(AddressModel address) {
-//        String key = "mod_" + address.getModId() + "_id_" + address.getObjectId();
-//        if (photos.containsKey(key)) {
-//            ArrayList<String> list = photos.get(key);
-//            if (list.size() > 0) {
-//                return list.get(0);
-//            }
-//        }
-//        return null;
-//    }
 
 }

@@ -5,12 +5,6 @@ import android.os.Environment;
 
 public class UpdateUtils {
 
-    private static final String TAG = UpdateUtils.class.getSimpleName();
-
-    public static String getFilesDir(Context context) {
-        return context.getFilesDir().getAbsolutePath() + "/";
-    }
-
     public static boolean hasExternalStorage() {
         boolean mExternalStorageAvailable = false;
         boolean mExternalStorageWritable = false;

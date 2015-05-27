@@ -47,40 +47,6 @@ public class MainGrid extends LinearLayout {
         }
     }
 
-//    private void landscapeFill(Adapter adapter) {
-//        int divider = 4;
-//        final int adapterCount = adapter.getCount();
-//        int lineCount = Math.round(adapterCount / divider) + 1;
-//        for (int l = 0; l < lineCount; l++) {
-//            addLine(l);
-//        }
-//        for (int i = 0; i < adapterCount; i++) {
-//            int line = i % divider;
-//            final int position = i;
-//            LinearLayout item = (LinearLayout) adapter.getView(position, null, null);
-//            LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-//            params.gravity = Gravity.LEFT;
-//            params.weight = 1f;
-//            params.leftMargin = innerMargin;
-//            params.bottomMargin = innerMargin;
-//            params.rightMargin = innerMargin;
-//            params.topMargin = innerMargin;
-//            item.setLayoutParams(params);
-//            item.setClickable(true);
-//            setClickableChildren(item);
-//            if (mListener != null) {
-//                item.setOnClickListener(new OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        mListener.onItemClick(v, position);
-//                    }
-//                });
-//            }
-//            lines.get(line).addView(item);
-//        }
-//        invalidate();
-//    }
-
     private void portraitFill(Adapter adapter) {
         int divider = 2;
         final int adapterCount = adapter.getCount();
@@ -142,27 +108,6 @@ public class MainGrid extends LinearLayout {
                 inner.setDuplicateParentStateEnabled(true);
                 setClickableChildren(inner);
             }
-        }
-    }
-
-    public void updateItemBackground(int id, String path) {
-        ImageView view = (ImageView) findViewById(id);
-        if (view != null) {
-            Utils.getPicasso(getContext()).load("file:" + path).centerCrop().resize(200, 200).into(view);
-        }
-    }
-
-    public void updateItemBackground(int id, int id2) {
-        ImageView view = (ImageView) findViewById(id);
-        if (view != null) {
-            Utils.getPicasso(getContext()).load(id2).centerCrop().resize(200, 200).into(view);
-        }
-    }
-
-    public void updateItemBackground(int id, File file) {
-        ImageView view = (ImageView) findViewById(id);
-        if (view != null) {
-            Utils.getPicasso(getContext()).load(file).centerCrop().resize(200, 200).into(view);
         }
     }
 }

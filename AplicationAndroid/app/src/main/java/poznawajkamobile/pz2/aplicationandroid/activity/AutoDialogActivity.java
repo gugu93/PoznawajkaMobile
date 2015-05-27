@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import com.example.kml.poznawajkamobile.R;
 
 
-public class AutoDialogActivity extends ActionBarActivity {
+public class AutoDialogActivity extends AbstractActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

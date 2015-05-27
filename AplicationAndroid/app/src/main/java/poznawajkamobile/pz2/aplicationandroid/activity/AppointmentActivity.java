@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.example.kml.poznawajkamobile.R;
 
 
-public class AppointmentActivity extends ActionBarActivity {
+public class AppointmentActivity extends AbstractActivity {
     private Button myButton;
 
     @Override

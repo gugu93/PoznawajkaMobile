@@ -55,10 +55,6 @@ public class SpecialDrawerAdapter extends BaseAdapter {
         return convertView;
     }
 
-    public void goTo(Class<?> cls) {
-        Intent i = new Intent(mContext, cls);
-        mContext.startActivity(i);
-    }
 
     public enum SpecialDrawerItem {
      SETTINGS(R.string.drawer_settings, Iconify.IconValue.fa_sliders);
@@ -88,14 +84,6 @@ public class SpecialDrawerAdapter extends BaseAdapter {
             return icon;
         }
 
-//        public Class<?> getAction() {
-//            if (this.equals(SETTINGS)) {
-//                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
-//                    return SettingsCompatActivity.class;
-//                }
-//            }
-//            return cls;
-//        }
 
         public static SpecialDrawerItem getByOrdinal(int position) {
             return values()[position];

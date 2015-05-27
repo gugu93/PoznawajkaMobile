@@ -68,24 +68,6 @@ public class ResetPasswordActivity extends ActionBarActivity {
         alertDialog.show();
     }
 
-    private void openAlert2(View view) {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ResetPasswordActivity.this);
-
-        alertDialogBuilder.setTitle("Odmowa!");
-        alertDialogBuilder.setMessage("Zmiana hasła zmiana hasła nie powiodła się. Podany e-mail jest nieprawidłowy.");
-        // set positive button: Yes message
-        alertDialogBuilder.setNegativeButton("Powrót do menu logowania", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                // go to a new activity of the app
-                Intent loginActivity = new Intent(getApplicationContext(),
-                        LoginActivity.class);
-                startActivity(loginActivity);
-            }
-        });
-        AlertDialog alertDialog = alertDialogBuilder.create();
-        alertDialog.show();
-    }
-
     private boolean validateData(){
         return true;
     }

@@ -9,9 +9,6 @@ import poznawajkamobile.pz2.aplicationandroid.activity.AbstractActivity;
 
 public class AbstractListFragment extends ListFragment {
 
-    protected AbstractActivity getBaseActivity() {
-        return (AbstractActivity) getActivity();
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

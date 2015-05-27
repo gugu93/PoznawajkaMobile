@@ -64,40 +64,6 @@ abstract public class AbstractActivity extends ActionBarActivity {
         super.attachBaseContext(new CalligraphyContextWrapper(newBase));
     }
 
-    public static Intent fragmentArgumentsToIntent(Bundle arguments) {
-        Intent intent = new Intent();
-        if (arguments == null) {
-            return intent;
-        }
-
-        final Uri data = arguments.getParcelable(Constant.EXTRA_INTENT_URI);
-        if (data != null) {
-            intent.setData(data);
-        }
-
-        final String action = arguments.getString(Constant.EXTRA_INTENT_ACTION);
-        if (!TextUtils.isEmpty(action)) {
-            intent.setAction(action);
-        }
-
-        intent.putExtras(arguments);
-        intent.removeExtra(Constant.EXTRA_INTENT_URI);
-        intent.removeExtra(Constant.EXTRA_INTENT_ACTION);
-        return intent;
-    }
-
-    public void goTo(Class<?> cls) {
-        Intent i = new Intent(this, cls);
-        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(i);
-    }
-
-    public void goToAndClear(Class<?> cls) {
-        Intent i = new Intent(this, cls);
-        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
-        finish();
-    }
 
     public Preferences getPreferences() {
         if (mPreferences == null) {
@@ -106,52 +72,4 @@ abstract public class AbstractActivity extends ActionBarActivity {
         return mPreferences;
     }
 
-    public void setActionBarItem(MenuItem item, Iconify.IconValue icon) {
-        int show;
-        boolean isHorizontal = getResources().getBoolean(R.bool.isLandscape);
-        boolean isTablet = getResources().getBoolean(R.bool.isTablet);
-        if (isHorizontal || isTablet) {
-            show = MenuItemCompat.SHOW_AS_ACTION_IF_ROOM | MenuItemCompat.SHOW_AS_ACTION_WITH_TEXT;
-        } else {
-            show = MenuItemCompat.SHOW_AS_ACTION_IF_ROOM;
-        }
-        item.setIcon(getMenuIcon(icon));
-        MenuItemCompat.setShowAsAction(item, show);
-    }
-
-    public void setActionBarItem(MenuItem item, Drawable icon) {
-        int show;
-        boolean isHorizontal = getResources().getBoolean(R.bool.isLandscape);
-        boolean isTablet = getResources().getBoolean(R.bool.isTablet);
-        if (isHorizontal || isTablet) {
-            show = MenuItemCompat.SHOW_AS_ACTION_IF_ROOM | MenuItemCompat.SHOW_AS_ACTION_WITH_TEXT;
-        } else {
-            show = MenuItemCompat.SHOW_AS_ACTION_IF_ROOM;
-        }
-        item.setIcon(icon);
-        MenuItemCompat.setShowAsAction(item, show);
-    }
-
-    public Drawable getMenuIcon(Iconify.IconValue icon) {
-        return GraphicUtils.getMenuIcon(this, icon);
-    }
-
-
-    public void setActionBarItem(MenuItem item, Iconify.IconValue icon, int show) {
-        item.setIcon(getMenuIcon(icon));
-        MenuItemCompat.setShowAsAction(item, show);
-
-    }
-
-    public boolean isTablet() {
-        return isTablet;
-    }
-
-    public boolean isLandscape() {
-        return isLandscape;
-    }
-
-    public boolean isMasterDetail() {
-        return isLandscape() && isTablet();
-    }
 }
