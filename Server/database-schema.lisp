@@ -2,6 +2,22 @@
 
 (defclass database-item () ())
 
+(clsql:def-view-class group (database-item)
+  ((gr_IdGroup :db-kind :key
+               :db-constraints :auto-increment
+               :type integer
+               :accessor id
+               :initard :id)
+   (gr_Name :type (string 50)
+            :db-constraints :not-null
+            :accessor name 
+            :initarg :name)
+   (gr_Description :type (string 500)
+                   :db-constraints :not-null
+                   :initarg :description 
+                   :accessor description))
+  (:base-table "groups"))
+
 (clsql:def-view-class user (database-item)
   ((us_UserId :db-kind :key
               :db-constraints :auto-increment
@@ -92,10 +108,50 @@
                :accessor message))
   (:base-table "user_prov"))
 
-(def-view-class user-rating ()
-  ((id :type integer :accessor id)
-   (user-id :type integer :accessor user-id)
-   (rate :type integer :accessor rate)
-   (prov-type :type integer :accessor prov-type)
-   (comment :type string :accessor comment)
-   (from-user-id :type integer :accessor from-user-id)))
+(clsql:def-view-class user-photo (database-item)
+  (up_PhotoId :type integer
+              :db-constraints :auto-increment
+              :initarg :id
+              :accessor id)
+  (up_UserId :type integer
+             :initarg :user-id
+             :accessor user-id)
+  (up_UserGalleryId :type integer
+                    :initarg :gallery-id
+                    :accessor gallery-id)
+  (:base-table "user_photo"))
+
+(clsql:def-view-class user-gallery (database-item)
+  (ug_Id :type integer
+         :db-constraints :auto-increment
+         :initarg :id
+         :accessor id)
+  (ug_UserId :type integer
+             :initarg :user-id
+             :accessor user-id)
+  (ug_GalleryName :type (string 50)
+                  :initarg :gallery-name
+                  :accessor gallery-name)
+  (ug_Size :type integer
+           :initarg :size
+           :accessor size)
+  (:base-table "user_gallery"))
+
+(clsql:def-view-class user-rating (database-item)
+  ((ur_Id :type integer
+          :db-constraints :auto-increment
+          :initarg :id
+          :accessor id)
+   (ur_UserId :type integer
+              :initarg :user-id
+              :accessor user-id)
+   (ur_Rate :type integer
+            :initarg :rate
+            :accessor rate)
+   (ur_Comment :type string
+               :initarg :comment
+               :accessor comment)
+   (ur_FromUserId :type integer
+                  :initarg from-user-id
+                  :accessor from-user-id))
+  (:base-table "user_rating"))
